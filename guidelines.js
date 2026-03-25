@@ -95,8 +95,3 @@ list.querySelectorAll('.gl-dropdown__item').forEach(item => {
   });
 });
 
-document.querySelectorAll('.gl-type-chips li[data-type]').forEach(chip => {
-  chip.addEventListener('click', () => {
-    selectType(chip.dataset.type);
-  });
-});
