@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2017 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Two</span>
+      <span class="open-vol__masthead-year">2017</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="assets/cover-v2.jpg"
+            alt="The CROW Volume Two 2017 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="#" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p><span class="crow-name">The CROW</span> at the University of Washington Bothell provides students with a platform to showcase research investigations they have conducted, analyzed, and synthesized on their own. As a reader, you will discover a myriad of topics ranging from Science and Technology to the Interdisciplinary Arts and a few in between. The multiple submission types and various writing styles featured in the Campus Research and Observational Writings should spark any reader's interest.</p>
+          <p>Beginning in this year's publication <span class="crow-name">The CROW</span> features a new submission type, Researched Argumentative Essays. This submission type has been a wonderful addition to the journal and has allowed for new ideas and aspects of research writing to be included. The act of conducting research is proven to be highly impactful to learning practices that engage students outside of the classroom setting and allow them to think more critically about the topics they wish to discover. Having their work published will forever encapsulate and preserve their work while also transforming it into a powerful tool which may be used by the next academics who seek new ideas.</p>
+          <p>By taking this monumental and often daunting step of subjecting their work to be reviewed and critiqued by their peers, the authors featured in this journal have progressed towards becoming contributors to the academic discourse of their particular field of study. The Editorial Board was overjoyed and worked tirelessly in reviewing all the incredible submissions this year. We want to praise all the students for the hard work they put into their research and everyone who submitted their work for review. We also want to thank the faculty and staff mentors who foster students' passions and talents.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2017 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="education">Education</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="physics">Physics</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Legacy of Colonialism
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Molly Herbert</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            How Concussion Frequency is Greater in Collegiate Athletes than Adolescent Athletes
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Multiple studies have examined concussion frequency in athletes of all levels of play. This study analyzed previously published data on athletes ranging from the high school to the collegiate level to determine if concussion occurrence was greater in collegiate athletes than in adolescent athletes (ages 13–18). Based on the analysis, the concussion abundance in tested adolescent athletes was 3.7% and the occurrence in collegiate athletes was over twice as much at about 7.5%. This data demonstrates that concussion frequency in collegiate athletes is indeed greater than in adolescent athletes, opening possibilities for more intense research on concussion frequency at the collegiate level as well as improving existing concussion protocol.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Atif Mahmood Bhatti</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Extreme Adaptations in Cetaceans: Deep Diving Behavior and Physiology
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: Cetaceans — porpoises, whales, and dolphins — are oxygen-breathing aquatic mammals thought to have evolved from quadruped land animals millions of years ago. Since cetaceans must resurface to expel carbon dioxide and intake oxygen, the more effectively they can hold their breath, the better chance they have of evading predators and finding food. Extreme adaptations like deep diving behavior have allowed consecutive generations to feed and reproduce exceptionally well. This adaptation is not singular and works through the regulation of many different bodily processes, including elastic arteries, respiratory physiology, gas regulation, myoglobin concentration, blood circulation, and metabolism — all working in concert to enable remarkable breath-hold durations.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Allison Thomas, Alexander Richards, Clinton Foriska, &amp; Ryan Mayer</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Physical Exercise as Treatment for Depression in Geriatric Psychiatric Patients
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This paper examines the relationship between physical exercise and depressive symptoms in geriatric psychiatric patients, and how physical exercise can be used to treat depression in these patients. Drawing on studies by Carneiro et al., Carter et al., Heinzel et al., the New York State Office of Mental Health, Rapp, and Rosenbaum et al., the paper demonstrates the ways in which physical exercise is beneficial in combating depressive symptoms and disorders in patients over the age of 60 — with studies leading to the conclusion that physical exercise is most effective in treating depressive symptoms in the elderly demographic.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Rebecca Rodrigues</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="biology health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Genetic Predisposition to Generalized Anxiety Disorder
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Generalized Anxiety Disorder (GAD) has been investigated by researchers worldwide due to a potential genetic predisposition. Researchers have consulted factors including familial structures, peer stimulus, age, living and schooling environments, and genetics. Of these, a genetic predisposition is the one factor observable globally. This extensive literary review from international researchers identifies a serotonin transporter gene polymorphism (5-HTTLPR) as the genetic variant thought to predispose an individual to GAD. Finally, the paper examines how identifying this genetic predisposition can lead to advancements in medicine and therapy, ultimately curbing the number of diagnosable cases of GAD worldwide.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Molly Miller</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Globalization of Clinical Drug Trials and Failure to Regulate
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: United States pharmaceutical companies often test their drugs in developing nations through the use of contract research organizations. Despite established ethical guidelines, questions arise of whether research in developing nations can be considered ethical — surrounding the use of placebos, acquiring informed consent, and ensuring voluntary participation. Ethical guidelines such as the Belmont Report, the International Conference on Harmonisation, and the Declaration of Helsinki outline important measures, but they are rarely enforceable. In order to ensure ethical practices are followed among drug trials, the Declaration of Helsinki must become enforceable and be recognized as the standard for ethical research in developing nations by U.S. agencies and research institutions.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Samantha Frati</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Efficiency of Women's Health Resources in Developing Countries
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The lack of access to health and family planning resources for women in impoverished countries has been recognized as a major barrier to national growth. When women are given access to family planning education, they tend to prioritize the financial security of their families, which benefits communities and nations as women's rights are restored and individuals invest more in regional economies. Programs such as The Maternal and Child Health and Family Planning Program in Bangladesh are attributed with decreasing the fertility rate from 5 to 2.2 children per woman on average. Although there have been great recorded successes in meeting contraceptive need, resources remain extremely limited and some countries face staunch sociocultural barriers.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Neele Thom</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Desertification of North Africa and the Desertion of its Refugees
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: There were 20 million new climate refugees in 2008, and 17 million people are currently fleeing desertification. 60–75 million people in the North African Sahara-Sahel region face displacement due to desertification driven by climate change via droughts and temperature increases at levels never before seen. The United States must act: it should set a precedent of accepting climate change refugees, provide funds for United Nations Conventions, and become party to the International Criminal Court. The Sahara-Sahel is suffering and the international community is turning a blind eye to their pain.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Nate Blanchard</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Doula Care for Low Income African American and Latino Mothers in a Hospital Setting
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In the United States, African American and Latina women are 148% more likely than white women to experience birth complications such as cesarean sections and low birth weight babies. Implementing more support for birthing mothers during their hospital stay might decrease these outcomes. This support might be best found in a hospital-based doula program that provides individual emotional and physical support to women throughout pregnancy and childbirth. This proposal looks at the current research on doulas and their positive impacts on low-income African American and Latina mothers, and makes the case for broader institutional adoption of doula-supported birth programs.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Christy Wyble</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="health-studies education">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Access to Physical Education in High Schools and Childhood Obesity
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Education</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Childhood obesity is a major public health issue affecting adolescents across the United States — for ages 2 to 5 obesity has doubled, and nearly tripled among youth ages 6 to 19 since the 1970s. This research proposal examines whether there is a relationship between access to physical education in high schools and childhood obesity, specifically for grades 9–12, using random sampling of Interlake High School students alongside data from the Healthy Youth Survey and the Bellevue School District. The study argues that all high schools should provide robust physical education implementation programs as a meaningful intervention in the childhood obesity epidemic.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Qendresa Hasani</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Experimental Applications of Differential Scanning Calorimetry to Test and Characterize Polymers at the University of Washington Bothell
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: Differential Scanning Calorimetry (DSC) is used for analyzing the thermal properties of polymeric materials used in many engineering applications. The data produced generates a heat flow curve that reflects the amount of energy required to heat a sample per degree Celsius over time, allowing for calculation of heat capacities, melting temperatures, glass transition temperatures, degree of crystallinity, and environmental oxidation. This paper describes several projects at UW Bothell where DSC was utilized to evaluate industrial and sports applications of polymers — including degradation in sport track surfaces, premature cracking in polyurethane transformer housing covers, and determination of unknown polymers in high-temperature filtration systems.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Kaleb Dempsey</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="biology political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Indoor Agricultural Technologies: An Introduction to the Future of Sustainable Farming
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Indoor agriculture provides a framework to address the need for new, innovative solutions to feed the planet's exponentially growing population. This investigation assesses the advantages and future prospects of indoor agricultural technologies as a sustainable alternative to traditional farming, using a hybrid approach of academic literature review and exploration of indoor farming culture. Cost-benefit analysis examines potential economic advantages of hydroponic gardening systems and Light Emitting Diodes (LEDs). Advancements in artificial lighting technologies, a dwindling global water supply, and unpredictable weather patterns prompted by climate change together signal a promising future for indoor farming.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Gerald J. MacKenzie</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Fourier Transform Infrared (FTIR) Spectroscopy for Material Characterization at the University of Washington Bothell
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: Fourier Transform Infrared (FTIR) Spectroscopy is a powerful material analysis technique that can be used alone as a quick characterization tool or in complement with techniques such as DSC, GC, NMR, or Raman Spectroscopy to gain the complete physical and chemical makeup of a material. At UW Bothell, FTIR techniques have been applied to analyze synthetic granular composites used on horse racetracks, crumb rubber from artificial turf, and comparative studies of polyvinyl acetate (PVAc) polymers. FTIR tests indicated oxidation degradation of wax binders in track surfaces and revealed that different acrylic contents in PVAc produce subtly different material properties — including greater flexibility at room temperature — with important implications for composite material selection in engineering applications.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Luke B. Daanomah &amp; Bryce Denis</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2017 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li>Molly Herbert</li>
+          <li>Atif Mahmood Bhatti</li>
+          <li>Allison Thomas</li>
+          <li>Alexander Richards</li>
+          <li>Clinton Foriska</li>
+          <li>Ryan Mayer</li>
+          <li>Rebecca Rodrigues</li>
+          <li>Molly Miller</li>
+          <li>Samantha Frati</li>
+          <li>Neele Thom</li>
+          <li>Nate Blanchard</li>
+          <li>Christy Wyble</li>
+          <li>Qendresa Hasani</li>
+          <li>Kaleb Dempsey</li>
+          <li>Gerald J. MacKenzie</li>
+          <li>Luke B. Daanomah</li>
+          <li>Bryce Denis</li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2017 Editorial Board</h3>
+        <ul class="vol-credits__list">
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <img class="footer__uwb-logo"
+         src="https://www.figma.com/api/mcp/asset/cf0876bd-49f7-446e-b08d-8ab2875994a2"
+         alt="University of Washington Bothell">
+
+    <div class="footer__left">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate
+        or publish works that discriminate against any sex, gender expression, sexual
+        orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully
+        consider all potential publications within this guideline.
+      </p>
+      <button class="footer__top-btn"
+              onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</button>
+    </div>
+
+    <div class="footer__right">
+      <div class="footer__contact-block">
+        <span class="footer__label">CONTACT</span>
+        <a href="mailto:publish@uw.edu" class="footer__info-row">
+          <span class="footer__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/2dadf7b8-77dc-467a-80d1-e71880101038"
+                 alt="" width="18" height="16">
+          </span>
+          publish@uw.edu
+        </a>
+      </div>
+      <div class="footer__follow-block">
+        <span class="footer__label">FOLLOW US</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer"
+           class="footer__info-row">
+          <span class="footer__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/e7086411-a7c7-45dd-8eb4-14a3d7f02cc9"
+                 alt="" width="24" height="24">
+          </span>
+          @uwbcrow
+        </a>
+      </div>
+      <img class="footer__crow-img"
+           src="https://www.figma.com/api/mcp/asset/59224d8e-2fb7-4d87-8647-661104cdab4d"
+           alt="" aria-hidden="true">
+    </div>
+
+  </footer>
+
+  <script src="archive.js"></script>
+  <script src="transitions.js"></script>
+  <script src="submit-modal.js"></script>
+</body>
+</html>

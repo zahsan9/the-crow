@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2016 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume One</span>
+      <span class="open-vol__masthead-year">2016</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="assets/cover-v1.jpg"
+            alt="The CROW Volume One 2016 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="#" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p><span class="crow-name">The CROW</span> highlights the incredible dedication of students at the University of Washington Bothell to conduct, analyze, and synthesize their own research investigations. As the reader, you will discover a myriad of topics ranging from Science and Technology to the Interdisciplinary Arts and a few in between. The multiple submission types and various writing styles feature the campus research and observational writings that should spark any reader's interests.</p>
+          <p>The act of conducting research is proven to be a highly impactful learning practice that engages students outside of the classroom setting and allows them to think more critically about the topics they wish to discover. Having their work published will forever encapsulate and preserve their work while also transforming it into a powerful tool which can be used by the next academic who seeks new ideas.</p>
+          <p>By taking this monumental and often daunting step of subjecting their work to be reviewed and critiqued by their peers, the authors featured in this journal have progressed towards becoming contributors to the academic discourse of their particular field of study. The Editorial Board was overjoyed to have had the opportunity to review all the incredible submissions this year. We want to praise all the students for the hard work they put into their research and to everyone who submitted their work for review. We also want to thank the faculty and staff mentors who foster students' passions and talents.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2016 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="literature">Literature</button>
+      <button class="filter-pill" data-filter="physics">Physics</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Springtime on Mount Everest
+          </a>
+          <span class="pub-card__subject">Literature</span>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Denae Weigelt</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="psychology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Happiness in Relation to Spirituality
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Malak Shalabi</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Understanding the Origins of Animal Multicellularity Through the Studies of Choanoflagellates
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: Choanoflagellates are the closest living relative of animals, confirmed through multiple lines of phylogenetic analyses, comparative genomics, and similarities in cell biology. Previous studies of the choanoflagellate Salpingoeca rosetta suggest that bacteria may have played an important role in the early origins of animals. One study showed that the Bacteriodetes Algoriphagus machinoponensis can release lipid signaling molecules that induce choanoflagellates to grow into multicellular colonies known as rosettes. Another showed that when grown in the presence of Vibrio fischerii, choanoflagellates will exhibit swarming behavior and sexually reproduce. Through the use of molecular and comparative genomic approaches, choanoflagellates offer an experimentally tractable, phylogenetically relevant model system for investigating the unicellular ancestry of animals.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Isaac Kim</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Food Environment in Healthcare
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: With chronic disease prevalence rates continually increasing, a public health response in prevention is needed. Dietary and nutritional behavior that prevents disease is directly linked to the quality of food consumed, yet hospital administrations are signing contracts with fast food corporations and processed food suppliers, skewing an assumed alliance with healthy living requirements for chronic disease patients. Medical students receive very little nutrition education in medical training, and medical administrations are failing to educate and motivate patients. Moving forward, changes in policy development, healthcare food environments, and medical school nutrition education can realign with public health disease prevention and health promotion initiatives — allowing medical facilities to act as a point of public health intervention and build trust with patients and the community.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Samantha Frati, Jessica Jacobsen, Rachel Li, &amp; Shelby Lubchuk</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="political-science biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Livelihood Identity: How Food is Used as Resistance in the Mangrove Ecosystems of Ecuador
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Political Science</span>
+            <span class="pub-card__subject">Biology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Since the late 1960s, the development of the shrimp-farm industry in Ecuador has contributed to extensive ecological damage to mangrove areas, severely threatening the livelihood of those reliant on these ecosystems. In response, the population mobilized a national grassroots movement that used food to articulate resistance against the shrimp-farm industry and the Ecuadorian government. The "livelihood identity," or collective sense of belonging, among ancestral mangrove people has motivated communities to protect not only their food source, but also their way of life. This paper analyzes how the expansion of the shrimp-farm industry has altered resource availability and access in mangrove communities and given rise to social movements that utilize food culture as a tool of resistance.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Hillary Sanders</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="physics health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Analysis of CO2, CO, PM2.5, and PM10 From Flaming and Smoldering Combustion in a Home Wood Stove
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Physics</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Carbon monoxide, carbon dioxide, and particulate matter smaller than 2.5μm have known negative health and climate implications, making them advantageous to study. Three instruments — a trace level CO analyzer, a non-dispersive infrared gas analyzer for CO2, and an aerosol monitor for particulate matter — were used to continuously measure the output of these pollutants from a wood stove under two types of combustion: flaming and smoldering. The CO instrument has a lower detectable limit of 0.04ppm; the CO2 instrument has a measurement range of 0–20,000ppm with accuracy &lt;3%; and the DustTrak uses gravimetric and photometric analysis to measure concentrations from 0.001–150 mg/m³, providing comprehensive pollutant profiles for both combustion modes.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Sara Wells</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Overexpression, Purification, and Inhibition of Helicobacter Pylori Aldo-keto Reductase (HpAKR) using Designer Inhibitors
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Helicobacter pylori infects the gastric mucosa of over half of the world's population and is implicated in the genesis of many gastric pathologies. Current treatments are becoming increasingly ineffective as antibiotic-resistant strains become more prevalent. The purpose of this project is to discover a competitive inhibitor for an aldo-keto reductase enzyme (HpAKR) that is required for H. pylori to survive in the human stomach. The plasmid containing the HpAKR gene will be transformed into Rosetta™ E. coli cells for overexpression, and the purified HpAKR molecules will be assayed for activity and inhibition, with findings intended to inform future antibiotic-resistant treatment strategies.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Taryn Meachem</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Analysis of Fluoride, Chloride, Carbonate, and Sulfate in Filtered, Tap, and Ground Water Samples by ISE and Titration
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This study compares natural groundwater to tap water and filtered water to identify whether groundwater has significantly different concentrations of fluoride, chloride, carbonate, and sulfate (FCCS). Consuming high concentrations of fluoride can lead to fluorosis and reduction of IQ, neither of which have effective treatment options. Samples were collected from two Pacific Northwest households and compared to potable groundwater from the Artesian Well in Lynnwood, with fluoride and chloride measured via ion-selective combination electrode and sulfate and carbonate via titration. The largest source of error comes from hydroxide interference when detecting fluoride and chloride concentrations, informing recommendations for prevention of fluoride-related health issues.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Bunraj Grewal</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Access &amp; Affordability in Public Health Policy to Increase Adherence of Cancer Prevention Guidelines
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Children residing in low income, food insecure neighborhoods face increased obstacles in adhering to cancer prevention guidelines (CPGs), which focus on nutrition and physical activity to maintain a healthy body weight. Geographic, economic, structural, and social conditions place low socioeconomic status (SES) youth at increased risk. Results indicate that cancer prevalence is increasing globally, many cancers are preventable, and higher SES households adhere to CPGs more easily than those in low SES households. Children rarely meet daily fruit and vegetable recommendations, and both cancer survivors and families without a cancer history are largely unaware of CPGs. Targeted public health policies and programs with qualitative, community-specific approaches are needed to increase adherence and access within low SES communities.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Jessica Jacobson</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Determining Potential Inhibitor(s) of Thioredoxin Glutathione Reductase, Key Enzyme of Schistosoma Mansoni Parasite
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Schistosomiasis is a parasitic worm disease affecting more than 200 million people worldwide, and praziquantel remains the only treatment. With patients showing signs of resistance to praziquantel, there is an urgent need to develop a new alternative drug. This experiment will determine potential inhibitor(s) of Thioredoxin glutathione reductase (TGR), an essential enzyme responsible for the parasite's survival, using three phases of computational modeling: virtual screening, lead optimization, and down-selection. Top hit compounds are predicted to have binding affinities of about -10.0 kcal/mol after virtual screening, improving to -13.7 kcal/mol after lead optimization — with the strongest candidates progressing toward preclinical and clinical drug development.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Mengkhy Lay &amp; Dr. Peter Anderson</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Examining the Effects of Different Diets and Salinities on Copepod Population Growth
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: Climate impacts on coastal oceans — sea level rise, increased storm intensity, and increased precipitation — can lead to a rise in fresh water entering coastal ecosystems, causing decreases in ocean salinity. Sea urchins are key members of nearshore food webs and their feces may provide large amounts of available nutrients for other organisms. This research studied the population growth of T. californicus copepods in both low salinity and normal seawater environments, with diets of either fresh Ulva or urchin fecal Ulva. Both diet and salinity significantly affected population growth — low salinity proved to be the better environment, and fresh Ulva the better diet — with implications for understanding how marine food web dynamics will respond to climate-driven environmental changes.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Martha Raymore &amp; Megan Dethier</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Development of a Thermal Desorption and CRY-GC-MS Method for the Measurement of VOCs in Ambient Air
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: Wildfires have increased across North America in recent years. Acetonitrile (CH3CN) is chosen as a trace molecule because it indicates biomass burning while anthropogenic sources are limited. Previous studies required transport of massive equipment to fire sites, giving importance to developing a simple, portable, and inexpensive method for tracing acetonitrile production. This study proposes a new method using thermal desorption-cryofocusing-gas chromatography-mass spectrometry (TD-Cryo-GC-MS) with higher sensitivity, reproducibility, and recovery for measuring VOCs in ambient air. TD tubes packed with PorapakN adsorbent were used, with Na2SO4 showing 99.8% recovery as an ozone trap and breakthrough tests yielding 1.87 ±0.56% recovery for concentrations up to 60ng CH3CN over two hours. The resulting validation experiment demonstrates good first results and establishes a foundation for future measurement of wildfire-associated VOCs.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Angela Angelevska &amp; Crystal McClure</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2016 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li>Denae Weigelt</li>
+          <li>Malak Shalabi</li>
+          <li>Isaac Kim</li>
+          <li>Samantha Frati</li>
+          <li>Jessica Jacobsen</li>
+          <li>Rachel Li</li>
+          <li>Shelby Lubchuk</li>
+          <li>Hillary Sanders</li>
+          <li>Sara Wells</li>
+          <li>Taryn Meachem</li>
+          <li>Bunraj Grewal</li>
+          <li>Jessica Jacobson</li>
+          <li>Mengkhy Lay</li>
+          <li>Dr. Peter Anderson</li>
+          <li>Martha Raymore</li>
+          <li>Megan Dethier</li>
+          <li>Angela Angelevska</li>
+          <li>Crystal McClure</li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2016 Editorial Board</h3>
+        <ul class="vol-credits__list">
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <img class="footer__uwb-logo"
+         src="https://www.figma.com/api/mcp/asset/cf0876bd-49f7-446e-b08d-8ab2875994a2"
+         alt="University of Washington Bothell">
+
+    <div class="footer__left">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate
+        or publish works that discriminate against any sex, gender expression, sexual
+        orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully
+        consider all potential publications within this guideline.
+      </p>
+      <button class="footer__top-btn"
+              onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</button>
+    </div>
+
+    <div class="footer__right">
+      <div class="footer__contact-block">
+        <span class="footer__label">CONTACT</span>
+        <a href="mailto:publish@uw.edu" class="footer__info-row">
+          <span class="footer__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/2dadf7b8-77dc-467a-80d1-e71880101038"
+                 alt="" width="18" height="16">
+          </span>
+          publish@uw.edu
+        </a>
+      </div>
+      <div class="footer__follow-block">
+        <span class="footer__label">FOLLOW US</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer"
+           class="footer__info-row">
+          <span class="footer__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/e7086411-a7c7-45dd-8eb4-14a3d7f02cc9"
+                 alt="" width="24" height="24">
+          </span>
+          @uwbcrow
+        </a>
+      </div>
+      <img class="footer__crow-img"
+           src="https://www.figma.com/api/mcp/asset/59224d8e-2fb7-4d87-8647-661104cdab4d"
+           alt="" aria-hidden="true">
+    </div>
+
+  </footer>
+
+  <script src="archive.js"></script>
+  <script src="transitions.js"></script>
+  <script src="submit-modal.js"></script>
+</body>
+</html>

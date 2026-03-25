@@ -27,29 +27,32 @@
 
   <!-- OPEN VOLUME HERO -->
   <section class="open-vol">
+
+    <!-- Masthead bar -->
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Ten</span>
+      <span class="open-vol__masthead-year">2025</span>
+    </div>
+
     <div class="open-vol__inner">
 
-      <!-- Journal Cover Card -->
-      <div class="open-vol__card">
-        <img
-          class="open-vol__card-cover"
-          src="https://www.figma.com/api/mcp/asset/154909ba-36cd-4b7e-aeec-2f92883d117d"
-          alt="The CROW Volume Ten 2025 Journal Cover">
-        <div class="open-vol__card-footer">
-          <span class="open-vol__card-title">Volume Ten</span>
-          <span class="open-vol__card-year">2025</span>
+      <!-- Left: cover card + action buttons -->
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="assets/cover-v10.jpg"
+            alt="The CROW Volume Ten 2025 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="#" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
         </div>
       </div>
 
-      <!-- Buttons + Letter from Editors -->
+      <!-- Right: letter from editors -->
       <div class="open-vol__content">
-        <div class="open-vol__top-row">
-          <div class="open-vol__buttons">
-            <a href="#" class="open-vol__btn" target="_blank" rel="noreferrer">Download PDF</a>
-            <a href="#publications" class="open-vol__btn">See Publications</a>
-          </div>
-          <p class="open-vol__letter-label">Letter From the Editors</p>
-        </div>
+        <p class="open-vol__letter-label">Letter From the Editors</p>
 
         <div class="open-vol__letter-body">
           <p>This momentous Tenth Edition of <span class="crow-name">The CROW</span> was composed and published in the midst of major education funding cuts, and anxieties around changes in the country. As we witness ongoing attacks on the rights of our community members, we feel that the mission of <span class="crow-name">The CROW</span> to platform and uplift student voices is our way of advocating. We thank you for being part of this work and reaffirm our belief in the value and impact of student writing, student activism, and student investment in global futures.</p>
@@ -63,132 +66,407 @@
 
   <!-- PUBLICATIONS -->
   <section class="publications" id="publications">
-    <h2 class="publications__heading">2025 publications</h2>
-
-    <div class="publications__searchbar">
-      <button class="publications__search-icon-btn" aria-label="Search">
-        <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
-      </button>
-      <input
-        type="search"
-        class="publications__search-input"
-        placeholder="Search publications…"
-        aria-label="Search publications"
-        id="pubSearch">
+    <div class="publications__header">
+      <h2 class="publications__heading">2025 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
     </div>
 
-    <p class="publications__no-results" id="pubNoResults" hidden>No publications match your search.</p>
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="business">Business</button>
+      <button class="filter-pill" data-filter="education">Education</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="literature">Literature</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
     <ul class="publications__grid" id="pubGrid">
 
       <!-- Card 1 -->
-      <li class="pub-card">
+      <li class="pub-card" data-subject="literature">
         <div class="pub-card__content">
           <a class="pub-card__title"
              href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-01-Kai.pdf"
              target="_blank" rel="noreferrer">
             Reflecting the Poem That Never Ends
           </a>
+          <span class="pub-card__subject">Literature</span>
           <p class="pub-card__abstract">ABSTRACT: This paper critically examines the themes, details, language, and processes in Silvina López Medin's book <em>Poem That Never Ends</em>. Investigating personal lineages of motherhood, <em>Poem That Never Ends</em> navigates the complexities of writing about shared family history. Looking closely at the many thematic layers and the discussion of process into the book itself reveals insights into contemporary discourse around poetics, imagination, and form.</p>
         </div>
         <div class="pub-card__footer">
           <div class="pub-card__author-icon" aria-hidden="true">
             <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
           </div>
-          <span class="pub-card__author">phoenix kai</span>
+          <span class="pub-card__author">By Phoenix Kai</span>
         </div>
       </li>
 
       <!-- Card 2 -->
-      <li class="pub-card">
+      <li class="pub-card" data-subject="education political-science">
         <div class="pub-card__content">
           <a class="pub-card__title"
              href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-04-Chacon.pdf"
              target="_blank" rel="noreferrer">
             The Mexican American Experience: Healing Through Ethnic Studies and Bilingualism
           </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Education</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
           <p class="pub-card__abstract">ABSTRACT: The US education system is a tool used to push the dominant Anglo-American cultures among immigrants and other minoritized cultures within the United States. With their proximity to the US border and historical events, Mexicans living in the United States have faced subjugation and discrimination from the Texas Revolution to the anti-immigrant policies and rhetoric; these educational practices have targeted Mexicans for almost two centuries…</p>
         </div>
         <div class="pub-card__footer">
           <div class="pub-card__author-icon" aria-hidden="true">
             <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
           </div>
-          <span class="pub-card__author">Amado Chacon</span>
+          <span class="pub-card__author">By Amado Chacon</span>
         </div>
       </li>
 
       <!-- Card 3 -->
-      <li class="pub-card">
+      <li class="pub-card" data-subject="health-studies political-science">
         <div class="pub-card__content">
           <a class="pub-card__title"
              href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-02-Yousaf.pdf"
              target="_blank" rel="noreferrer">
             Racism in Healthcare: Researched and Analyzed from an Intersectional Angle
           </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
           <p class="pub-card__abstract">ABSTRACT: This literature review explores the interplay of racism and implicit bias in healthcare, particularly focusing on the reproductive health of women of color through an intersectional lens. The legacy of Jim Crow laws and forced sterilizations have contributed to a mistrust of the American healthcare system among women of color. These legacies motivated the Black Panther Party to form the People's Free Medical Clinics, so that their community members could feel safe seeking medical treatments…</p>
         </div>
         <div class="pub-card__footer">
           <div class="pub-card__author-icon" aria-hidden="true">
             <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
           </div>
-          <span class="pub-card__author">Sidra Yousaf</span>
+          <span class="pub-card__author">By Sidra Yousaf</span>
         </div>
       </li>
 
       <!-- Card 4 -->
-      <li class="pub-card">
+      <li class="pub-card" data-subject="biology">
         <div class="pub-card__content">
           <a class="pub-card__title"
              href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-03-Lambert.pdf"
              target="_blank" rel="noreferrer">
             Similarities Between Greater Roadrunner (<em>Geococcyx californianus</em>) Birds and Mulga (<em>Acacia aneura</em>) Shrubs: A Review of Extreme Adaptations to Desert Environments
           </a>
+          <span class="pub-card__subject">Biology</span>
           <p class="pub-card__abstract">ABSTRACT: This literature review paper will focus on the Greater Roadrunner (<em>Geococcyx californianus</em>) of the Southwestern U.S. and the Mulga shrub (<em>Acacia aneura</em>) of Australia. The former is one of the fastest running, flightless birds on the planet, and the latter is an evergreen shrub capable of growing to incredible heights. Greater Roadrunners and Mulga shrubs demonstrate remarkable adaptations that enable survival in the so-called harsh environments…</p>
         </div>
         <div class="pub-card__footer">
           <div class="pub-card__author-icon" aria-hidden="true">
             <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
           </div>
-          <span class="pub-card__author">Faith Lambert, Niki Hakimi, Faith Manning, &amp; Geoffrey Tong</span>
+          <span class="pub-card__author">By Faith Lambert, Niki Hakimi, Faith Manning, &amp; Geoffrey Tong</span>
         </div>
       </li>
 
       <!-- Card 5 -->
-      <li class="pub-card">
+      <li class="pub-card" data-subject="political-science">
         <div class="pub-card__content">
           <a class="pub-card__title"
              href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-05-Fero.pdf"
              target="_blank" rel="noreferrer">
             Echoing Across a Nation: The New Wave of Gendered Terrorism in the United States
           </a>
+          <span class="pub-card__subject">Political Science</span>
           <p class="pub-card__abstract">ABSTRACT: This essay examines the evolution of terrorism in the United States, tracing its trajectory from early instances of global terrorism to the transformative impact of 9/11 and the rise of new wave domestic terrorism during Donald Trump's presidency. With a particular focus on its impact on women, the analysis explores how the post-9/11 era redefined terrorism as an external threat predominantly associated with Muslim and Arab communities, while overlooking the growing dangers…</p>
         </div>
         <div class="pub-card__footer">
           <div class="pub-card__author-icon" aria-hidden="true">
             <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
           </div>
-          <span class="pub-card__author">Brianna Fero</span>
+          <span class="pub-card__author">By Brianna Fero</span>
         </div>
       </li>
 
       <!-- Card 6 -->
-      <li class="pub-card">
+      <li class="pub-card" data-subject="political-science">
         <div class="pub-card__content">
           <a class="pub-card__title"
              href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-06-El-Anany.pdf"
              target="_blank" rel="noreferrer">
             Judicial Compliance: The Supreme Constitutional Court and The Militarization of Egypt's Government
           </a>
+          <span class="pub-card__subject">Political Science</span>
           <p class="pub-card__abstract">ABSTRACT: This paper examines the role of Egypt's Supreme Constitutional Court (SCC) in legitimizing authoritarian rule and reinforcing executive power, despite its formal mandate as an independent judicial body. Through an institutional and political analysis, the study explores the SCC's historical development, its appointment processes, and its jurisdiction over constitutional review. While the SCC was initially established to bolster judicial independence…</p>
         </div>
         <div class="pub-card__footer">
           <div class="pub-card__author-icon" aria-hidden="true">
             <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
           </div>
-          <span class="pub-card__author">Hoda El Anany</span>
+          <span class="pub-card__author">By Hoda El Anany</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-07-El-Anany.pdf"
+             target="_blank" rel="noreferrer">
+            Evolution of American Foreign Policy: The Creation of a Global Superpower
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper examines the evolution of American foreign policy and its transformation from isolationism to global superpower status. By analyzing key historical developments, including 19th-century expansionism, involvement in the World Wars, and post-war international leadership, the paper explores how the United States strategically balanced isolationist tendencies with interventionist actions to secure its national interests. This study argues that territorial expansion, economic influence, and military engagements shaped America's rise, culminating in its dominant role in world affairs. Through foreign aid, military alliances, and global governance initiatives, contemporary U.S. foreign policy continues to reflect the nation's long-standing principles of power projection and exceptionalism.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Hoda El Anany</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="business psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-08-Lovas.pdf"
+             target="_blank" rel="noreferrer">
+            Rebrand or Rebland? How Brand Image Reflects Appreciation for Consumers
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Business</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In recent years, many companies' brandings and outward appearances have become rather alike, following trends of minimalism, such as flat shapes and basic colors. This has mostly been pioneered by tech companies such as Google and Microsoft but is now also being seen in other businesses like PayPal or Jaguar. These new rebrands wildly contrast with many of the detailed and unique aesthetics seen in previous decades, which has spawned backlash. Many detractors view these rebrands as boring, unimaginative, and inferior compared to what came before. This paper aims to explore what factors have pushed this recent trend as well as the overall effect these rebrands have on consumers and employees. Do they truly help to revitalize a company's brand, or are they a sign of a growing disconnect between companies and their customers?</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Stephen Lovas</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-09-Stone.pdf"
+             target="_blank" rel="noreferrer">
+            Family Perspectives of Alzheimer's Dementia Progression &amp; Types of Care: A Qualitative Methods Approach
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In just under forty years from now, the United States will be faced with a crisis of dementia as our generations continue to age. Alzheimer's Dementia and its related diseases require around the clock care as the disease progresses, and abuse is a well documented issue in facilities that provide long term care for these patients. Documentation is much more scarce for people receiving treatment at home. Using a qualitative method study design with narrative approaches, one-on-one interviews will be conducted on family members of patients with Alzheimer's Dementia to analyze possible differences in quality and scope of care, with the hope that this research can highlight inequities in long term care.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Robin Stone</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="psychology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-10-Sugita.pdf"
+             target="_blank" rel="noreferrer">
+            The Impact of Social Media on Teen Mental Health: A Mixed-Method Intervention
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This mixed-method study investigates how social media interactions—particularly social comparison and online validation—affect adolescent mental health. With smartphones and social media now deeply embedded in teen life, concerns have grown about their psychological impact, including links to depression, anxiety, and low self-esteem. This study will recruit 150–200 high school students (ages 13–17) in Renton, Washington, to explore these dynamics through surveys, journal entries, and interviews. The findings may reveal that certain types of social media interactions negatively impact teen mental health, informing interventions such as digital mindfulness tools or policy changes to promote healthier online habits.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Kelsey Sugita</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-11-Hussein.pdf"
+             target="_blank" rel="noreferrer">
+            Breast Cancer: A Qualitative Study on Why Barriers Prevent North African Women with Stage III Breast Cancer from Seeking Mammography Screening and How to Overcome It
+          </a>
+          <span class="pub-card__subject">Health Studies</span>
+          <p class="pub-card__abstract">ABSTRACT: Breast cancer is the leading cause of cancer-related deaths among women worldwide, with particularly high mortality rates in North Africa due to late-stage diagnoses. This study aims to explore the barriers that prevent North African women from seeking mammography screening and to identify culturally appropriate strategies to overcome these challenges. Using a qualitative phenomenological approach, the study will involve in-depth interviews with ten North African women diagnosed with Stage III breast cancer. Anticipated themes include limited awareness, mistrust in the healthcare system, financial constraints, cultural beliefs, and fear of stigma. The findings aim to support the development of targeted public health campaigns and improve healthcare provider education in North African communities.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Mahy Hussein</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-12-Kaur.pdf"
+             target="_blank" rel="noreferrer">
+            A Comprehensive Analysis: The Relationship Between Temperature and Precipitation on Chokecherries
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This research aimed to study the relationship and combined impact of temperature and precipitation on the overall fruit yield of Chokecherry trees, with the goal of finding conditions that maximize production and quality amidst constantly changing climate conditions. The hypothesis was that in order to maximize yield, trees needed spring temperatures ranging from 70°F to 85°F during growing seasons, and 32°F to 45°F during dormancy. Using data from the USA National Phenology Network (2014–2023), results suggest minimal correlation between precipitation and yield, maximum correlation between temperature and yield, and no collective correlation between temperature and precipitation on yield.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Gurkamal Kaur</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-13-Berhane.pdf"
+             target="_blank" rel="noreferrer">
+            Rodentia Species Did Not Follow the Latitudinal Diversity Gradient During the Miocene
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: The latitudinal diversity gradient (LDG) suggests that species richness increases as they get closer to the equator, but it is unclear whether this trend applies to rodents. Using data from the Paleobiology Database, a linear regression analysis yielded a p-value of 0.619, indicating no statistically significant relationship between latitudinal range and species richness. The results suggest that the LDG does not apply to rodents during the Miocene, and that plate tectonic activity — which led rodents to adapt to various environments — explains their distribution better than temperature changes alone.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Yordanos Berhane</span>
+        </div>
+      </li>
+
+      <!-- Card 14 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-14-Jeffords.pdf"
+             target="_blank" rel="noreferrer">
+            Effects of the Paleocene-Eocene Thermal Maximum on Freshwater Plant Distribution and its Relation to Modern Climate Change
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This research tests the hypothesis that the distribution of plants in freshwater aquatic environments changed because of a rapidly warming climate during the Paleocene-Eocene Thermal Maximum. Comparing aquatic and terrestrial plant species between the Paleocene and Eocene epochs via a χ² test revealed a notable increase in aquatic plant distribution from the Paleocene to the Eocene — potentially resulting in impaired water quality, eutrophication, and a decline in aquatic biodiversity. Given our dependence on freshwater resources, similar trends in response to present-day climate change could pose significant risks to life on Earth.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Victoria Jeffords</span>
+        </div>
+      </li>
+
+      <!-- Card 15 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-15-Macias.pdf"
+             target="_blank" rel="noreferrer">
+            Benthic Foraminifera Found to Have Survived Better During the Paleocene-Eocene Thermal Maximum with Implications to a Future Mass Extinction Event
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This research tests whether planktonic foraminifera were greater victims of the global extinction event during the Paleocene-Eocene Thermal Maximum (PETM) than benthic foraminifera, due to their exposure to warming in the open water column. A χ² test applied to data from the Paleobiology Database showed that benthic foraminifera frequency increased from the Paleocene to the Eocene while planktonic foraminifera decreased — suggesting benthic forams survived better during the PETM because they are less exposed to surface-level warming events, with implications for understanding future mass extinction risks.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Liz Macias</span>
+        </div>
+      </li>
+
+      <!-- Card 16 -->
+      <li class="pub-card" data-subject="education psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-16-Sekhon.pdf"
+             target="_blank" rel="noreferrer">
+            Students Eventually Value Active Learning
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Education</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This research investigates STEM students' feelings towards active learning methodologies in foundational physics and mathematics courses through an analysis of Student Evaluations of Teaching (SET) open-ended questions. Findings demonstrate a consistent increase in student appreciation for active learning environments over three quarters. The research highlights that educators who engage with more advanced students tend to achieve higher satisfaction compared to those teaching newer students, suggesting that prolonged exposure to active learning positively correlates with increased student satisfaction.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Parbeen Sekhon &amp; Eric Onnen</span>
         </div>
       </li>
 
     </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2025 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li>Phoenix Kai</li>
+          <li>Sidra Yousaf</li>
+          <li>Faith Lambert</li>
+          <li>Niki Hakimi</li>
+          <li>Faith Manning</li>
+          <li>Geoffrey Tong</li>
+          <li>Amado Chacon</li>
+          <li>Brianna Fero</li>
+          <li>Hoda El Anany</li>
+          <li>Stephen Lovas</li>
+          <li>Robin Stone</li>
+          <li>Kelsey Sugita</li>
+          <li>Mahy Hussein</li>
+          <li>Gurkamal Kaur</li>
+          <li>Yordanos Berhane</li>
+          <li>Victoria Jeffords</li>
+          <li>Liz Macias</li>
+          <li>Parbeen Sekhon</li>
+          <li>Eric Onnen</li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2025 Editorial Board</h3>
+        <ul class="vol-credits__list">
+          <li>Layla</li>
+          <li>Chuck</li>
+          <li>Rehema</li>
+          <li>Kaya</li>
+          <li>Sabine</li>
+          <li>Newt</li>
+          <li>Cecilia</li>
+          <li>Morgan</li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 
   <!-- FOOTER -->
