@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Guidelines | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&family=Tiro+Gurmukhi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo"><span class="crow-name">The CROW</span></a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="index.html#archives" class="nav__link">Archives</a></li>
+      <li><a href="index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="guidelines.html"     class="nav__link nav__link--active">Guidelines</a></li>
+      <li><a href="faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- GUIDELINES -->
+  <section class="guidelines-page">
+    <h2 class="guidelines-page__heading">Submission Guidelines</h2>
+    <div class="guidelines-page__inner">
+
+      <!-- ── Paper stack ────────────────────────────── -->
+      <div class="guidelines-page__paper-wrap">
+        <div class="guidelines-page__paper-back guidelines-page__paper-back--far"></div>
+        <div class="guidelines-page__paper-back"></div>
+        <div class="guidelines-page__paper-front">
+          <p class="gl-paper-title">Your Research!</p>
+
+          <!-- Default -->
+          <div class="gl-paper-section" id="gpDefault">
+            <p class="gl-body">
+              <span class="crow-name">The CROW</span> welcomes research submissions from undergraduate and graduate students across all UWB schools and programs.
+            </p>
+            <p class="gl-subheading">Submission Types</p>
+            <ul class="gl-type-chips">
+              <li data-type="abstract">Research Abstract</li>
+              <li data-type="argumentative">Researched Argumentative Essay</li>
+              <li data-type="editorial">Research Editorial</li>
+              <li data-type="literary">Researched Literary Analysis</li>
+              <li data-type="paper">Research Paper</li>
+              <li data-type="proposal">Research Proposal</li>
+              <li data-type="literature">Literature Review</li>
+              <li data-type="wip">Work in Progress</li>
+            </ul>
+            <p class="gl-toggle-hint">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex-shrink:0"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Use the <strong>dropdown</strong> on the right to explore each type's definition and criteria.</span>
+            </p>
+          </div>
+
+          <!-- Research Abstract -->
+          <div class="gl-paper-section" id="gpAbstract" hidden>
+            <p class="gl-type">Research Abstract</p>
+            <p class="gl-body">A <strong>concise yet powerful summary</strong> of a longer, larger piece of work. Typically <strong>300 words or fewer</strong>, an abstract distills the core elements of a paper so a reader can quickly assess its purpose, scope, and value without reading the full text.</p>
+            <p class="gl-subheading">Must cover</p>
+            <ul class="gl-key-points">
+              <li><span>Thesis</span> The central argument or claim of the full paper</li>
+              <li><span>Background</span> Context that motivates the research</li>
+              <li><span>Results</span> Key findings or outcomes</li>
+              <li><span>Conclusion</span> What the results mean and what was learned</li>
+            </ul>
+          </div>
+
+          <!-- Researched Argumentative Essay -->
+          <div class="gl-paper-section" id="gpArgumentative" hidden>
+            <p class="gl-type">Researched Argumentative Essay</p>
+            <p class="gl-body">An <strong>original work</strong> that outlines an argument based on extensive review of previously published material. It goes beyond summarizing sources by taking an <strong>innovative stance</strong> and making a <strong>compelling case</strong> supported by research evidence.</p>
+            <p class="gl-subheading">Must cover</p>
+            <ul class="gl-key-points">
+              <li><span>Thesis</span> A clear, arguable central claim</li>
+              <li><span>Literature</span> Thorough review and critical evaluation of related material</li>
+              <li><span>Argument</span> An innovative, well-supported position on the topic</li>
+              <li><span>Citations</span> In-text citations throughout and a full reference page</li>
+            </ul>
+            <p class="gl-note">Common in the humanities, but may draw on quantitative or qualitative data from any discipline.</p>
+          </div>
+
+          <!-- Research Editorial -->
+          <div class="gl-paper-section" id="gpEditorial" hidden>
+            <p class="gl-type">Research Editorial</p>
+            <p class="gl-body">A <strong>concise commentary</strong> on a currently published article or issue that highlights exciting recent research. Editorials <strong>do not primarily discuss the author's own work.</strong> Instead, they add context, explain <strong>interdisciplinary significance</strong>, or outline future research directions.</p>
+            <p class="gl-subheading">Must</p>
+            <ul class="gl-key-points">
+              <li><span>Add dimension</span> Go beyond summarizing the experiments or findings</li>
+              <li><span>Provide context</span> Situate the work within the broader field</li>
+              <li><span>Look forward</span> Identify future directions or interdisciplinary implications</li>
+            </ul>
+          </div>
+
+          <!-- Researched Literary Analysis -->
+          <div class="gl-paper-section" id="gpLiterary" hidden>
+            <p class="gl-type">Researched Literary Analysis</p>
+            <p class="gl-body">An essay <strong>evaluating an author's piece of work</strong> by closely examining their <strong>perspective, word choice, and writing structure</strong>. While typically focused on a single work, it may include additional primary texts and secondary scholarly sources to support the analysis.</p>
+            <p class="gl-subheading">Scope</p>
+            <ul class="gl-key-points">
+              <li><span>Primary focus</span> One work, though additional texts may be included</li>
+              <li><span>Analysis</span> Perspective, language, structure, and literary devices</li>
+              <li><span>Sources</span> Both primary and secondary sources are welcome</li>
+            </ul>
+          </div>
+
+          <!-- Research Paper -->
+          <div class="gl-paper-section" id="gpPaper" hidden>
+            <p class="gl-type">Research Paper</p>
+            <p class="gl-body">Presents findings from the student's own <strong>scholarly inquiry</strong> on a specific topic. Research papers are centered around a <strong>research question</strong> and include clearly defined <strong>methods, results, and conclusions</strong> drawn from the data collected.</p>
+            <p class="gl-subheading">Must cover</p>
+            <ul class="gl-key-points">
+              <li><span>Question</span> A focused, answerable research question</li>
+              <li><span>Methodology</span> How data was collected and analyzed</li>
+              <li><span>Results</span> What was found, with discussion of significance</li>
+              <li><span>Conclusions</span> Interpretations drawn directly from the data</li>
+            </ul>
+            <p class="gl-note">Accepts quantitative or qualitative data from any discipline.</p>
+          </div>
+
+          <!-- Research Proposal -->
+          <div class="gl-paper-section" id="gpProposal" hidden>
+            <p class="gl-type">Research Proposal</p>
+            <p class="gl-body">A document that puts forth a <strong>research question, a hypothesis, and a rationale</strong> for how that question will be investigated. Proposals include a <strong>literature review</strong> and a detailed <strong>methodology</strong>. They conclude by addressing the study's <strong>implications, significance, and limitations</strong>.</p>
+            <p class="gl-subheading">Must cover</p>
+            <ul class="gl-key-points">
+              <li><span>Question</span> Research question and hypothesis</li>
+              <li><span>Literature</span> Review of existing research on the topic</li>
+              <li><span>Method</span> Proposed approach, including ethical considerations if human subjects are involved</li>
+              <li><span>Significance</span> Implications, importance, and limitations of the proposed study</li>
+            </ul>
+          </div>
+
+          <!-- Literature Review -->
+          <div class="gl-paper-section" id="gpLiterature" hidden>
+            <p class="gl-type">Literature Review</p>
+            <p class="gl-body">Both a <strong>summary and a synthesis</strong>. A literature review <strong>does not contribute original findings</strong>; instead, it surveys existing scholarship on a topic, links ideas across sources, and <strong>identifies gaps</strong> or unresolved questions in the current body of research.</p>
+            <p class="gl-subheading">Key distinction</p>
+            <ul class="gl-key-points">
+              <li><span>Summarize</span> Accurately represent what existing sources say</li>
+              <li><span>Synthesize</span> Draw connections and patterns across multiple sources</li>
+              <li><span>Identify gaps</span> Highlight what is missing or unresolved in current research</li>
+              <li><span>Not original</span> Does not introduce new data or original findings</li>
+            </ul>
+          </div>
+
+          <!-- Work in Progress -->
+          <div class="gl-paper-section" id="gpWip" hidden>
+            <p class="gl-type">Work in Progress</p>
+            <p class="gl-body">A report of findings from <strong>ongoing research</strong> that has not yet reached completion. A WIP contributes to the field <strong>even without final conclusions</strong>, sharing the <strong>hypothesis, method, and any preliminary results</strong> gathered so far.</p>
+            <p class="gl-subheading">Must cover</p>
+            <ul class="gl-key-points">
+              <li><span>Hypothesis</span> The central question or prediction guiding the research</li>
+              <li><span>Method</span> The research approach being used</li>
+              <li><span>Preliminary results</span> Included if available, but not required</li>
+            </ul>
+            <p class="gl-note">Submitting a WIP does not prevent later publication of the completed paper in another venue.</p>
+          </div>
+
+        </div><!-- /.guidelines-page__paper-front -->
+      </div><!-- /.guidelines-page__paper-wrap -->
+
+      <!-- ── Sidebar ─────────────────────────────────── -->
+      <div class="guidelines-page__sidebar">
+
+        <p class="guidelines-page__sidebar-label">Submission type</p>
+        <div class="gl-dropdown" id="glDropdown">
+          <button class="gl-dropdown__toggle" id="glToggle" aria-haspopup="listbox" aria-expanded="false">
+            <span id="glSelected">Overview</span>
+            <svg class="gl-dropdown__arrow" viewBox="0 0 24 24" fill="none" width="20" height="20">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="gl-dropdown__list" id="glList" role="listbox" hidden>
+            <li class="gl-dropdown__item gl-dropdown__item--active" role="option" data-type="default">Overview</li>
+            <li class="gl-dropdown__item" role="option" data-type="abstract">Research abstract</li>
+            <li class="gl-dropdown__item" role="option" data-type="argumentative">Researched argumentative essay</li>
+            <li class="gl-dropdown__item" role="option" data-type="editorial">Research editorial</li>
+            <li class="gl-dropdown__item" role="option" data-type="literary">Researched literary analysis</li>
+            <li class="gl-dropdown__item" role="option" data-type="paper">Research paper</li>
+            <li class="gl-dropdown__item" role="option" data-type="proposal">Research proposal</li>
+            <li class="gl-dropdown__item" role="option" data-type="literature">Literature review</li>
+            <li class="gl-dropdown__item" role="option" data-type="wip">Work in progress</li>
+          </ul>
+        </div>
+
+        <!-- Criteria panel -->
+        <div class="gl-criteria" id="glCriteria">
+
+          <!-- Default criteria -->
+          <div class="gl-criteria-section" id="gcDefault">
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <p class="gl-criteria__note">Applies to all submission types.</p>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced throughout</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th edition or MLA 7th edition</li>
+              <li><span class="gl-criteria__key">Reference page</span>Required for all submissions</li>
+              <li><span class="gl-criteria__key">Authorship</span>Original work of the author(s) only</li>
+              <li><span class="gl-criteria__key">Eligibility</span>Undergraduate and graduate UWB students, all programs</li>
+            </ul>
+            <div class="gl-criteria__deadlines">
+              <p class="gl-criteria__deadline-row"><span>Priority deadline</span><strong>January 1</strong></p>
+              <p class="gl-criteria__deadline-row"><span>Final deadline</span><strong>March 1</strong></p>
+            </div>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- Abstract criteria -->
+          <div class="gl-criteria-section" id="gcAbstract" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Word limit</span>300 words maximum</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+              <li><span class="gl-criteria__key">Reference page</span>Required</li>
+            </ul>
+            <p class="gl-criteria__subheading">Must include</p>
+            <ul class="gl-criteria__checklist">
+              <li>Thesis statement</li>
+              <li>Background information</li>
+              <li>Results</li>
+              <li>Overall conclusion</li>
+            </ul>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- Argumentative criteria -->
+          <div class="gl-criteria-section" id="gcArgumentative" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Page limit</span>25 pages maximum</li>
+              <li><span class="gl-criteria__key">Excludes</span>Title page, abstract, tables, figures, references</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+            </ul>
+            <p class="gl-criteria__subheading">Must include</p>
+            <ul class="gl-criteria__checklist">
+              <li>Clear thesis</li>
+              <li>Thorough literature review and evaluation</li>
+              <li>Innovative, compelling argument</li>
+              <li>In-text citations and reference page</li>
+            </ul>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- Editorial criteria -->
+          <div class="gl-criteria-section" id="gcEditorial" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Page limit</span>3 pages maximum</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+            </ul>
+            <p class="gl-criteria__subheading">Must</p>
+            <ul class="gl-criteria__checklist">
+              <li>Add dimension beyond a simple summary</li>
+              <li>Not primarily discuss the author's own work</li>
+              <li>Provide context or interdisciplinary significance</li>
+            </ul>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- Literary criteria -->
+          <div class="gl-criteria-section" id="gcLiterary" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Page limit</span>10 pages maximum</li>
+              <li><span class="gl-criteria__key">Excludes</span>Title page, abstract, tables, figures, references</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+            </ul>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- Paper criteria -->
+          <div class="gl-criteria-section" id="gcPaper" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Page limit</span>25 pages maximum</li>
+              <li><span class="gl-criteria__key">Excludes</span>Title page, abstract, tables, figures, references</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+            </ul>
+            <p class="gl-criteria__subheading">Must include</p>
+            <ul class="gl-criteria__checklist">
+              <li>Clear research question</li>
+              <li>Methodology</li>
+              <li>Results and discussion</li>
+              <li>Conclusions drawn from data</li>
+              <li>Reference page</li>
+            </ul>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- Proposal criteria -->
+          <div class="gl-criteria-section" id="gcProposal" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Page limit</span>15 pages maximum</li>
+              <li><span class="gl-criteria__key">Excludes</span>Title page, abstract, tables, figures, references</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+            </ul>
+            <p class="gl-criteria__subheading">Must include</p>
+            <ul class="gl-criteria__checklist">
+              <li>Research question and hypothesis</li>
+              <li>Literature review</li>
+              <li>Proposed methodology</li>
+              <li>Ethical considerations (if human subjects)</li>
+              <li>Implications, significance, and limitations</li>
+            </ul>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- Literature review criteria -->
+          <div class="gl-criteria-section" id="gcLiterature" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Page limit</span>25 pages maximum</li>
+              <li><span class="gl-criteria__key">Excludes</span>Title page, abstract, tables, figures, references</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+            </ul>
+            <p class="gl-criteria__subheading">Must</p>
+            <ul class="gl-criteria__checklist">
+              <li>Synthesize multiple sources</li>
+              <li>Identify gaps in current research</li>
+              <li>Not contribute new original findings</li>
+            </ul>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+          <!-- WIP criteria -->
+          <div class="gl-criteria-section" id="gcWip" hidden>
+            <h3 class="gl-criteria__heading">Criteria</h3>
+            <ul class="gl-criteria__list">
+              <li><span class="gl-criteria__key">Page limit</span>15 pages maximum</li>
+              <li><span class="gl-criteria__key">Excludes</span>Title page, abstract, tables, figures, references</li>
+              <li><span class="gl-criteria__key">Spacing</span>Double-spaced</li>
+              <li><span class="gl-criteria__key">Margins</span>1 inch on all sides</li>
+              <li><span class="gl-criteria__key">Citations</span>APA 6th or MLA 7th edition</li>
+            </ul>
+            <p class="gl-criteria__subheading">Must include</p>
+            <ul class="gl-criteria__checklist">
+              <li>Hypothesis</li>
+              <li>Methodology</li>
+              <li>Preliminary results (if available)</li>
+            </ul>
+            <p class="gl-criteria__footnote">Final results and conclusions are not required. Submitting a WIP does not prevent later publication of the completed paper.</p>
+            <p class="gl-criteria__policy">Accepted papers may be returned for revision before final publication. Papers published in <span class="crow-name">The CROW</span> will then be ineligible for other peer-reviewed journals.<br><br>Questions? <a href="mailto:publish@uw.edu">publish@uw.edu</a></p>
+          </div>
+
+        </div><!-- /.gl-criteria -->
+      </div><!-- /.guidelines-page__sidebar -->
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img class="footer__uwb-logo"
+         src="https://www.figma.com/api/mcp/asset/cf0876bd-49f7-446e-b08d-8ab2875994a2"
+         alt="University of Washington Bothell">
+    <div class="footer__left">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate
+        or publish works that discriminate against any sex, gender expression, sexual
+        orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully
+        consider all potential publications within this guideline.
+      </p>
+      <button class="footer__top-btn"
+              onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</button>
+    </div>
+    <div class="footer__right">
+      <div class="footer__contact-block">
+        <span class="footer__label">CONTACT</span>
+        <a href="mailto:publish@uw.edu" class="footer__info-row">
+          <span class="footer__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/2dadf7b8-77dc-467a-80d1-e71880101038"
+                 alt="" width="18" height="16">
+          </span>
+          publish@uw.edu
+        </a>
+      </div>
+      <div class="footer__follow-block">
+        <span class="footer__label">FOLLOW US</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer"
+           class="footer__info-row">
+          <span class="footer__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/e7086411-a7c7-45dd-8eb4-14a3d7f02cc9"
+                 alt="" width="24" height="24">
+          </span>
+          @uwbcrow
+        </a>
+      </div>
+      <img class="footer__crow-img"
+           src="https://www.figma.com/api/mcp/asset/59224d8e-2fb7-4d87-8647-661104cdab4d"
+           alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  <script src="guidelines.js"></script>
+  <script src="transitions.js"></script>
+</body>
+</html>

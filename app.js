@@ -3,7 +3,7 @@
    ─────────────────────────────────────────────────────────────────────────── */
 const VOLUMES = [
   { title: 'Volume Eleven', year: '2026', comingSoon: true,  img: null },
-  { title: 'Volume Ten',    year: '2025', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/56a257cc-78ac-402c-a900-95593a0f3392' },
+  { title: 'Volume Ten',    year: '2025', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/56a257cc-78ac-402c-a900-95593a0f3392', archivePage: 'archive-2025.html' },
   { title: 'Volume Nine',   year: '2024', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/178c62c1-9960-4f2a-97c7-1a55639f575d' },
   { title: 'Volume Eight',  year: '2023', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/5a370395-f360-472f-bebf-0257cb951f8f' },
   { title: 'Volume Seven',  year: '2022', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/de792246-164c-46b9-bdb9-6c1365a0f621' },
@@ -111,6 +111,7 @@ function navigate(delta) {
 
   // 6. Update active index
   active = newActive;
+  updateDots();
 
   // 7. Shift every other card one step in the direction of travel
   //    delta=+1 → each card moves one step toward 'far-left' (lower index)
@@ -139,12 +140,15 @@ document.addEventListener('mousemove', () => {
 document.getElementById('btnPrev').addEventListener('click', () => navigate(-1));
 document.getElementById('btnNext').addEventListener('click', () => navigate(+1));
 
-// Clicking a side card navigates to it
+// Clicking a side card navigates to it; clicking the center card opens its archive page
 cards.forEach(card => {
   card.addEventListener('click', () => {
     const p = card.dataset.pos;
     if (p === 'left')  navigate(-1);
     if (p === 'right') navigate(+1);
+    if (p === 'center' && VOLUMES[active].archivePage) {
+      window.location.href = VOLUMES[active].archivePage;
+    }
   });
 });
 
@@ -212,6 +216,69 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 0);
 }, { passive: true });
 
+/* ── Jump directly to any volume (used by dots) ──────────────────────────── */
+function jumpTo(idx) {
+  if (idx === active || isAnimating) return;
+
+  const steps = Math.abs(idx - active);
+
+  // Single step — use the normal carousel slide
+  if (steps === 1) {
+    navigate(idx > active ? 1 : -1);
+    return;
+  }
+
+  // Multi-step — fade out, snap, fade in
+  isAnimating = true;
+  active = idx;
+  updateDots();
+
+  track.style.transition = 'opacity 0.18s ease';
+  track.style.opacity = '0';
+
+  setTimeout(() => {
+    cards.forEach(c => { c.style.transition = 'none'; });
+    pos = [...POS_ORDER];
+    const offsets = [-2, -1, 0, 1, 2];
+    cards.forEach((card, i) => {
+      fillCard(card, VOLUMES[(active + offsets[i] + N) % N]);
+      card.dataset.pos = pos[i];
+    });
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      cards.forEach(c => { c.style.transition = ''; });
+      track.style.transition = 'opacity 0.22s ease';
+      track.style.opacity = '1';
+      setTimeout(() => {
+        isAnimating = false;
+        track.style.transition = '';
+      }, 220);
+    }));
+  }, 180);
+}
+
+/* ── Carousel dots ───────────────────────────────────────────────────────── */
+const dotsContainer = document.getElementById('carouselDots');
+
+function buildDots() {
+  VOLUMES.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel__dot';
+    dot.setAttribute('aria-label', `Go to ${VOLUMES[i].title}`);
+    dot.dataset.year = `V${N - i} · ${VOLUMES[i].year}`;
+    dot.addEventListener('click', () => jumpTo(i));
+    dotsContainer.appendChild(dot);
+  });
+}
+
+function updateDots() {
+  dotsContainer.querySelectorAll('.carousel__dot').forEach((dot, i) => {
+    dot.classList.toggle('carousel__dot--active', i === active);
+  });
+}
+
 /* ── Boot ─────────────────────────────────────────────────────────────────── */
 init();
 buildEditors();
+buildDots();
+updateDots();
