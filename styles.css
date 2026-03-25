@@ -1665,6 +1665,8 @@ body {
 .faq-item__body {
   max-height: 0;
   overflow: hidden;
+  background: rgba(45,35,87,0.05);
+  border-radius: 0 0 10px 10px;
   transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1674,7 +1676,7 @@ body {
   font-size: 15.5px;
   line-height: 1.7;
   color: rgba(45,35,87,0.82);
-  padding-bottom: 24px;
+  padding: 16px 20px 20px;
 }
 
 .faq-item__body ul {
