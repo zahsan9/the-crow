@@ -1,18 +1,16 @@
-/* ── Volume data (newest → oldest) ──────────────────────────────────────────
-   Cover images are Figma MCP assets — replace with permanent URLs when ready.
-   ─────────────────────────────────────────────────────────────────────────── */
+/* ── Volume data (newest → oldest) ────────────────────────────────────────── */
 const VOLUMES = [
   { title: 'Volume Eleven', year: '2026', comingSoon: true,  img: null },
-  { title: 'Volume Ten',    year: '2025', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/56a257cc-78ac-402c-a900-95593a0f3392', archivePage: 'archive-2025.html' },
-  { title: 'Volume Nine',   year: '2024', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/178c62c1-9960-4f2a-97c7-1a55639f575d' },
-  { title: 'Volume Eight',  year: '2023', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/5a370395-f360-472f-bebf-0257cb951f8f' },
-  { title: 'Volume Seven',  year: '2022', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/de792246-164c-46b9-bdb9-6c1365a0f621' },
-  { title: 'Volume Six',    year: '2021', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/d60d8c55-ee50-44ec-b593-a436b5201a10' },
-  { title: 'Volume Five',   year: '2020', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/37ea479f-646c-472e-9bd4-56e7f0e66718' },
-  { title: 'Volume Four',   year: '2019', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/223bf6e7-fc68-4804-9ba4-6f5dddfe9282' },
-  { title: 'Volume Three',  year: '2018', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/95c3b1f8-9672-46cb-ba50-31a040fccf35' },
-  { title: 'Volume Two',    year: '2017', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/d3c6f959-96b5-43c9-ba2a-5dbd2b519d52' },
-  { title: 'Volume One',    year: '2016', comingSoon: false, img: 'https://www.figma.com/api/mcp/asset/4854627f-519d-430a-8b43-74345451f489' },
+  { title: 'Volume Ten',    year: '2025', comingSoon: false, img: 'assets/cover-v10.jpg', archivePage: 'archive-2025.html' },
+  { title: 'Volume Nine',   year: '2024', comingSoon: false, img: 'assets/cover-v9.jpg' },
+  { title: 'Volume Eight',  year: '2023', comingSoon: false, img: 'assets/cover-v8.jpg' },
+  { title: 'Volume Seven',  year: '2022', comingSoon: false, img: 'assets/cover-v7.jpg' },
+  { title: 'Volume Six',    year: '2021', comingSoon: false, img: 'assets/cover-v6.jpg' },
+  { title: 'Volume Five',   year: '2020', comingSoon: false, img: 'assets/cover-v5.jpg' },
+  { title: 'Volume Four',   year: '2019', comingSoon: false, img: 'assets/cover-v4.jpg' },
+  { title: 'Volume Three',  year: '2018', comingSoon: false, img: 'assets/cover-v3.jpg' },
+  { title: 'Volume Two',    year: '2017', comingSoon: false, img: 'assets/cover-v2.jpg' },
+  { title: 'Volume One',    year: '2016', comingSoon: false, img: 'assets/cover-v1.jpg' },
 ];
 
 const N = VOLUMES.length;
