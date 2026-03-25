@@ -218,7 +218,7 @@ body {
 
 .submit-modal__list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   font-family: 'DM Sans', sans-serif;
   font-size: 14.5px;
@@ -232,7 +232,10 @@ body {
 .submit-modal__icon {
   color: var(--purple);
   flex-shrink: 0;
-  margin-top: 1px;
+}
+
+.submit-modal__icon svg {
+  display: block;
 }
 
 .submit-modal__list a {
@@ -302,7 +305,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 882px;
-  padding: 60px 20px;
+  padding: 108px 20px 100px;
   text-align: center;
 }
 
@@ -373,7 +376,7 @@ body {
 /* ── ARCHIVES ──────────────────────────── */
 .archives {
   background: var(--dark);
-  padding: 61px 0 80px;
+  padding: 61px 0 110px;
   overflow: hidden;
 }
 
@@ -624,7 +627,7 @@ body {
 /* ── ABOUT ─────────────────────────────── */
 .about {
   background: var(--paper-texture) var(--cream);
-  padding: 140px 79px;
+  padding: 140px 79px 160px;
   text-align: center;
 }
 
@@ -704,7 +707,7 @@ body {
 .guidelines-page {
   background: var(--paper-texture) var(--cream);
   min-height: calc(100vh - 121px);
-  padding: 60px 120px 140px;
+  padding: 108px 120px 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -829,7 +832,7 @@ body {
   background: rgba(45,35,87,0.07);
   border: 1px solid rgba(45,35,87,0.12);
   border-radius: 20px;
-  padding: 5px 12px;
+  padding: 8px 12px;
   line-height: 1;
 }
 
@@ -1191,7 +1194,7 @@ body {
 /* ── EDITORS ───────────────────────────── */
 .editors {
   background: var(--paper-texture) var(--cream);
-  padding: 48px 79px 72px;
+  padding: 48px 79px 100px;
 }
 
 .editors__heading {
@@ -1205,7 +1208,7 @@ body {
 .editors__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px 24px;
+  gap: 44px 16px;
 }
 
 .editors__grid--advisors {
@@ -1298,7 +1301,7 @@ body {
 /* ── OPEN VOLUME HERO ──────────────────── */
 .open-vol {
   background: var(--paper-texture) var(--cream);
-  padding: 80px 111px 100px 127px;
+  padding: 108px 111px 100px 127px;
 }
 
 .open-vol__inner {
@@ -1547,6 +1550,7 @@ body {
   position: relative;
   height: 340px;
   overflow: hidden;
+  margin-top: 80px;
 }
 
 /* UWB logo: top-left */
@@ -1671,7 +1675,7 @@ body {
 .faq-page {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 60px 120px 140px;
+  padding: 108px 120px 140px;
 }
 
 .faq-page__heading {
