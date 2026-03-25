@@ -1191,7 +1191,7 @@ body {
 /* ── EDITORS ───────────────────────────── */
 .editors {
   background: var(--paper-texture) var(--cream);
-  padding: 60px 79px 100px;
+  padding: 48px 79px 72px;
 }
 
 .editors__heading {
@@ -1199,25 +1199,25 @@ body {
   font-weight: 700;
   font-size: 36px;
   color: var(--ink);
-  margin-bottom: 56px;
+  margin-bottom: 52px;
 }
 
 .editors__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 56px 24px;
+  gap: 32px 24px;
 }
 
 .editors__grid--advisors {
   grid-template-columns: repeat(2, 260px);
   justify-content: center;
-  gap: 56px 80px;
+  gap: 32px 80px;
 }
 
 .editors__divider {
   border: none;
   border-top: 1px solid rgba(45,35,87,0.15);
-  margin: 56px auto;
+  margin: 36px auto;
   width: 320px;
 }
 
@@ -1226,7 +1226,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 .editor-card__avatar {
