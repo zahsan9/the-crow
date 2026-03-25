@@ -42,13 +42,15 @@ function fillCard(card, vol) {
   const yearEl  = card.querySelector('.vol-card__year');
 
   if (vol.comingSoon) {
-    cover.innerHTML = '<div class="coming-soon"><p>Coming</p><p>Soon...</p></div>';
+    cover.innerHTML = '<div class="coming-soon"><p>Coming Soon</p><p>Volume Eleven</p></div>';
     cover.style.backgroundImage = '';
     cover.style.backgroundColor = '#43396d';
+    card.dataset.comingSoon = 'true';
   } else {
     cover.innerHTML = '';
     cover.style.backgroundColor = '#43396d';
     cover.style.backgroundImage = vol.img ? `url('${vol.img}')` : '';
+    delete card.dataset.comingSoon;
   }
 
   titleEl.textContent = vol.title;
