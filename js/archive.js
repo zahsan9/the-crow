@@ -1,9 +1,3 @@
-/* ── Nav shadow on scroll ──────────────────────────────────────────────────── */
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 0);
-}, { passive: true });
-
 /* ── Publication search + filter ───────────────────────────────────────────── */
 const searchInput = document.getElementById('pubSearch');
 const clearBtn    = document.getElementById('pubSearchClear');
@@ -42,6 +36,9 @@ function applyFilters() {
 
   // Clear button visibility
   clearBtn.hidden = !query;
+
+  // Fade in count once populated
+  countEl.classList.add('is-ready');
 }
 
 function clearSearch() {

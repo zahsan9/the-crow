@@ -218,12 +218,6 @@ function buildEditors() {
   ADVISORS.forEach(ad => advisorsGrid.appendChild(makeEditorCard(ad)));
 }
 
-/* ── Nav shadow on scroll ────────────────────────────────────────────────── */
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 0);
-}, { passive: true });
-
 /* ── Jump directly to any volume (used by dots) ──────────────────────────── */
 function jumpTo(idx) {
   if (idx === active || isAnimating) return;

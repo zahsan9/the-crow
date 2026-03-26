@@ -40,6 +40,12 @@ document.querySelectorAll('.bio-dropdown').forEach(details => {
   });
 });
 
+/* ── Nav shadow on scroll ───────────────────────────────────────────────────── */
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 0);
+}, { passive: true });
+
 /* ── Page transitions ───────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('page-loaded');

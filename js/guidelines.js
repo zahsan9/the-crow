@@ -1,9 +1,3 @@
-/* ── Nav shadow ────────────────────────────────────────────────────────────── */
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 0);
-}, { passive: true });
-
 /* ── Guidelines dropdown ───────────────────────────────────────────────────── */
 const toggle   = document.getElementById('glToggle');
 const list     = document.getElementById('glList');
