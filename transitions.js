@@ -3,6 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('page-loaded');
 });
 
+// Smooth scroll hash links without writing the hash to the URL
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  const target = document.querySelector(link.getAttribute('href'));
+  if (!target) return;
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 document.querySelectorAll('a[href]').forEach(link => {
   const href = link.getAttribute('href');
   if (
