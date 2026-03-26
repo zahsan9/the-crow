@@ -47,30 +47,6 @@ Open `http://localhost:8080`. Direct `file://` access also works for most featur
 
 ## Background
 
-The original site was built on Wix. It functioned as a storage location for articles — but failed to communicate what The CROW actually is, who it's for, or why student work here matters. The redesign addressed that positioning problem from the ground up.
-
-### Pain points
-
-**It wasn't clear what the site was.**
-No hero, no mission statement, no immediate signal that this is a student research journal. Visitors had no idea if they were in the right place.
-
-**The visual design undercut the work.**
-A generic Wix template communicated nothing distinctive about The CROW's identity. Student research that deserved recognition was presented with the same weight as placeholder content.
-
-**No sense of community.**
-Editors, contributors, and the people behind the journal were invisible. The site felt static and institutional rather than student-run and participatory.
-
-**The submission process was buried and intimidating.**
-Guidelines were hard to find, dense, and not broken out by submission type. First-time submitters had no clear path.
-
-**Content was hard to browse.**
-Articles were listed with no author context — no bios, no program, no reason to care who wrote them. There was no way to quickly understand the range of work published.
-
-**Dead interactions.**
-No hover states, no transitions, no microinteractions. Pages felt unfinished and unresponsive to the user.
-
-**Inconsistent design across pages.**
-Different pages felt disconnected — inconsistent banners, nav behavior, card styles, and typography with no shared system underneath.
 
 ### What changed
 
