@@ -1609,6 +1609,7 @@ body {
 .pub-card {
   background: #fff;
   border-radius: 12px;
+  position: relative;
   display: flex;
   flex-direction: column;
   box-shadow: inset 4px 0 0 var(--purple), 0 2px 8px rgba(0,0,0,0.04);
@@ -1636,12 +1637,19 @@ body {
   color: #2a282f;
   letter-spacing: -0.64px;
   line-height: 1.4;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
-.pub-card__title:hover { color: var(--ink); }
+/* stretched link — makes entire card clickable */
+.pub-card__title::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.pub-card--pdf-only .pub-card__title::after {
+  display: none;
+}
 
 .pub-card__subjects {
   display: flex;
@@ -1703,6 +1711,21 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.pub-card:not(.pub-card--pdf-only) .pub-card__footer::after {
+  content: 'View PDF →';
+  margin-left: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--purple);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.pub-card:not(.pub-card--pdf-only):hover .pub-card__footer::after {
+  opacity: 1;
 }
 
 .pub-card__author-icon {
