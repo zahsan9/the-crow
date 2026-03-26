@@ -284,3 +284,13 @@ init();
 buildEditors();
 buildDots();
 updateDots();
+
+/* ── Instant-jump to #archives when returning from a volume page ─────────── */
+if (location.hash === '#archives') {
+  const archives = document.getElementById('archives');
+  if (archives) {
+    document.documentElement.style.scrollBehavior = 'auto';
+    archives.scrollIntoView();
+    document.documentElement.style.scrollBehavior = '';
+  }
+}

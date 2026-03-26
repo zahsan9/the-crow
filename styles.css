@@ -1341,8 +1341,29 @@ body {
   padding: 52px 127px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   margin-bottom: 72px;
+}
+
+.open-vol__masthead-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.open-vol__back {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(248,243,236,0.45);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.open-vol__back:hover {
+  color: var(--cream);
 }
 
 .open-vol__masthead-vol {
