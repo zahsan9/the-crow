@@ -1072,7 +1072,11 @@ body {
 .gl-criteria-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
+}
+
+.gl-criteria-section > .gl-criteria__heading + .gl-criteria__note {
+  margin-top: -10px;
 }
 
 .gl-criteria-section[hidden],
@@ -1086,8 +1090,6 @@ body {
   font-size: 20px;
   color: var(--ink);
   margin-bottom: 0;
-  padding-bottom: 14px;
-  border-bottom: 2px solid var(--purple);
 }
 
 .gl-criteria__note {
