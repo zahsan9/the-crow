@@ -2,7 +2,7 @@
 const VOLUMES = [
   { title: 'Volume Eleven', year: '2026', comingSoon: true,  img: null },
   { title: 'Volume Ten',    year: '2025', comingSoon: false, img: 'assets/cover-v10.jpg', archivePage: 'archive-2025.html' },
-  { title: 'Volume Nine',   year: '2024', comingSoon: false, img: 'assets/cover-v9.jpg' },
+  { title: 'Volume Nine',   year: '2024', comingSoon: false, img: 'assets/cover-v9.jpg', archivePage: 'archive-2024.html' },
   { title: 'Volume Eight',  year: '2023', comingSoon: false, img: 'assets/cover-v8.jpg', archivePage: 'archive-2023.html' },
   { title: 'Volume Seven',  year: '2022', comingSoon: false, img: 'assets/cover-v7.jpg', archivePage: 'archive-2022.html' },
   { title: 'Volume Six',    year: '2021', comingSoon: false, img: 'assets/cover-v6.jpg', archivePage: 'archive-2021.html' },
