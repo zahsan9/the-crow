@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="../index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="../index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="../index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="../guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="../faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <!-- Masthead bar -->
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Nine</span>
+      <span class="open-vol__masthead-year">2024</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <!-- Left: cover card + action buttons -->
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="../assets/cover-v9.jpg"
+            alt="The CROW Volume Nine 2024 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="../volumes-pdfs/vol-9.pdf" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <!-- Right: letter from editors -->
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p>The Ninth Edition of <span class="crow-name">The CROW</span> was composed and published in a time just after the COVID-19 global pandemic, as members of the University of Washington Bothell community constructed and lived out our new normal. As we grapple with ongoing global conflicts and mobilizations across campus, we feel that the mission of <span class="crow-name">The CROW</span> to platform and uplift student voices has rarely been more relevant. As we acknowledge the hardship of the past few years, and the atrocities advancing across the world, we thank you for being part of this work and reaffirm our belief in the value and impact of student writing, student activism, and student investment in global futures.</p>
+          <p>With this edition, <span class="crow-name">The CROW</span> continues to highlight the incredible dedication of students at UW Bothell as they conduct, analyze, and synthesize their own research investigations in topics ranging from science and technology, interdisciplinary arts, health studies, and everything in between. Research is a high-impact learning practice that engages students outside the classroom and allows them to think more critically about the topics they wish to discover. By taking the initiative to submit their work for review by a board of their peers, the authors in this journal have taken steps towards becoming active contributors to academic discourse that values inclusion, expansion, and critical thinking. As ways of writing and research advance, student publications like <span class="crow-name">The CROW</span> lie on the frontier of newness. This year saw us pen our new AI policy, balancing our multiple missions of accessibility, uplifting student work, and remaining true to our values while adapting to new developments.</p>
+          <p>The University of Washington Bothell is built on the unceded ancestral lands of the Coast Salish peoples, including the Duwamish and Snohomish tribes. We acknowledge this land's deep historical, cultural, and spiritual significance to Indigenous communities. We recognize the ongoing harm caused by colonization and affirm our responsibility as a student-led research publication to engage in decolonization efforts. <span class="crow-name">The CROW</span> seeks to create an inclusive and equitable publication that values Indigenous experience, knowledge, and culture, and fosters justice. We incorporate these values daily as we look over each submission, and as we provide feedback.</p>
+          <p>We would like to extend special recognition and gratitude to our student authors. Despite fears of rejection, judgement, or critique, our authors showed great appreciation and care for the extensive editing and publication process. We know submitting was difficult, and we appreciate your patience and effort as we tried to ensure your work would shine. We are so excited to share the 2024 Edition of <span class="crow-name">The CROW</span>!</p>
+          <p><em>With love,<br>Your friends on the Editorial Board: Phoenix, Newt, Robin, Sabine, &amp; Morgan.</em></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2024 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="literature">Literature</button>
+      <button class="filter-pill" data-filter="physics">Physics</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Obesity Affecting Low-Income Communities in America
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This paper will explore the causes, consequences, and potential solutions for obesity in marginalized low-income communities in the United States. Obesity is a multi-layer health issue with diverse types of causes and barriers, particularly impacting certain minority groups due to the unique challenges they face. This paper goes through the interventions across interpersonal, organizational, community, and policy that are tailored to the health issue of the targeted population. Additionally, there are propositions of possible solutions that could be effectively implemented within low-income communities based on the information gathered in this paper. The main goal of this comprehensive writing is to bring together and analyze information and interventions based on the health topic and population in order to gain a wide range of knowledge to implement into future implications.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Halle Egan</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Cores, Consumption, and Digital Aesthetics
+          </a>
+          <span class="pub-card__subject">Psychology</span>
+          <p class="pub-card__abstract">ABSTRACT: Following the COVID-19 pandemic, the social media platform TikTok saw a massive influx of new users, a large chunk of whom were Gen-Z. Following stay-at-home orders, many struggled to find ways to connect with others. Feeling disconnected and alienated from the world, many turned to social media platforms as an escape. Four years have passed since the pandemic, and Gen-Z now reigns supreme as the largest user base of TikTok. Perhaps coincidentally, the past four years have also seen surging reports of feelings of isolation and loneliness in Gen-Z. Remnants of the pandemic can be seen in Gen-Z's struggle to understand their role in the world around them. One basis for this struggle comes from a lack of personal understanding. In a cycle all too familiar, Gen-Z has been turning to social media apps as a temporary fix for a complex issue. By analyzing trends on social media, we might be able to gain insight into how this demographic has been coping with a lack of self-understanding. In a never-ending sea of content, microtrends and aesthetic-cores stand out as a way for those lacking self-identity to find temporary comfort in belonging. But is this persona-escapism at all practical in the long run?</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Luis Cruz</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="literature political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Museums as Wunderkammer and Community Centers: a Comparative Analysis
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Literature</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Museums are inherently experiential locales wherein objects are imbued with specific meanings that influence the ways visitors understand the wider world around them. In the context of cultural and historical objects, their presentation in exhibits greatly contributes to public perceptions of specific cultures, communities, people, and identities. Wunderkammer, or cabinets of curiosities, are prime examples of this, wherein the random organization and curation of objects based on their perceived exoticism depicts cultures outside of the West as strange, mysterious, and, at worst, dangerous. Therefore, it is imperative that museums institute inclusive and thoughtful exhibit designs that uplift and support represented cultures rather than diminish them. These ideas are explored through comparative analyses of exhibits at the Seattle Art Museum and Wing Luke Museum of the Asian Pacific American Experience and their incorporation of Wunderkammer-inspired and community-based exhibition models.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Layla Youssef</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Impact of the Relationship Between Patient and Doctor on Health Disparities for the Hispanic Culture: a Qualitative Study
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This paper delves into the healthcare experiences of the Hispanic community in the United States, aiming to understand the impact of health disparities and the level of trust in healthcare professionals. The introduction provides an overview of Hispanic culture and its distinct practices, including reliance on home remedies and dietary supplements. It also highlights the lack of Spanish-speaking healthcare providers and the resultant challenges in communication and trust. The research question explores the relationship between patient-doctor trust and health disparities within the Hispanic community. Employing a phenomenological qualitative approach, the study will gather data through interviews and surveys with Hispanic cancer patients in Washington state. Analysis will focus on themes related to trust, experiences with healthcare, barriers to access, and views on the healthcare system. Ethical considerations ensure participant anonymity and confidentiality. The study's significance lies in addressing the healthcare disparities faced by minorities, particularly Hispanics, and advocating for changes in the healthcare system to improve accessibility, trust, and patient outcomes.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Karla Alvarez</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="health-studies biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Quantitative Study on Mitigating Children's BMI: Execution of a School-Based Culinary Garden Initiative
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Biology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Pediatric obesity is a prominent public health issue worldwide, with substantial consequences for the physical and mental health of children. This abstract reports the results of a quantitative study that investigates the efficacy of a school-based culinary garden program in reducing children's body mass index (BMI) and encouraging healthier lifestyle habits. These findings highlight the potential of implementing culinary gardens in schools as effective strategies for addressing pediatric obesity and promoting healthier lifestyle habits among children. Incorporating these initiatives into school curricula offers practical learning opportunities and enables children to make well-informed decisions regarding their health. This in turn, helps in preventing long-term health complications associated with obesity.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Dalia Abraham</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="psychology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            The Psychology of Substance Misuse Influencing Academic Performance of Homeless Youth in Seattle: a Qualitative Narrative Study
+          </a>
+          <span class="pub-card__warning" aria-label="Content warning">&#9888; Content Warning</span>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Of the over 10,000 homeless individuals in the city of Seattle, more than half are classified as youth (15–24 years old). The University of Washington in Seattle is the sixth highest-ranked university in the nation; however, there is a gap of study in why the homeless youth of this city do not get access to proper academic services. Due to the common causes of youth homelessness, such as family problems and abusive relationships, this vulnerable population is at risk of substance abuse and academic instability. This research analyzes homeless youth through a qualitative narrative study to determine the risk factors of substance abuse and the outcome of academic stability and endeavors. This study is focused on the homeless youth population in the city of Seattle, recruiting participants from the Seattle Union Gospel Mission. Further research is needed to imply the correlation of decreasing academic stability in homeless youth, and to incorporate proper permanent interventions to prosper development academically and professionally.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Nicole Vicente</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Traumatic Experiences of Women Who Have Recently Experienced Homelessness
+          </a>
+          <span class="pub-card__warning" aria-label="Content warning">&#9888; Content Warning</span>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Due to COVID-19, the housing instability crisis is on the rise. It particularly affects women, who are more at risk of victimization, traumatic events, and having a serious mental illness such as PTSD. Yet, existing research does not describe how these events shape women's lives, especially those who have experienced homelessness for shorter periods of time. This proposal aims to gain a better understanding of how women experiencing housing instability are impacted by these traumatic events. Using a qualitative method study design and narrative and phenomenological approaches, one-on-one interviews will be conducted covering multiple topics including participants' feelings of safety, concerns, and substance use. This research seeks to educate and raise awareness about the need for interventions and policies to ensure access to safer environments.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Elise Bao</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Maternal Mortality and Severe Maternal Morbidity Among Black Women: a Qualitative Phenomenological Study
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Black women face high rates of maternal morbidity and mortality in the United States, where they are 3–4 times more likely to experience complications and pregnancy-related deaths. They face racial disparities in severe maternal morbidity and receive inadequate care to prevent pregnancy and delivery complications. A qualitative phenomenological study will be used to explore the lived experiences of Black women in the state of Louisiana surrounding severe maternal morbidity to draw out risk factors, barriers between healthcare professionals and patients, and improvements to maternal health equity. There will be in-depth semi-structured focus groups composed of 3–5 participants and one interviewer each. This research can be extended by further looking into in-hospital births, birthing centers, and at-home births, comparing and contrasting the different outcomes within each facility. The lived experiences of Black women who have faced maternal morbidity highlight a broader system of preventable disparities while giving a voice for Black women to share their experiences in hopes of leading to change.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Nadira Hajimohamed</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Qualitative Study to Understand the Journey and Experiences of Adolescents Who Undergo Misusing Opioids
+          </a>
+          <span class="pub-card__warning" aria-label="Content warning">&#9888; Content Warning</span>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The opioid epidemic has turned into a serious public health issue in the US, with a morbidity rate to increase by a staggering 43%. Adolescents are the most vulnerable, experiencing the ominous consequences of opioid abuse, which includes overdose and death. This research proposal explores the popularity and consequences of opioid addiction among adolescents and teens, giving insight into the underlying factors contributing to this devastating trend. This proposal uses a phenomenological qualitative research approach in order to gain insight into the experiences, feelings, and emotions of adolescents misusing opioids. From this research, intervention methods will be created to decrease this alarming public health issue.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Yahya Wardak</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="health-studies biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Obesity in America: Cross-Sectional Study on the Associations Between Fast Food Restaurants' Density and Obesity Among U.S. Adults in Washington State
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Biology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Obesity has become the world's most significant public health epidemic, and the prevalence of obesity and diet-related health problems have skyrocketed with the rapid growth of fast-food restaurants. Despite the rising prevalence of this issue, there is limited research on this topic. This research proposal aims to bridge the knowledge gap and to explore the correlation between fast-food restaurant density and obesity in the United States through a quantitative approach, using the measurement of the body mass index and participants' residential proximity to fast food restaurants. The goal of this research is to provide valuable insights to help healthcare professionals and policymakers to create tangible interventions on obesity, and overall improve public health outcomes.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Giselle Mak</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="political-science health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            A Qualitative Approach on Climate Justice for Communities: Impact of Discrimination &amp; Redlining in Seattle Washington
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Political Science</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Climate justice is centered around climate change and the ability to make the burden of climate change more equitable. Redlining was a way to divide people through property ownership, done by putting immigrants and people of color in select neighborhoods that were poorly graded by the Homeowner's Loan Corporation (HOLC). The ranking scale was graded A–D on a map, with grade A labeled most desirable and grade D labeled undesirable. Seattle, Washington has a history of redlining, and the effects are still seen today — some areas that were graded D have higher temperatures, more concrete, and less trees compared to grade A areas. This can have negative health effects and medical costs for those who are impacted. Conducting a qualitative research project in a historical grade D area could yield insight from the communities who live there about how they feel and what resources they need to combat climate change.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Annie Edwards</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Perspectives of Occupational Stigma on Sex Workers in Healthcare Settings: a Qualitative Study
+          </a>
+          <span class="pub-card__warning" aria-label="Content warning">&#9888; Content Warning</span>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Those who are known to be involved in the sex trade are deeply impacted by occupational stigma, and that has far reaching effects on their lives, extending even to their healthcare. Stigma has also had an impact on the research about those in the sex trade, with the focus of these studies often limited to sex workers' sexual and reproductive health — reinforcing the idea that sex workers are only vectors of disease. There are very few studies about their general wellbeing and the healthcare they receive. From previous literature, we know that it is rare for sex workers to feel safe enough to disclose their work status, and when they choose to disclose, they are often deeply shamed or even barred from returning to clinics and hospitals. The narrative phenomenological approach of this study will provide vital perspectives from those living within the confines of occupational stigma and its impact on their ability to have their healthcare needs assessed and addressed.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Chuck Frickin-Bats</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="psychology political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Evaluating Educational Efforts to Support Trauma-Affected Students
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Traumatic events happen in everyone's lives, and they can create impactful and irreparable consequences for those who experience them. In recent years, community events such as the COVID-19 pandemic and school shootings are becoming more prominent. For students in elementary schools, trauma can affect their performance, mental health, relationships, and self-esteem. It's up to school districts, administrators, and teachers to provide support to students who are affected by traumatic events. This can look like ensuring training is completed, creating multi-tiered systems of support, and establishing and cultivating loving classroom communities. This research paper analyzes the different educational efforts to support trauma-affected students and strives to create more trauma-aware schools, classrooms, and educators.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Kori Cantwell</span>
+        </div>
+      </li>
+
+      <!-- Card 14 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Uyghur Forced Labor: the Role We Play
+          </a>
+          <span class="pub-card__warning" aria-label="Content warning">&#9888; Content Warning</span>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: Regardless of current existing humanitarian efforts, the Uyghur population in Xinjiang, China are subject to forced labor. Human rights advocates have classified China's treatment of Uyghur people as ethnic cleansing and genocide. This humanitarian crisis has a long-written history, yet nothing effective has been accomplished. America's foreign policy, the Uyghur Forced Labor Prevention Act (UFLPA), has fallen short of its goals and failed to support those it was made to support. Approaching the second year since the creation of UFLPA, it is becoming increasingly important to alter the current trajectory. Attempts toward improving UFLPA to better support the Uyghur population are necessary for human rights movements globally. America must focus on utilizing its ability to publicly denounce countries while working toward eliminating e-commerce related to forced labor.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Liam Hunter</span>
+        </div>
+      </li>
+
+      <!-- Card 15 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            The Value of Quantum
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: This research paper, intended to be an introduction to the subject, discusses the field of quantum computing, describing its historical evolution and its properties that separate it from normal (classical) computing. While being able to potentially exponentially increase the speed of many computational tasks, practical quantum computing faces many challenges. Chief among these are the issues of coherence and error correction. Quantum systems are inherently unpredictable and susceptible to environmental interference, posing difficulties in maintaining the stability of quantum states (coherence). Furthermore, error correction in quantum computing remains an unresolved challenge, especially in the context of scalable solutions. This paper discusses these challenges in the context of today's cutting-edge quantum technology, including Google's Sycamore quantum processor.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Steven Suarez</span>
+        </div>
+      </li>
+
+      <!-- Card 16 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            The Linkage Between Climate Change and Apple (<em>Malus</em> spp.) Fruit Phenophases in the Continental United States
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: Apples constitute a large portion of the United States' horticulture industry, even more so in the Pacific Northwest and Atlantic Northeast regions. The fruiting phenophase of the apple (Malus spp.) can be affected by many temperature-dependent variables, including sun and heat exposure, pollinator emergence, and fungal severity and presence. However, while there is plenty of research on how the apple fruiting season can be affected, there is very little stated about the trend in the fruiting phenophase length over the previous decades. Therefore, data from the National Phenology Network was used to answer if and how the apple fruit phenophase length has been affected by increasing seasonal spring maximum temperatures over the last 15 years in the US.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Faith Lambert &amp; Mara Juarez-Velazquez</span>
+        </div>
+      </li>
+
+      <!-- Card 17 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            The Correlation Between Springtime Temperatures and Flowering Patterns of the Black Cherry (<em>Prunus serotina</em>) in the United States
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This research paper addresses the impact of changes in temperature during the spring season on the flowering of the black cherry tree (Prunus serotina) in the United States. Utilizing data from the National Phenology Network (NPN), specifically employing the Overall Max Temperature vs Onset Day of the Year, Seasonal Max Method, and Accumulated Growth Degree Days (AGDD) Method, we aimed to predict the phenological impacts on flowering onset dates. Among the three methods applied, the Seasonal Max Method yielded the most reliable data. Our analysis revealed a noteworthy negative correlation between the onset day of black cherry trees and maximum temperature. Our findings demonstrate a consistent negative correlation between temperature and the flowering of the black cherry tree — as temperatures rise, the black cherry tree exhibits an earlier onset of flowering.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Gursimar Tonk, Anwesha Naidu, &amp; Xuantao (Rico) Zhang</span>
+        </div>
+      </li>
+
+      <!-- Card 18 -->
+      <li class="pub-card" data-subject="literature political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            The 1890s–1900s: How the Turn of the Century Influenced the Birth of Movies
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Literature</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Like all works of art, silent films (as in those made between the 1890s and the advent of sound in 1927) were influenced by the sociohistorical events of their time during their production. Given that most films were produced initially as entertainment, they can also act as windows into the times they were created in — whether intentionally so or not. This paper covers how aspects of the Second Industrial Age and the Progressive Era influenced some of the earliest films of the silent era: Employees at the Lumière Factory (1895), The Great Train Robbery (1903), and The Kleptomaniac (1905). The paper first goes over these sociohistorical events to highlight the issues occurring at the time of each profiled film's production, then incorporates background information and visual analysis to contextualize each film and show the influence made by concurrent sociohistorical events.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Phillip Gruenemay</span>
+        </div>
+      </li>
+
+      <!-- Card 19 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Sexual &amp; Reproductive Health: Approaches to Literacy Interventions for Children &amp; Adolescent Youth
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In this paper, the researchers attempt to explore the multifaceted influences on sexual health tendencies in adolescent populations. A global emphasis is placed on this population to corroborate the interconnected nature of sexual health education. The researchers investigate sexually influenced decisions, statistical patterns such as the prevalence of unintended pregnancies amongst adolescents, and the factorial dissection of the social-ecological model. A program, named "Consider Me," was designed to facilitate an interdisciplinary approach to implementing sexual health education in settings of varying characteristics, including medical and academic environments. The potential impacts of the program could result in the promotion of individual and community empowerment, the reduction of sexually transmitted diseases, and the depletion of stigmatization revolving around sexual health education.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Ayla Badr, Hyojeong Kim, &amp; Ryan Van Vuitton</span>
+        </div>
+      </li>
+
+      <!-- Card 20 -->
+      <li class="pub-card" data-subject="psychology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Autism: Is Awareness the Same in Japan and Korea?
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: There have been studies on autism as well as other forms of neurodiversity in the United States, but less is known about how other countries fare with awareness of these disorders. This paper is meant to look at how much the public in other countries know about this information and how they will treat people based on their behavior. Autism is the primary focus of this research because there is more information available about this topic on a global scale. As it is a developmental function that affects behavior, the actions of affected individuals will vary. Korea and Japan were chosen for the setting of this topic, since they are known to be well-developed countries and would have a greater chance of having the resources needed for those who are neurologically diverse compared to other countries.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Shakambari Ramachandran</span>
+        </div>
+      </li>
+
+      <!-- Card 21 -->
+      <li class="pub-card" data-subject="biology political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Fabricated Cuts: Is Cultured Meat a More Sustainable Meat Alternative?
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Cultured meat is an innovative protein alternative that is just hitting the markets in Asia and the Middle East. Produced by harvesting cells from young animals and culturing them on a scaffold, cultured meat theoretically provides a cruelty-free meat alternative that mimics the taste and texture of meat. Preliminary research suggests that cultured meat production could be more environmentally friendly than producing meat and meat alternatives and could reduce our environmental impact — notably land use and greenhouse gas emissions. However, since cultured meat is a relatively new area of study, there needs to be more definitive research in some areas, such as how energy consumption would affect environmental impact. This paper analyzes current research to explore the possibility of cultured meat as an environmentally friendly protein alternative.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Emma Uderski</span>
+        </div>
+      </li>
+
+      <!-- Card 22 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="#"
+             target="_blank" rel="noreferrer">
+            Echoes of Resilience: Unveiling the Tapestry of Suffering in Palestine
+          </a>
+          <span class="pub-card__warning" aria-label="Content warning">&#9888; Content Warning</span>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: The purpose of this paper is to stress the urgency for humanization of Palestinians in the current genocide occurring in Palestine. This paper uses two approaches to the current genocide: one humanitarian and one legal. The first half provides a brief history of Palestine and Israeli relations, emphasizing the implementation of Israel within indigenous Palestinian land. Discussing this history shows that the events unfolding in Palestine are not a sudden occurrence but rather the culmination of 76 years of systematic oppression. Western media outlets refer to the Palestinian genocide as the "Israeli-Hamas War"; using the official definitions of war and genocide, this paper argues that this is not a war, but a genocide — specifically proving how the atrocities occurring in Palestine constitute a genocide under the Geneva Conventions. Numerous statistical insights provide a comprehensive understanding of the living conditions Palestinians are subject to, emphasizing the need to speak up.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Hoda El Anany</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2024 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li>
+            <details class="bio-dropdown">
+              <summary>Halle Egan</summary>
+              <p>Halle Egan (she/her/hers) is a first-generation college student at UW Bothell, majoring in Health Studies and minoring in Biology. Following graduation in June 2025, she plans to further her education at medical school to become a surgeon. She currently works at a bariatric surgery center as a scrub technician and wants to pursue endoscopic and laparoscopic surgeries in her career. In her free time, she enjoys reading and riding horses, along with spending time with her family, friends, and animals.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Luis Cruz</summary>
+              <p>Luis Cruz (he/him/his) is an undergraduate student at UW Bothell pursuing a major in Chemistry and a minor in Creative Writing. After graduating, he plans on pursuing a career as a scientific researcher in the pharmaceutical field. Scientifically, he is interested in the research and development of new medicines. In his written work, he enjoys analyzing internet culture, music, and film through a critical literary lens.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Layla Youssef</summary>
+              <p>Layla Youssef (she/her) is a first-year graduate student studying Museology. She graduated with a BA in Global Studies and American Ethnic Studies with an emphasis on postcolonial studies, human rights, and cultural histories. Her interests in museum work lie in curation and exhibit design for cultural and history museums, particularly in understanding how interpretation of exhibits impacts the ways visitors understand the world. In her free time, she enjoys visiting local coffee shops, hanging out with friends, watching movies, and writing stories.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Karla Alvarez</summary>
+              <p>Karla Alvarez is currently a junior at UW Bothell, planning to graduate in 2025 with a Bachelor of Arts in Health Studies. Personally, she wants to travel more and expand her knowledge of different cultures. Her favorite pastimes are listening to music, doing martial arts, building Legos, reading, and spending time with friends and family.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Dalia Abraham</summary>
+              <p>Dalia Abraham (she/her/hers) is an Eritrean American third-year undergraduate student at UW Bothell, pursuing a degree in Health Studies and a minor in Biology. After graduating, she intends to apply to physician assistant school in hopes of becoming a pediatrics PA. During her free time, she enjoys reading, spending time with her family, and hiking.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Nicole Vicente</summary>
+              <p>Nicole Vicente (she/her/hers) is in her senior year, graduating with a Bachelor of Arts in Health Studies and minoring in Biology. She intends to take her DAT and apply to dental school for the 2024–2025 cycle, hoping to pursue pediatric dentistry. Growing up as a Filipino-American, she has emphasized community service through teaching kids, mentoring youth, and volunteering at local homeless shelters. She currently works as a pediatric dental assistant and an undergraduate researcher at the Ruohola-Baker Lab at UW Medicine. She enjoys camping, hiking, and cooking for the people she loves.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Elise Bao</summary>
+              <p>Elise Bao is a senior at UW Bothell, graduating in Summer 2023 with a Bachelor of Arts in Health Studies. She currently works with people with neurodevelopmental disabilities as an Intern. Driven by her desire to learn more about the complexities of the human brain, she wants to pursue a career in psychiatry. In her free time, she likes to try new food and discover new places with her family and friends.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Nadira Hajimohamed</summary>
+              <p>Nadira Hajimohamed (she/her/hers) is a third-year UW Bothell student majoring in Health Studies, graduating in spring 2024. After graduating, she plans to pursue dental hygiene and hopes to start a Master of Science in Community Health and Social Justice program at UWB in Fall 2024. She grew up in Renton, Washington, and loves going on nature walks, painting, and reading.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Yahya Wardak</summary>
+              <p>Yahya Wardak is a senior majoring in Health Studies and minoring in Biology. He plans to pursue a career in public health, sharing his research on adolescents misusing opioids — a severe public health problem in the United States. He wants to be part of an effort to create an intervention method for this crisis. During his free time he enjoys the outdoors, playing sports, and watching movies.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Giselle Mak</summary>
+              <p>Giselle Mak (she/her/hers) is a fourth-year undergraduate student studying Health Studies with a Biology minor. She currently works as a dental assistant and is interested in pursuing dentistry upon graduation. She enjoys hiking and spending time with her family and friends in her free time.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Annie Edwards</summary>
+              <p>Annie Edwards (she/her/hers) is a recent 2024 UW Bothell graduate with a B.A. in Health Studies. She was on the UW Bothell Black Student Union board in 2023–2024 and plans on applying to graduate programs soon. She has a passion for learning about underrepresented groups in healthcare and how to advocate for them, and hopes her work can reflect that passion.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Chuck Frickin-Bats</summary>
+              <p>Chuck Frickin-bats is a queer, non-binary, disabled sex worker and sex worker advocate (they/them). After starting sex work in 2010, they quickly got involved in community advocacy, which is what drives their education. Chuck is interested in creating educational material to teach healthcare professionals and the public about the societal and health impacts of occupational stigma on sex workers, and wants to create access to healthcare for sex workers and other marginalized communities. "Nothing about us without us."</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Kori Cantwell</summary>
+              <p>Kori Cantwell (she/her/hers) is a first-generation senior at UW Bothell, graduating in Spring 2024 with Elementary and Special Education dual-teaching certifications. Her goal as a teacher is to build meaningful relationships with students and create a loving classroom community. She has worked as a peer writing consultant at UWB's Writing and Communications Center as well as a nanny and toddler teacher. In her free time, she loves to read, write, spend time with her friends, travel, and crochet.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Liam Hunter</summary>
+              <p>Liam Hunter (he/him) is a sophomore double majoring in LEPP & Psychology with a minor in Human Rights. He currently works as a peer writing consultant at UWB's Writing & Communication Center. He plans to graduate in June 2025 and move on to UW Seattle Law School, intending to use his multicultural background to support his endeavors towards becoming an international intellectual property (IP) lawyer.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Steven Suarez</summary>
+              <p>Steven Suarez (he/him) is in his senior year at UW Bothell as an Applied Computing major, passionate about math, computer science, and specifically quantum computing. During his time in college, he has also learned a lot about social and economic justice and wants to use his voice to empower people of oppressed and underprivileged backgrounds, especially in STEM. Outside of academics, he loves afternoon hikes on the Sammamish River Trail, spontaneous meetups with friends, tabletop games, and hanging out with his Golden Retriever.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Faith Lambert</summary>
+              <p>Faith Lambert (she/her) is a fourth-year undergraduate Biology major and Chemistry minor with a career interest in cancer research. She plans to attend graduate school and earn a Ph.D. in cellular and molecular biology, immunology, or pathobiology. Outside of classes, she engages in activism and educational advocacy as president of the Alliance 4 Sustainability at UWB. In her downtime, she enjoys writing free-verse poetry and working on her fantasy-turned-sci-fi book series.</p>
+            </details>
+          </li>
+          <li>Mara Juarez-Velazquez</li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Gursimar Tonk</summary>
+              <p>Gursimar Tonk (she/her) is a second-year Biology major and Health Studies minor with political aspirations. Her passion for biological sciences extends to health-related lab research and exploring the intricacies of public health. She aims to connect her health studies knowledge with her interest in politics at various levels of governance. She finds joy in the dynamic landscape of American politics and beyond academia, enjoys listening to music, watching YouTube, staying updated on pop culture, and keeping up with current political news.</p>
+            </details>
+          </li>
+          <li>Anwesha Naidu</li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Xuantao (Rico) Zhang</summary>
+              <p>Xuantao (Rico) Zhang (he/him) is a dedicated third-year undergraduate student at UWB, pursuing a major in Chemistry with the goal of becoming a dentist. Inspired by his family's involvement in the medical field, he is passionate about leveraging his scientific knowledge to help alleviate people's pain and improve their well-being. Beyond his academic pursuits, he enjoys playing the saxophone or guitar, viewing music as an integral part of his life that brings joy and balance to his endeavors.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Phillip Gruenemay</summary>
+              <p>Phillip Gruenemay is a senior at UW Bothell graduating during the 2023–2024 academic year with a Bachelor of Arts in Media and Communication Studies. During his junior year, he took the Independent Undergraduate Research class, meshing his interests in movies and American history to explore how films of the silent era were influenced by sociohistorical events of the time. Phillip wants to thank Dr. David S. Goldstein and Professor Louise Spiegler for their invaluable mentorship during the creation of his research papers.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Ayla Badr</summary>
+              <p>Ayla Badr is currently a junior majoring in Health Studies, aspiring to pursue a career in health administration upon graduation. Her research primarily delves into health disparities prevalent among minority communities within the United States. She aims to enhance resources available for underserved communities and contribute further knowledge to the health sector.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Hyojeong Kim</summary>
+              <p>Hyojeong Kim is a junior at UW Bothell, majoring in Health Studies and minoring in Biology. She aims to continue her education by attending dental school post-graduation to embark on a career as a dentist.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Ryan Van Vuitton</summary>
+              <p>Ryan Van Vuitton is diligently working towards completing an interdisciplinary degree encompassing Psychology, Health Studies, and Data Visualization. Post-graduation, he remains open to various opportunities, aiming for stability in his career endeavors before making significant decisions for the future.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Shakambari Ramachandran</summary>
+              <p>Shakambari Ramachandran (she/her/hers) is a third-year transfer student in the Psychology program. She is interested in research, which is what prompted her to publish her paper in the CROW. She is a part of the Marketing club and NAMI, and in her spare time volunteers to teach art and tutors young children in English. Her hobbies include reading, watching movies, and painting.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Emma Uderski</summary>
+              <p>Emma Uderski (she/her, they/them) is a second-year undergraduate student at UW Bothell, majoring in Biology and minoring in Health Studies. They are passionate about the biological sciences and supporting humans and animals in their community as a Veterinary Assistant at the PAWS Spay & Neuter Clinic, and plan to apply to a Doctor of Veterinary Medicine program in late 2025. In her free time, Emma enjoys knitting, reading, and attending live music shows.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Hoda El Anany</summary>
+              <p>Hoda El Anany (she/her/hers) is a junior pursuing a double degree in Business Administration and Law, Economics, and Public Policy with a minor in Human Rights. She has a passion for music and loves attending concerts. In her professional career, she works as an Administrative Assistant for UW Medicine. Following her anticipated graduation in Spring 2026, she intends to go to law school with a passion for international law and policy.</p>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2024 Editorial Board</h3>
+        <ul class="vol-credits__list">
+          <li>
+            <details class="bio-dropdown">
+              <summary>phoenix kai vaughan-ende</summary>
+              <p>phoenix kai vaughan-ende (they/them) is a poet, writer, and multimedia artist located on the unceded Indigenous lands of the Coast Salish peoples in Seattle, WA. They received their BA in Ethnic Studies from the University of Colorado Boulder and are working toward their MFA in Creative Writing and Poetics at UW Bothell. Their work has appeared in Sweet: A Literary Confection, Beyond Queer Words, The Timber Journal, and elsewhere, and is currently fascinated with queer belonging, physics, identity, speculative futures, and mythological retellings.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Newton (Newt) Austria-Ball</summary>
+              <p>Newton (Newt) Austria-Ball (they/them) is in their second year at UWB, following a path towards majoring in Biology to later become a Doctor of Pharmacy, while minoring in Creative Writing. They love all kinds of writing and helping others with their writing, which led them to become a writing tutor. Having lived in an underprivileged area for most of their life, they want to help shed light on those who do not have ready access to healthcare, advocating for more affordable and accessible care. In their free time, they like taking walks in the wetlands, learning about plants and medication, writing, playing instruments, and painting.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Robin Stone</summary>
+              <p>Robin Stone (he/them) is in their last undergraduate year at UWB as a Health Studies major. They have a personal passion for working to treat Alzheimer's and related dementias, working to help the individuals, families, and communities devastated by the disease. Outside of mountain biking and playing Dungeons & Dragons, he is also a devout Mormon and Christian who advocates for an authentically faith-filled life while still being authentically queer.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Sabine Drake</summary>
+              <p>Sabine Drake (she/her/hers) is a third-year undergraduate Health Studies major, intending to minor in Chemistry in hopes of pursuing a Doctor of Veterinary Medicine career. She is passionate about public health research, community disparities, and her work as a Veterinary assistant. This is her first year working with the CROW editorial board. In her free time, she enjoys spending time with her family, being outside, and spending time with her two dogs.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Morgan Fu-Mueller</summary>
+              <p>Morgan Fu-Mueller (he/they) is a second-year Psychology major with legal aspirations. He loves to think about K-pop, play D&D, and make art, drawing on all of that to advance his writing. As a WaCC tutor, they're passionate about enabling people to convey their points in their own voices and making academic writing more accessible. They're excited to be working with the CROW editorial board this year to gain experience with a wide variety of writing in a new environment and help produce the best and silliest issue yet.</p>
+            </details>
+          </li>
+          <li class="vol-credits__contributor-note">(advisor) Andrea Stone, PhD</li>
+          <li class="vol-credits__contributor-note">(advisor) Erik Echols</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__left">
+      <img class="footer__uwb-logo" src="../assets/uwb-logo.png" alt="University of Washington Bothell">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate or publish works that discriminate against any sex, gender expression, sexual orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully consider all potential publications within this guideline.
+      </p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__link-group">
+        <span class="footer__label">Contact</span>
+        <a href="mailto:publish@uw.edu" class="footer__link">
+          <img src="../assets/icon-email.svg" class="footer__link-icon" alt="" aria-hidden="true">
+          publish@uw.edu
+        </a>
+      </div>
+      <span class="footer__divide" aria-hidden="true"></span>
+      <div class="footer__link-group">
+        <span class="footer__label">Follow us</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer" class="footer__link">
+          <img src="../assets/icon-instagram.svg" class="footer__link-icon footer__link-icon--circle" alt="" aria-hidden="true">
+          @uwbcrow
+        </a>
+      </div>
+      <img class="footer__crow-img" src="../assets/crow.png" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  <script src="../js/archive.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script src="../js/submit-modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2019 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="../index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="../index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="../index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="../guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="../faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Four</span>
+      <span class="open-vol__masthead-year">2019</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="../assets/cover-v4.jpg"
+            alt="The CROW Volume Four 2019 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="../volumes-pdfs/vol-4.pdf" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p><span class="crow-name">The CROW</span> showcases the initiative and commitment of students at the University of Washington Bothell to engage in their own research endeavors. As the reader, you will discover a myriad of topics ranging from the biological sciences to interdisciplinary arts and beyond. The multiple submission types and diverse writing styles are likely to capture the interest of any reader.</p>
+          <p>Conducting research is a dynamic, influential learning practice promoted throughout the University. Research solidifies learning outside of the classroom setting by allowing students to think critically about the topics they desire to explore, and to practice producing knowledge for themselves and others. Having their research published will forever preserve their work while also transforming it into a powerful tool to be used by the next generation of academics. By taking the monumental and often daunting step of participating in the peer-review process, the authors featured in this journal have emerged as contributors to the academic discourse of their particular field of study.</p>
+          <p>The Editorial Board was privileged to have the opportunity to review all of the incredible submissions this year. The selection process was undertaken thoughtfully with respect and sensitivity for all of the insightful, articulate submissions we received. We sincerely thank and commend all of the students for the dedication they put into their research and to everyone who submitted their work. We also thank the faculty and staff mentors who foster students' passions and talents. In this volume we proudly present the work of a growing research community.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2019 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="astronomy">Astronomy</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="education">Education</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="literature">Literature</button>
+      <button class="filter-pill" data-filter="physics">Physics</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Effect of BPA on Gene Expression
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: The levels of the plastic chemical bisphenol A (BPA) that leach into food via plastic packaging have been deemed safe for public consumption by the FDA (2014). However, scientists have recently begun studying how BPA affects gene methylation, which controls when the DNA template is read so that gene function is only expressed when needed. BPA toxins absorbed in the body are found to cause gene demethylation where genes are then overexpressed — a problem when heavily regulated genes are affected, such as those coding for replication and growth. This review compares the percent of methylation change of four genes before and after treatment with 50 μg/kg of BPA, finding that three of four genes showed decreased methylation, supporting that BPA decreases gene methylation and could persuade the FDA to consider new regulations for BPA use.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Rachel Calder</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="astronomy physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Cosmic Strings: The Cracks in the Universe
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Astronomy</span>
+            <span class="pub-card__subject">Physics</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This research editorial covers the topic of cosmic strings, theoretical one-dimensional faults in space-time formed in the immediate aftermath of the Big Bang. Of particular note are oscillating cosmic string loops, which produce gravitational waves detectable by instruments such as LIGO (Laser Interferometer Gravitational wave Observatory), and gravitational lensing, a visual distortion of distant objects potentially caused by the interference of cosmic strings in the foreground of images. While conclusive data on the phenomenon remains elusive, the potential insights into cosmology, particle physics, and other fields keep the search alive.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Hannah Preisinger</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="education political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Education for Native Americans – Help or Hindrance?
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Education</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Native American students taught using a Euro-centric educational curriculum continue to fail out of the PreK-12 system. This paper explores how devaluing Indigenous culture, yet maintaining the expectation that Native American students will thrive and graduate, is harmful and ineffective. It asks how relationships between teachers and Native students — built with respect for and consideration of Indigenous culture — can lead to student success, arguing for curriculum reform that centers Indigenous knowledge and community.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Joyce Chester</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Using Sci-Fi to Observe the Effects of Social Media and Reality TV
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: Science-fiction has a reputation for doing two things remarkably well: creating commentary on present-day societies and being eerily good at predicting possible technologies and futures. This paper utilizes pieces of science-fiction from various mediums to establish an observable pattern amongst writers in the genre today, and what these pieces say about the current state of reality television and social media. It also questions whether the ubiquitous presence of reality television and social media are perpetuating the normalization of using others as our own personal entertainment.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Brynley Louise</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Effects of Mass Incarceration on Individuals and Communities
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: Over two million individuals are incarcerated in the United States. This paper examines the negative impacts of incarceration on individuals and their communities. Since most of the individuals affected by high rates of incarceration are people of color, this produces harmful effects in communities of color. The negative impacts include decreased social control within communities, higher rates of medical problems, decreased well-being, and relationship problems. Minimizing these impacts is a goal that doesn't address the systemic racism and poverty perpetuated by incarceration — a widespread change can only be achieved through a change in attitude toward race, crime, and punishment.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Ashley Forsyth</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Giving Up the Ghost: The Parallel Demotion of Spirits and Spirituality
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper examines the progression of Western attitudes towards ghosts and related concepts from ancient times through Europe's age of Enlightenment. Through a study of folklore, literature, and religious beliefs, a gradual shift becomes evident: from the sincere respect of ancestor veneration, to demonic paranoia in the Middle Ages, to public scorn and private curiosity as Western scientific traditions gained dominance. The author also proposes a parallel between this demotion of spirits and a diminishment in the societal importance of spirituality itself.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Hannah Preisinger</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Opioid Epidemic: Shifting from War to Peace
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The misleading and unethical marketing practices of pharmaceutical companies during the late 90s led to a health crisis referred to as the opioid epidemic. As the rates of opioid usage skyrocketed along with rates of bloodborne illnesses due to needle sharing, the United States government's policy of extreme criminalization served to worsen the problem. Research into alternative policies yielded positive results — programs such as needle exchanges, rehabilitation, and decriminalization were each effective in remedying different consequences of the epidemic. However, because of the complexity of this issue, the United States must implement most or all of these policies together alongside a shift from a private to a public healthcare system.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By AJ True</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Infallibility Through Duality
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper examines the puzzling interplay of Christianity and paganism in the English epic Bēowulf, adopting a psychoanalytical approach to explain the blending of two seemingly mutually exclusive faiths. Applying Saunder L. Gilman's theory of stereotyping, an extension of Lacanian psychology, this essay analyzes the Bēowulf-poet's motives for including such opposing religions, taking into consideration the time period's rocky transition from Saxon paganism to Christianity. Bēowulf may in fact be a unique window into the battle between the faiths — a singular moment in history captured in the person of its stalwart protagonist, shedding light on a virtually undocumented period of Western history.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Jakob Johnson</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            How Mutations in Synapsin I and Synapsin II Contribute to Seizure-Like Activity and Episodes in Individuals with Epilepsy
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Epilepsy is one of the most prevalent neurological disorders and has been associated with abnormalities in the functioning of synapse proteins known as synapsins. This literature review synthesizes the work of three different articles to develop our understanding of how mutations in Synapsin I and Synapsin II may be correlated to seizure-like activity and episodes in individuals with epilepsy. Findings show that mutations in Synapsins I and II, individually or simultaneously, can contribute to the chronic seizure-like activity and episodes that individuals with epilepsy suffer — work of vital importance for informing new pharmacological methods for treating epileptic episodes in the future.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Atif Bhatti</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="education psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Effects of Youth Participatory Action Research (YPAR) on Leadership Development Among Youth
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Education</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Youth Participatory Action Research (YPAR) is a critical form of action research used in educational curriculum that focuses on and values the youth point of view. Based from action research alongside community member action, YPAR can be a powerful process that unites youth and adults in research projects that improve communities and the conditions of youth lives. The information that results from the YPAR process is meant to be used to advocate for change in communities, with this paper examining how YPAR participation shapes leadership development and civic engagement among young people.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Anna Tran</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="psychology education">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            College Relationships and Grades
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Education</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Emerging adulthood is when many college students experience reduced parental involvement and increasing adult responsibilities including friendship, family, work, and academic obligations. This proposal explores the association of dating and grades in college among college-age students in Washington State's universities. Using a cross-sectional design with an online survey, the proposal asks demographic and dating-related questions alongside academic success questions such as grades received and hours studied each week. Results are expected to yield differences among year in college, how long students have been in a relationship, and academic success.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By William Appel</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Do Socioeconomic Factors Contribute to A Patient Having a Hospital Acquired Infection in Washington?
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Throughout history there has been a strong link between healthcare outcomes and socioeconomic status. Despite this, little to no data exists discussing how socioeconomic status affects hospital infection rates, even as hospital-acquired antibiotic resistant infections become a greater threat each year. To investigate this relationship, this proposal suggests a broad sampling of 10 Washington State hospitals, randomly selecting consenting patients and following up afterward to determine if they contracted an infection resulting from their hospital stay. It is imperative that we continue to investigate and better understand the role socioeconomic status plays on health outcomes.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Michael Prothman &amp; Alex Wang</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Depression and Exercise: Does Exercise Help People with Depression?
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Depression is a worldwide health problem experienced by many individuals throughout all age groups, particularly youth. If not managed, depression can lead an individual to commit suicide. Studies have shown that exercise is an effective alternative in the management and treatment of depression. This proposal looks into how depression in college and university students can be successfully managed with exercise, using the Patient Health Questionnaire (PHQ-9) to study depression levels alongside various types and intensities of exercise. The proposal will reveal that individuals who manage their depression with exercise see positive results and have more control over their symptoms.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Ameena Mohammed</span>
+        </div>
+      </li>
+
+      <!-- Card 14 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Effect of the Great Permian Extinction on Survival of Chemosymbiotic Bivalves: How Alternate Diets and Metabolic Processes Allow Organisms to Survive Marine Hypoxia
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: As fertilizer runoff and other nitrogen rich pollutants cause dead zones in the ocean, there are many implications for what types of organisms will survive modern marine hypoxia. This project determines whether the Permian-Triassic Extinction approximately 252 million years ago caused mass marine extinction via hypoxia, and whether chemosymbiotic bivalves — which survive by hosting chemosynthetic bacteria — were shielded from the event. Using data from the Paleobiology Database, the number and distribution of chemosymbiotic bivalves was compared across the late Permian and early Triassic. Contrary to the hypothesis, the Permian extinction did significantly affect the number of chemosymbiotic species — their numbers actually increased following the event.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Katherine Lu</span>
+        </div>
+      </li>
+
+      <!-- Card 15 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Canid and Human Cohabitation: Canids did not Move into Caves with Humans
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: It is not known how long dogs and humans have had a relationship. If dogs and humans coexisted in the past, their fossils should be located in the same places they both resided — as canids developed a relationship with humans, it would make sense that they moved into caves when humans did. Data was obtained from the Paleobiology Database and sorted by time period, then further sorted depending on if the fossil was found in a cave. A χ²-test found that canids did not move into caves along with humans; in fact, there was a statistically significant difference supporting a possible negative relationship, suggesting a coexisting relationship may not have existed during those time periods given how recently canids were domesticated.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Lauren Kirk</span>
+        </div>
+      </li>
+
+      <!-- Card 16 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Microbial Susceptibilities and Resistances to Campylobacter Jejuni Isolates from Crow Fecal Matter in Washington State
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This research investigates the antimicrobial resistance profile of Campylobacter jejuni (C. jejuni) isolates obtained from crows within Bothell, Everett, Mercer Island, and Factoria, Washington. Antibiotic resistance is a growing public health issue — resistance to some antibiotics defeats the purpose of having antibiotics for treatment. Using the Kirby-Bauer method with eleven antibiotics, forty C. jejuni isolates from crow feces were tested. The isolates showed maximum resistance to ciprofloxacin (34.21%) and tetracycline (31.5%), with sixteen isolates showing multiple drug resistance. These results show that crows are capable of spreading antibiotic resistance through the bacteria C. jejuni, serving as environmental indicators of the antibiotic usage of the places they visit.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Neha Chhabra</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2019 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li><details class="bio-dropdown"><summary>William Appel</summary><p>William Appel is a senior majoring in Global Studies. He enjoys political science and other global studies-related courses, and is vice-president of the pre-law society at UWB. He also works part-time as a teaching assistant in a school district. Outside of academics, he enjoys writing, mixed martial arts, reading science fiction, playing DnD, and Marvel movies. William plans to attend law school this fall.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Atif Bhatti</summary><p>Atif Bhatti graduated from the University of Washington Bothell in Autumn 2018, majoring in Biology and minoring in Neuroscience and Chemistry. Since then, he has been working as a medical scribe alongside a cardiologist and studying for his MCAT. During his time at UWB, Atif served as president of the Pre-Health Society, worked as a Biology Teaching Assistant, and was involved in crow vocalization research. He plans to attend medical school in the future.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Rachel Calder</summary><p>Rachel Calder graduated from University of Washington Bothell in winter 2019 with a B.S. in Biology and a minor in Chemistry. At UW Bothell she enjoyed both the inspiring biology courses and helping new students in the Orientation and Transition Program, which led her to work at the Institute for Systems Biology collaborating with scientists to create open resources and improve equity in the science field.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Joyce Chester</summary><p>Joyce Chester is an Alaskan Native Aleut who grew up with seven siblings in the town of Egegik. She moved to Washington state after her wedding, where she raised four children. Having worked in education for twenty years, she recently transferred to UW Bothell from Edmonds Community College to complete her teaching certification and undergraduate degree. After graduation, she hopes to teach History and/or Special Education in a middle school setting.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Neha Chhabra</summary><p>Neha Chhabra graduated in Winter 2019 with a Bachelor of Science in Biology and a minor in Chemistry. She is working towards becoming a dentist to serve underrepresented communities. Neha progressed to ACT Student Chair, was selected as one of UW Bothell's Husky 100, and conducted research assessing bacteria in crow gut microbiomes. She plans to study microbial interactions in the oral cavity in dental school and work directly with underrepresented communities.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Ashley Forsyth</summary><p>Ashley Forsyth will graduate in Fall 2019 with a Bachelor of Arts in Society, Ethics and Human Behavior. They plan to pursue a master's degree in either library and information science or cultural studies. They are interested in how history and power dynamics influence society and incorporate social issues in their storytelling. They like to write sci-fi and fantasy stories and hope to publish one someday.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Jakob Johnson (Jamie Sanford)</summary><p>Jakob Johnson (Jamie Sanford) is a sophomore planning to graduate with a Bachelor of Science in Biology in 2021. He is working towards a career in molecular biology, which combines his passions for chemistry, biology, and research. His interests include animation, cuisine, theatre, Early English literature, and psychology — perhaps due to early and prolonged exposure to J.R.R. Tolkien — which led to his submission on Bēowulf for the CROW's 2019 edition.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Lauren Kirk</summary><p>Lauren Kirk graduated from University of Washington Bothell in winter 2019 with a B.S. in Biology and minor in Chemistry. She holds an A.S. degree in both Health Information Technology and Medical Assisting. After graduation, she will be completing a Master's degree and is planning on attending medical school.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Brynley Louise</summary><p>Brynley Louise will graduate in June 2019 with a Bachelor in Media and Communications. She works as a tutor at the Writing and Communication Center at UW Bothell and cultivates a digital community around online video entertainment. After graduation she is excited to commit to full-time work in entertainment and media. In her free time she enjoys painting, drawing, going to the movies, writing, and cooking.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Katherine Lu</summary><p>Katherine Lu is a second year undergraduate pursuing a B.S. in Biology with a Mathematics Minor, aiming toward a biomedical research career. Her interests include bioinformatics, food science, and molecular biology. Katherine makes and sells jewelry, writes short stories, and occasionally accepts graphic design commissions. She hopes that being published in the CROW will be the first step in a series of personal achievements in biology research.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Ameena R. Mohammed</summary><p>Ameena R. Mohammed will graduate in Summer 2019 with a Bachelor of Arts in Health Studies. After graduating, she hopes to start her career in healthcare administration. She is currently an intern at NAMI Eastside assisting with administrative tasks. Ameena is very thankful for the opportunity to have worked with the CROW, and found the peer review process to be a positive learning experience that will be helpful in the future.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Hannah Preisinger</summary><p>Hannah Preisinger is graduating in 2019 with a BA in Culture, Literature and the Arts and a minor in Consciousness Studies. She is involved with the gravitational wave astronomy research group, works as a Student Web Assistant with Marketing and Communications, and owns and operates a small theatrical production company. After graduation, she plans to continue practicing theater and attend a local coding boot camp.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Michael (Mike) Prothman</summary><p>Michael (Mike) Prothman will graduate in summer 2019 with a Bachelor of Arts in Health Studies. He previously earned a B.S. in Individual Studies in Geology and Mathematics from Central Washington University and volunteers as an EMT and ski patroller for King County Search and Rescue and The Summit at Snoqualmie. He works for Catholic Community Services of Western Washington as an Advocate in their Bridge Shelter for the homeless and is applying to medical school, hoping to specialize in emergency or internal medicine.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Anna Tran</summary><p>Anna Tran is a lifelong learner and advocate for quality and relevant education, graduating from UW Bothell with a Bachelor's of Arts in Education in December 2019. She believes that a common humanity is the first step in celebrating our differences. Her appreciation of learning through play informs her involvement with the ARC, Northwest Folklife, and Redmond Parks &amp; Recreation. Aside from work and school, you can find her thrifting, bowling, playing ping pong or darts, and eating gyoza.</p></details></li>
+          <li><details class="bio-dropdown"><summary>AJ True</summary><p>AJ True is a second-year student pursuing a Bachelor's degree in Health Studies. Upon graduating, he plans to attend graduate school for a Master's degree in Public Health and intends to work with public health policy at home and abroad to improve the quality of life for poor, marginalized, and disempowered communities. Outside of academia, AJ loves both creating and consuming food and music as a way of experiencing other cultures and bringing joy to his friends and family.</p></details></li>
+          <li>Alex Wang</li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2019 Editorial Board</h3>
+        <ul class="vol-credits__list">
+          <li><details class="bio-dropdown"><summary>Brandee Badgett</summary><p>Brandee Badgett is a fourth year undergraduate pursuing a Bachelor of Arts in Health Studies and a minor in Chemistry. Her experience includes being part of the Veterans Life Initiative Task Force and The Chancellor's Advisory Committee for Students. Upon graduation, she plans to attend medical school to study to become a general surgeon. Her interests include medicine, helping others, and film.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Stephen Ball</summary><p>Stephen Ball will graduate in Fall 2019 with a B.S in Health Studies. He is working towards becoming a Physician's Assistant with a specialty in orthopedics, gaining experience as an EMT and by shadowing PAs and physicians. His interests include playing sports, composing music, playing piano, and studying new research related to mental disease and illness.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Zarefah Baroud</summary><p>Zarefah Baroud graduated in Winter 2019 with her Bachelor's degree in Media and Communication Studies. She will be continuing with her Master's degree in Policy Studies at the University of Washington in Fall. Zarefah also works as a writing consultant at the UW Bothell Writing and Communication Center.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Marina Burandt</summary><p>Marina Burandt is a first-year graduate student in the MFA Creative Writing and Poetics program at UW Bothell. Her undergraduate degree was in English Literature from Chapman University, with minors in Art and Italian Studies. She works as a peer consultant at UWB's Writing and Communication Center and looks forward to using her skills as a writer and tutor for The CROW's editorial board.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Kimberley Cross</summary><p>Kimberley Cross will graduate in Spring 2019 with a Bachelor of Arts in Health Studies. She works in the UW Bothell Writing and Communication Center as a peer consultant and has done undergraduate research on trauma-informed practice and the relationship between stress and immune dysfunction. She will enter the Master of Public Health program at Claremont Graduate University upon graduation.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Mischaella (Shae) Foley</summary><p>Mischaella (Shae) Foley will graduate June 2019 with a Bachelor of Arts in Health Studies and a minor in Health Education and Promotion. Her experience includes a research internship at Seattle Children's Research Institute studying physical activity in preschoolers and an internship with Public Health–Seattle and King County in sexual and reproductive health education. Although busy with internships and work at Seattle Children's Hospital, her most important job is raising two children and a rescued dog with her husband, Ben.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Mariah Kunz</summary><p>Mariah Kunz will graduate in Spring 2019 with a Bachelor of Arts in Health Studies. She works on campus as a peer health educator and also works for global health non-profit VillageReach. Upon graduation, Mariah plans to pursue a Master's degree in public health at UW Seattle, focusing on reproductive health in resource-poor communities. For fun, she enjoys hiking with her dog, Twix.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Nasrin Rasool</summary><p>Nasrin Rasool will graduate in June 2019 with a Bachelor of Arts in Health Studies and a minor in Biology. She previously worked as president of the Health and Wellness Campaign at Champlain College Saint-Lambert in Canada. She is currently a member of the BIO club at UW Bothell. Upon graduation she plans to pursue a master's degree in Pharmacy, and her enthusiasm for research writing led her to join the CROW editorial board.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Antoinette (Anny) Smith</summary><p>Antoinette (Anny) Smith will graduate Magna Cum Laude in Spring 2019 with a Bachelor of Arts in Health Studies with minors in Health Education and Promotion and Gender, Women, and Sexuality Studies. Named to the Husky 100, she served as student speaker at the Chancellor's Reception and sits as chair on the Redmond Human Services Commission. Her research proposal was published in the 2018 CROW, which led to her role on the Editorial Board. After graduation, she will attend UW School of Social Work, hoping to work with people experiencing homelessness through a health and Chicana Feminist perspective.</p></details></li>
+          <li>Andrea Stone, PhD. <span class="vol-credits__contributor-note">(advisor)</span></li>
+          <li>Erik Echols <span class="vol-credits__contributor-note">(advisor)</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__left">
+      <img class="footer__uwb-logo" src="../assets/uwb-logo.png" alt="University of Washington Bothell">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate or publish works that discriminate against any sex, gender expression, sexual orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully consider all potential publications within this guideline.
+      </p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__link-group">
+        <span class="footer__label">Contact</span>
+        <a href="mailto:publish.edu" class="footer__link">
+          <img src="../assets/icon-email.svg" class="footer__link-icon" alt="" aria-hidden="true">
+          publish.edu
+        </a>
+      </div>
+      <span class="footer__divide" aria-hidden="true"></span>
+      <div class="footer__link-group">
+        <span class="footer__label">Follow us</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer" class="footer__link">
+          <img src="../assets/icon-instagram.svg" class="footer__link-icon footer__link-icon--circle" alt="" aria-hidden="true">
+          
+        </a>
+      </div>
+      <img class="footer__crow-img" src="../assets/crow.png" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  <script src="../js/archive.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script src="../js/submit-modal.js"></script>
+</body>
+</html>

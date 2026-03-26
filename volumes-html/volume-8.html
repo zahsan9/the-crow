@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="../index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="../index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="../index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="../guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="../faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <!-- Masthead bar -->
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Eight</span>
+      <span class="open-vol__masthead-year">2023</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <!-- Left: cover card + action buttons -->
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="../assets/cover-v8.jpg"
+            alt="The CROW Volume Eight 2023 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="../volumes-pdfs/vol-8.pdf" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <!-- Right: letter from editors -->
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p>The Eighth Edition of <span class="crow-name">The CROW</span> was composed and published in a time when the COVID-19 global pandemic began to shift to the past, and we students continued re-establishing our lives as in-person learners and learning communities. During this time, members of the University of Washington Bothell community continued to feel the impact of this transition in every aspect of our lives while still pursuing our education. Simultaneously, this time has been shaped by global events, fueling a generation of young adults dedicated to addressing our planet's persistent issues. This board feels it necessary to acknowledge the hardship and loss these past few years have brought to students, faculty, support staff, and everyone we are connected to, near and far. We acknowledge the effort it takes to be involved in changing our world and lives, so thank you foremost for being here a part of this work.</p>
+          <p>With this edition, <span class="crow-name">The CROW</span> continues to highlight the incredible dedication of students at UW Bothell as they conduct, analyze, and synthesize their own research investigations in topics ranging from science and technology, interdisciplinary arts, health studies, and everything in between. Conducting research is a high-impact learning practice that engages students outside the classroom and allows them to think more critically about the topics they wish to discover. By taking the initiative to submit their work for review by a board of their peers, the authors in this journal have taken steps towards becoming active contributors to academic discourse that values inclusion, expansion, and critical thinking.</p>
+          <p>The University of Washington Bothell is situated on the ancestral lands of the Coast Salish peoples, including the Duwamish and Snohomish tribes. We acknowledge this land's deep historical, cultural, and spiritual significance to Indigenous communities. We recognize the ongoing harm caused by colonization and affirm our responsibility as a student-led research publication to engage in decolonization efforts. <span class="crow-name">The CROW</span> seeks to create an inclusive and equitable publication that values Indigenous experience, knowledge, and culture, and fosters justice.</p>
+          <p>We would like to extend special recognition and gratitude to our student authors. In spite of fears of rejection, or perceived possible judgment by your peers, our authors showed great appreciation and care for the extensive editing and publication process, all during a difficult time for students — making their publication all the more extraordinary. We know submitting was difficult, and we appreciate your patience and effort. We are so excited to share the 2023 Edition of <span class="crow-name">The CROW</span>!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2023 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="astronomy">Astronomy</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="business">Business</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="literature">Literature</button>
+      <button class="filter-pill" data-filter="physics">Physics</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-01-Mirzazadeh.pdf"
+             target="_blank" rel="noreferrer">
+            The Effect of Advanced Age and Alzheimer's Disease Neuropathology on Levels of the Tight Junction Protein, Occludin, in the Brain Microvasculature
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The Blood-Brain Barrier (BBB) is a physiologic interface between the bloodstream and the brain. The BBB has tight junction proteins (TJPs) that restrict blood and toxins from entering the brain. This interface plays an important role in the health of our brains and helps protect against neurodegenerative diseases. A significant increase in the TJP occludin was found in microvessels isolated from the parietal lobe of female subjects with Alzheimer's Dementia relative to age-matched females without AD. The increase of occludin in female AD microvessels is an unexpected finding, and could reflect a compensatory mechanism within brain microvasculature in the context of both advanced age and Alzheimer's Dementia — potentially informing therapies to protect the BBB.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Ali Mirzazadeh</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-02-Nayyar.pdf"
+             target="_blank" rel="noreferrer">
+            Unearthing the Environmental Consequences in Seattle's New Holly Neighborhood
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Seattle's New Holly neighborhood is home to a diverse community facing numerous environmental challenges. Due to historical redlining and systemic inequality, this community has been disinvested in and exposed to hazardous pollutants, putting them at risk of health issues and displacement. New Holly has some of the least clean air quality in one of the U.S.'s most polluted cities, and its residents are disproportionately affected by environmental contamination. New developments in the area encourage gentrification and displacement of low-income families. While community members and organizations try to address these issues, systemic and historical factors make public efforts necessary to advocate for change and create an equitable and healthy community.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Ishika Nayyar</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="business">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-03-Badr.pdf"
+             target="_blank" rel="noreferrer">
+            From Virtual to Reality: An Economic Analysis of the Cloud Kitchen Industry
+          </a>
+          <span class="pub-card__subject">Business</span>
+          <p class="pub-card__abstract">ABSTRACT: Cloud kitchens have grown to a market size of $63.9B USD in 2022. The COVID-19 pandemic led to a surge in the market for these facilities as they proved to be a cost-effective option for restaurants to continue operating and meet the rising demand for food delivery. Cloud kitchens offer a range of economic benefits, including reduced costs, increased profitability, and decreased barriers to entry for new restaurant businesses. They also provide greater flexibility in food production and menu selections to meet the fluctuating customer demand. With the shift towards takeout and delivery likely to remain prevalent in the food service industry, cloud kitchens are expected to continue being an innovative and efficient way to meet the growing demand for online food ordering and delivery.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Mariam Badr</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="literature political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-04-Gopez.pdf"
+             target="_blank" rel="noreferrer">
+            When Group Boundaries Blur: The Impact of Southeast Asian Representation in Film and Television
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Literature</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Representation of minorities in the media is a frequently touched upon topic, especially regarding racial minorities. While the media has made strides in increased representation of minorities over the years, the overall quantity and quality of representation in television and film is still lacking. This is especially true when it comes to the representation of Southeast Asians in media, as both media platforms and the general populace are too quick to group Southeast Asians, South Asians, and East Asians into a singular racial category. This research paper analyzes sources implicating the impact that the lack of quality representation in media has on Southeast Asians, to build an argument about media being a powerful tool that should be used in ways that will lead us to a more accepting and diverse world.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Anika Gopez</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="political-science health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-05-Walesby.pdf"
+             target="_blank" rel="noreferrer">
+            Domestic Violence: Laws and Regulations Are Discouraging Women from Reporting
+          </a>
+          <span class="pub-card__warning" aria-label="Content warning">&#9888; Content Warning</span>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Political Science</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The statistics show that in the United States, rates of domestic violence against women have not decreased over the years, and globally, the statistics look very similar. Every year, more research emerges causing the current laws around domestic violence to become outdated. Without evaluating these, the likelihood of women continuing to not report domestic violence instances will continue to grow. We must look at the laws around domestic violence and see where change can be made so that women, and men, and all people, feel comfortable to come forward in domestic violence situations.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Amy Walesby</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-06-Abideen.pdf"
+             target="_blank" rel="noreferrer">
+            The Social Determinants and Cultural Barriers in Obtaining a Mammography Screening for Southeast Asian Immigrant Women in Los Angeles: An Exploratory Sequential Study
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Mammogram screenings are X-rays of the breasts used to detect early indicators of breast abnormalities such as cancerous bumps. The leading cause of cancer death in Asian American women is breast cancer, yet Asian Americans have the lowest rates of mammogram screenings compared to all other racial groups. In order to tackle social determinants and barriers, Asian Americans cannot be seen as a homogenous group — research studies often exclude Southeast Asian ethnicities, glossing over determinants unique to each ethnicity such as income, immigrant status, and education level. This exploratory sequential study collects both qualitative and quantitative data to identify barriers Southeast Asian immigrant women in Los Angeles face, setting a baseline for public health professionals.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Saajidah Abideen</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="health-studies psychology political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-07-Berhane.pdf"
+             target="_blank" rel="noreferrer">
+            Aspects of Mental Health and the African American Community
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: From institutionalized discrimination to stigma, the Black community have faced many challenges to receive much-needed support and treatment for their mental illnesses. The main question revolves around whether increased awareness and accessibility to mental health resources impacts the quality of life for African Americans. The proposed study addresses three main obstacles that hinder African Americans from seeking help: stigma around mental illness, historical atrocities done to African Americans by the healthcare field, and the effects these injustices have on African Americans' decision to receive care. The anticipated outcome is that increased awareness will result in greater willingness to accept treatment, leading to an overall better quality of life.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Yordanos Berhane</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-08-Humphries.pdf"
+             target="_blank" rel="noreferrer">
+            Renal Cell Carcinoma: The Impact of Patient Experience Within the Diagnosis Process, a Qualitative Study
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Cancer is known to be the second leading cause of death in the United States. Renal Cell Carcinoma (RCC) is a brutal cancer that results in a minuscule number of survivors, yet no effective screening methods have been implemented to diagnose RCC prior to a metastatic stage. This research proposal will explore the patient experience of RCC patients — humanizing cancer patients to better understand how traditional medicine may have failed them prior to diagnosis. RCC patients cannot advocate for themselves in a system not currently made to support the detection of their disease. The end goal is to create a tool better at detecting RCC while the cancer is in its early stages.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Isabella M. Humphries</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-09-Ogbagaber.pdf"
+             target="_blank" rel="noreferrer">
+            An Intervention on Free and Accessible Prenatal Care for Black Mothers in Low-Income Neighborhoods
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Inequities in maternal healthcare, especially for Black and Hispanic women, are a serious issue that is killing many lives. The United States has a relatively high prevalence of negative maternal mortality — 700 women pass away during pregnancy or within a year of giving birth, and two out of every three of these deaths might have been avoided. Socioeconomic status, lack of access to prenatal care, poor medical care, and persistent stress all contribute to this population's increased vulnerability. This study aims to ascertain how having optimal care prior to, during, and after pregnancy may affect the maternal mortality rate, and considers potential laws that would ensure equitable treatment for all.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Sinit Ogbagaber</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-10-Kapitonenko.pdf"
+             target="_blank" rel="noreferrer">
+            Eating Disorder Symptoms Associated with Cultural Shifts in East Asian Cultures versus Western Culture
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This essay discusses the presentation of Anorexia Nervosa (AN) symptoms in Chinese and Japanese cultures versus North American culture. It highlights the importance of recognizing eating disorders in more diverse populations and understanding how sociocultural factors influence their development. The symptoms of AN are explored through a cultural lens while comparing the varying symptoms against the Diagnostic and Statistical Manual of Mental Disorders. Noticing the symptomatic differences of AN in each culture shows that the DSM-5 diagnostic criteria of Anorexia Nervosa is not universal in all countries or cultures — indicating an increased need for mental health and medical professionals to acknowledge cultural influences when diagnosing and treating eating disorders.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Mary Kapitonenko</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-11-Biedscheid.pdf"
+             target="_blank" rel="noreferrer">
+            Panthera Latitudinal Ranges Increase Over Time
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: The explanations for the latitudinal diversity gradient (LDG), the increase of species from the equator to the poles, have long been debated by scientists for over a century. To inspect this concept further, the correlation between the big cat genus Panthera's fossil age and latitudinal range was examined to test the "out of the tropics" theory — that species disperse from the tropics over time. A linear regression test found that as Panthera fossils' age increases, so do their latitudinal ranges. These results further support the "out of the tropics" theory, meaning the LDG does indeed exist.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Molly Elise Biedscheid</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="health-studies biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-12-Howell.pdf"
+             target="_blank" rel="noreferrer">
+            The Progression of HIV and AIDS
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Biology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Since HIV was contracted by a human from a chimpanzee in the 1800s, more than 84.2 million people have been infected with HIV and 40.1 million have died from AIDS. Though this virus is powerful and has shown its ability to take over a portion of the population around the world, different steps like PrEP and PEP have been shown to decrease the rates as a preventive measure. PrEP and PEP are both medications that can be taken for either pre-exposure or post-exposure to HIV. With the evolution of medicine and the virus continuing to shift with science over time, the goal is to one day create a cure to prevent HIV and AIDS.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Brittany Howell</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="biology political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-13-Herrera.pdf"
+             target="_blank" rel="noreferrer">
+            A Climate Change Adaptation Assessment of the State of Washington: Industrial Hemp &amp; Building the Evergreen State of our Future
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This Adaptation Assessment of the State of Washington highlights the great potential of industrial hemp as an agronomic defense powerhouse against climate change, helping humanity transition away from fossil fuel. In theory, Washington has the potential to sequester over 28 million tonnes of CO₂e annually if industrial hemp were incorporated into its existing crop cycles statewide. Industrial hemp has a myriad of known uses, including hemp-based plastics and fuel. Given the public perception of hemp and its controversial history in the United States, a lack of research remains — and its potential has yet to be fully recognized. Washington can change that, but it must start from the top down with good policy and urgent implementation.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Loren Herrera</span>
+        </div>
+      </li>
+
+      <!-- Card 14 -->
+      <li class="pub-card" data-subject="physics astronomy">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2023/09/2023-14-Pierce.pdf"
+             target="_blank" rel="noreferrer">
+            Systematic Analysis of the Quasar Properties and Variability of Extremely-High Velocity Outflow Quasars in the Sloan Digital Sky Survey
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Physics</span>
+            <span class="pub-card__subject">Astronomy</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Active Galactic Nuclei host a supermassive black hole surrounded by in-falling gas in the form of an accretion disk. The most luminous of them, called quasars, regularly present outflowing winds observed as absorption in their spectra. We present the preliminary results on the first systematic study on Extremely High Velocity Outflow (EHVO) quasar properties and variability in the 16th data release of the Sloan Digital Sky Survey. Of the 98 quasars with EHVOs discovered, 51 cases were inspected for variability — 47% showed variability. We find that quasars with EHVOs exhibit larger values of bolometric luminosity and Eddington ratio compared to Broad Absorption Line Quasi-Stellar Objects and non-BAL parent sample quasars, while black hole mass does not show significant differences.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Easton Pierce, Alex Vong, Abby Wang, Cora DeFrancisco, Anish Rijal, Tzitzi Romo Pérez, Mikel Charles, Wendy García Naranjo, Rachel Fulda, Veronica Powell, &amp; Lorena Sanabria</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2023 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li>
+            <details class="bio-dropdown">
+              <summary>Ali Mirzazadeh</summary>
+              <p>Ali Mirzazadeh (he/him/his) is in his senior year studying Biology and minoring in Behavioral Neuroscience. He intends on taking his MCAT and applying to medical schools after graduating in Spring 2023. He is a TA for BBIO 200, a research assistant at the REED lab, a Cope Health Scholar, and has worked as a rehabilitation aide. He enjoys spending time with his closest friends, learning about different cultures, and working on his research.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Ishika Nayyar</summary>
+              <p>Ishika Nayyar is a senior graduating in Spring 2023 from UW Bothell, majoring in Health Studies and minoring in Global Health. Driven by her passion for healthcare, math, and science, she aspires to attend medical school to become a pediatrician specializing in sports medicine. In her free time, she enjoys cooking, attending concerts, watching and playing sports, and spending time with her family and friends.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Mariam Badr</summary>
+              <p>Mariam Badr is a business student at the University of Washington studying Marketing and Management Information Systems. She has previously published a case study on the University of Washington ResearchWorks. Her campus involvement includes Women in Business, Beta Alpha Psi, and Mentorship EDGE program.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Anika Gopez</summary>
+              <p>Anika Gopez (she/her/hers) is a Filipina American undergraduate student at UW Bothell with an intended major of Psychology. In high school, she interned under Lorna Gilmour at the Issaquah School District Equity Office. Anika is passionate about intersectional social justice. In her free time, she enjoys writing, drawing, and singing.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Amy Walesby</summary>
+              <p>Amy Walesby (she/her/hers) is a junior at UW Bothell, majoring in Psychology and minoring in Gender, Women & Sexuality Studies. She works as a Peer Health Educator (HERO) for the Health and Wellness Resource Center and as a dance teacher for the ARC Fitness Instructors. In her free time, Amy loves baking and cooking for her friends and family and going on hikes.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Saajidah Abideen</summary>
+              <p>Saajidah Abideen (she/her) is a senior graduating in June 2023 with a major in Biology and minors in Health Studies and Health Education and Promotion. She works as a peer writing consultant at UWB's Writing Center and as a research assistant in the Headley Lab at the Fred Hutchinson Cancer Center. Saajidah intends to obtain a PhD in Immunology, researching the mechanisms of infectious diseases and cancer cells.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Yordanos Berhane</summary>
+              <p>Yordanos Berhane is a first-generation college student of Eritrean descent and an undergraduate student at UW who will graduate in 2025 with a Bachelor's in Health Studies. After graduating, she plans on continuing her education to become a family practitioner or clinical therapist specializing in mental illness or childhood trauma. In her free time, she likes to read, visit art museums, and watch historical K-dramas.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Isabella M. Humphries</summary>
+              <p>Isabella M. Humphries is a third-year undergraduate student at UW who will graduate with a Bachelor of Arts in Health Studies in the summer of 2023. Following graduation, she intends to continue her education to become a nurse. Isabella discovered a passion for taking care of patients after working in a clinical laboratory in 2022. She would like to give special thanks to Dr. Stefanie Iverson-Cabral and Dr. Bryan White for their support and encouragement throughout her academic career.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Sinit Ogbagaber</summary>
+              <p>Sinit Ogbagaber (she/her/hers) is a junior at UW Bothell, majoring in Health Studies with minors in both Global Health and Health Education & Promotion. After graduation, she plans to pursue a master's in Public Health at UW. She hopes to use her education to tackle public health disparities and inequalities. In her free time, she likes hanging out with friends and family, trying new food, and watching TV shows.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Mary Kapitonenko</summary>
+              <p>Mary Kapitonenko is an undergraduate student at UW who will graduate in 2024 with a Bachelor of Arts in Psychology and a minor in Policy Studies and Human Rights. She intends to pursue Industrial and Organizational Psychology for graduate studies and entertains the option of a PhD. Her passion for psychology has been a long-time interest and she hopes to create positive change through her knowledge of human psychology.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Molly Elise Biedscheid</summary>
+              <p>Molly Elise Biedscheid (she/her/hers) graduated in the Winter of 2023 from UW with a major in Biology and a minor in Chemistry. Growing up in the Puget Sound area has taught her to love nature and the people surrounding it. She plans to pursue research in Toxicology to help diverse communities and wildlife. She loves spending time with her friends, kayaking, and exploring new sights.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Brittany Howell</summary>
+              <p>Brittany Howell is a senior at UW Bothell graduating in Summer 2023 with a Bachelor in Health Studies. After graduating, she plans to continue at the UW School of Medicine, specializing in Rheumatology. She helped run a COVID-19 vaccine clinic at Evergreen Health Infectious Disease clinic, ensuring patients got vaccinated and educated. In her free time, Brittany likes to spend time with her family, dog, and friends, and traveling.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Loren Herrera</summary>
+              <p>Loren Herrera studies Science, Technology, & Society (STS) and is a senior at UW Bothell. He is a member of the Tau Sigma National Honor Society and a UW Bothell Study Abroad Ambassador. Loren is a musician and filmmaker with a deep interest in philosophy. Professionally, he serves as both an Administrative Assistant and a Preservation & Museum Specialist at the Burke Museum of Natural History and Culture in Seattle.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Easton Pierce</summary>
+              <p>Easton Pierce (he/him/his) is a senior graduating in spring with a B.S. in physics at UWB. He currently studies variability in Dr. Paola Rodriguez Hidalgo's quasar research group. He plans to take a year exploring internships in the industry before potentially applying to graduate programs. Easton spends his free time reading, gaming, and recently picked up climbing.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Alex Vong</summary>
+              <p>Alex Vong is a senior Physics student at UW Bothell working on capstone projects with Dr. Rodriguez Hidalgo in astrophysics. Previously, he has been involved in particle physics research doing data analysis on the FASER neutrino detector and briefly participated in LIGO gravitational wave detection research. He will graduate with a B.S. in physics in the summer of 2023. His main passions are the foundations of physics and astrophysics.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Abby Wang</summary>
+              <p>Abby Wang (she/her/hers) is an undergraduate student at UW Bothell graduating in 2024 with a Bachelor of Science in Physics. She works with Prof. Paola Rodríguez Hidalgo in her quasar research group and has also worked with Dr. Ansel Neunzert on continuous gravitational waves research. She plans on applying to graduate programs in physics.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Cora DeFrancesco</summary>
+              <p>Cora DeFrancesco (she/her/hers) is a first year Masters student in Electrical and Computer Engineering and NSF Graduate Research Fellow, working for the Advanced Radar Research Center at the University of Oklahoma. She completed her Senior Capstone remotely with the Quasar Research Group at UW Bothell. Cora graduated in December 2022 with B.S. degrees in Astrophysics and Math, and is an active member of the OU women's ultimate frisbee team.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Anish Rijal</summary>
+              <p>Anish Rijal (he/him/his) is a fourth-year undergraduate student at UW Seattle pursuing a Bachelor of Science in Mechanical Engineering. He has been part of the Quasar Research Group since September 2021 and participated in the UWB Physics REU in the summer of 2022 under the mentorship of Dr. Paola Rodriguez Hidalgo. In his free time, he has taken an interest in writing and producing music and enjoys working out and playing football.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Tzitzi Romo Pérez</summary>
+              <p>Tzitzi Romo Perez (she/her/hers) is a 4th year graduating from UWB, majoring in Community Psychology. She has worked as a research assistant for Dr. Rodriguez Hidalgo in the Quasar research group for about a year. With mentorship and guidance, Tzitzi was able to follow her deep passion for astronomy and astronomy education. After graduation, she intends to apply to psychology graduate programs to become a therapist. In her free time, she enjoys astrophotography, poetry, and ceramic painting.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Mikel Charles</summary>
+              <p>Mikel Charles (she/her/hers) recently graduated from UWB, majoring in Mathematics with a minor in Physics. She is currently a graduate student at The Ohio State University pursuing a PhD in Physics. In her free time she enjoys painting, attending concerts, and spending time outdoors.</p>
+            </details>
+          </li>
+          <li>Wendy García Naranjo</li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Rachel Reese</summary>
+              <p>Rachel Reese (she/her/hers) graduated with Honors in December 2022 with a Bachelor of Science in Physics. Throughout her undergraduate career, Rachel conducted research in Active Galactic Nuclei, Broad Line Absorption Quasars, and Comet Sublimation. She currently works at the Thomas Jefferson National Accelerator Facility in Newport News, VA, as a Magnet Engineer designing, manufacturing, and assembling accelerator magnets. In her spare time, Rachel enjoys cooking, photography, and hiking.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Veronica Powell</summary>
+              <p>Veronica Powell (she/her/hers) is a senior majoring in Physics at UW Bothell. She is working on her senior project in Physics Education Research with Dr. Alanna Pawlak and previously worked in Dr. Paola Rodriguez Hidalgo's Quasar research group during the UWB Physics REU in Summer 2022. She is the Vice President of the UWB Physics & Astronomy club and takes special interest in astronomy, climate change research, and making physics more accessible. She has explored watercolor painting, photography, blacksmithing, skiing, and various other interests.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Lorena Sanabria</summary>
+              <p>Lorena Sanabria (she/her/hers) is originally from Colombia and a student at Embry Riddle Aeronautical University, pursuing a Bachelor of Science in Astronomy and Astrophysics with a Russian Studies minor. She has participated in research on gyrochronology, active galactic nuclei, and extremely high velocity outflows. She will continue her studies pursuing a Master's Degree in Data Science, set to graduate in 2024. In her free time, she enjoys lifting weights and staying active in the gym.</p>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2023 Editorial Board</h3>
+        <ul class="vol-credits__list">
+          <li>
+            <details class="bio-dropdown">
+              <summary>Annie Nguyen</summary>
+              <p>Annie Nguyen (she/her/hers) is in her senior year studying Health Studies and minoring in Health Education and Promotion. She intends on getting her CHES license after graduating in Spring 2023. This is her first year working with The CROW editorial board. She is hoping to improve her writing and create meaningful connections. She enjoys catching up with friends, reading, singing, and writing poetry in her free time.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Bentley Artison</summary>
+              <p>Bentley Artison (he/him/his) is in his senior year following a pathway towards a major in Health Studies and a minor in Science, Technology and Society (STS). Being a Seattle native, he plans to attack a career in public health that will shed more light on the health disparities being faced between communities in King County. This is his first year working with the CROW. Besides his involvement, he can be found enjoying time with his family, making music, traveling, and watching movies.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Daniel Curtin</summary>
+              <p>Daniel Curtin (he/him/his) is a third-year undergraduate student majoring in both Health Studies and Biology, with a minor in Biochemistry. He plans to pursue a career in biomedical research and attend medical school for a career in pathology or toxicology. He is a strong advocate for health equity, particularly among Indigenous and LGBTQ+ communities. He lives in Lake Forest Park with his partner and their spoiled dog, Hafiz. This is his first year on the CROW Editorial Board.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Grace Woods</summary>
+              <p>Grace Woods (she/her/hers) is a third year transfer student in the Community Psychology program with a Policy Studies minor. In a previous edition of her life, she lived on Orcas Island where the ravens knew her by face, and now enjoys that familiarity with the crows along the Snoqualmie river. There, she lives with her partner, his son, and their furry and scaled family members. Together they enjoy connecting with the natural world. Spring '22 was her first quarter as a board member.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Layla Youssef</summary>
+              <p>Layla Youssef (she/her/hers) is a senior undergraduate double majoring in Global Studies and American Ethnic Studies with a minor in Diversity. She is passionate about cultural research and understudied histories. After graduation, she plans to attend graduate school to study museology and work towards ethical collection processes within museums. She currently works as a Tutor at the UWB Writing and Communication Center. In her free time, she enjoys writing stories, watching movies, and doing spontaneous deep dives into random topics of interest.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Sakshi Bhise</summary>
+              <p>Sakshi Bhise (she/her/hers) is a senior graduating in spring 2023 with a double-major in Media and Communication Studies and Law, Economics, and Public Policy. She loves the writing process because with every piece of new writing, the author goes through a journey. She currently works at the Writing and Communication Center at UWB as a Lead Peer Consultant. In her free time, she likes to read books, paint, and dance.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Sidra Yousaf</summary>
+              <p>Sidra Yousaf (she/her/hers) is a fourth-year undergraduate student currently majoring in Community Psychology and Biology, minoring in neuroscience. She intends on going to medical school and specializing in neurology. This is her third year on the CROW board. She is passionate about social justice issues, especially in healthcare, and currently works as a Lead Peer Consultant at the Writing and Communication Center at UWB. In her free time, she enjoys hanging out with her friends, painting, and watching movies.</p>
+            </details>
+          </li>
+          <li class="vol-credits__contributor-note">(advisor) Andrea Stone, PhD</li>
+          <li class="vol-credits__contributor-note">(advisor) Erik Echols</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__left">
+      <img class="footer__uwb-logo" src="../assets/uwb-logo.png" alt="University of Washington Bothell">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate or publish works that discriminate against any sex, gender expression, sexual orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully consider all potential publications within this guideline.
+      </p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__link-group">
+        <span class="footer__label">Contact</span>
+        <a href="mailto:publish.edu" class="footer__link">
+          <img src="../assets/icon-email.svg" class="footer__link-icon" alt="" aria-hidden="true">
+          publish.edu
+        </a>
+      </div>
+      <span class="footer__divide" aria-hidden="true"></span>
+      <div class="footer__link-group">
+        <span class="footer__label">Follow us</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer" class="footer__link">
+          <img src="../assets/icon-instagram.svg" class="footer__link-icon footer__link-icon--circle" alt="" aria-hidden="true">
+          
+        </a>
+      </div>
+      <img class="footer__crow-img" src="../assets/crow.png" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  <script src="../js/archive.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script src="../js/submit-modal.js"></script>
+</body>
+</html>

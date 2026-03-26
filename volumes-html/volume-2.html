@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2017 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="../index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="../index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="../index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="../guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="../faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Two</span>
+      <span class="open-vol__masthead-year">2017</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="../assets/cover-v2.jpg"
+            alt="The CROW Volume Two 2017 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="../volumes-pdfs/vol-2.pdf" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p><span class="crow-name">The CROW</span> at the University of Washington Bothell provides students with a platform to showcase research investigations they have conducted, analyzed, and synthesized on their own. As a reader, you will discover a myriad of topics ranging from Science and Technology to the Interdisciplinary Arts and a few in between. The multiple submission types and various writing styles featured in the Campus Research and Observational Writings should spark any reader's interest.</p>
+          <p>Beginning in this year's publication <span class="crow-name">The CROW</span> features a new submission type, Researched Argumentative Essays. This submission type has been a wonderful addition to the journal and has allowed for new ideas and aspects of research writing to be included. The act of conducting research is proven to be highly impactful to learning practices that engage students outside of the classroom setting and allow them to think more critically about the topics they wish to discover. Having their work published will forever encapsulate and preserve their work while also transforming it into a powerful tool which may be used by the next academics who seek new ideas.</p>
+          <p>By taking this monumental and often daunting step of subjecting their work to be reviewed and critiqued by their peers, the authors featured in this journal have progressed towards becoming contributors to the academic discourse of their particular field of study. The Editorial Board was overjoyed and worked tirelessly in reviewing all the incredible submissions this year. We want to praise all the students for the hard work they put into their research and everyone who submitted their work for review. We also want to thank the faculty and staff mentors who foster students' passions and talents.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2017 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="education">Education</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="physics">Physics</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Legacy of Colonialism
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Molly Herbert</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            How Concussion Frequency is Greater in Collegiate Athletes than Adolescent Athletes
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Multiple studies have examined concussion frequency in athletes of all levels of play. This study analyzed previously published data on athletes ranging from the high school to the collegiate level to determine if concussion occurrence was greater in collegiate athletes than in adolescent athletes (ages 13–18). Based on the analysis, the concussion abundance in tested adolescent athletes was 3.7% and the occurrence in collegiate athletes was over twice as much at about 7.5%. This data demonstrates that concussion frequency in collegiate athletes is indeed greater than in adolescent athletes, opening possibilities for more intense research on concussion frequency at the collegiate level as well as improving existing concussion protocol.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Atif Mahmood Bhatti</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Extreme Adaptations in Cetaceans: Deep Diving Behavior and Physiology
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: Cetaceans — porpoises, whales, and dolphins — are oxygen-breathing aquatic mammals thought to have evolved from quadruped land animals millions of years ago. Since cetaceans must resurface to expel carbon dioxide and intake oxygen, the more effectively they can hold their breath, the better chance they have of evading predators and finding food. Extreme adaptations like deep diving behavior have allowed consecutive generations to feed and reproduce exceptionally well. This adaptation is not singular and works through the regulation of many different bodily processes, including elastic arteries, respiratory physiology, gas regulation, myoglobin concentration, blood circulation, and metabolism — all working in concert to enable remarkable breath-hold durations.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Allison Thomas, Alexander Richards, Clinton Foriska, &amp; Ryan Mayer</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Physical Exercise as Treatment for Depression in Geriatric Psychiatric Patients
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This paper examines the relationship between physical exercise and depressive symptoms in geriatric psychiatric patients, and how physical exercise can be used to treat depression in these patients. Drawing on studies by Carneiro et al., Carter et al., Heinzel et al., the New York State Office of Mental Health, Rapp, and Rosenbaum et al., the paper demonstrates the ways in which physical exercise is beneficial in combating depressive symptoms and disorders in patients over the age of 60 — with studies leading to the conclusion that physical exercise is most effective in treating depressive symptoms in the elderly demographic.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Rebecca Rodrigues</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="biology health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Genetic Predisposition to Generalized Anxiety Disorder
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Generalized Anxiety Disorder (GAD) has been investigated by researchers worldwide due to a potential genetic predisposition. Researchers have consulted factors including familial structures, peer stimulus, age, living and schooling environments, and genetics. Of these, a genetic predisposition is the one factor observable globally. This extensive literary review from international researchers identifies a serotonin transporter gene polymorphism (5-HTTLPR) as the genetic variant thought to predispose an individual to GAD. Finally, the paper examines how identifying this genetic predisposition can lead to advancements in medicine and therapy, ultimately curbing the number of diagnosable cases of GAD worldwide.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Molly Miller</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Globalization of Clinical Drug Trials and Failure to Regulate
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: United States pharmaceutical companies often test their drugs in developing nations through the use of contract research organizations. Despite established ethical guidelines, questions arise of whether research in developing nations can be considered ethical — surrounding the use of placebos, acquiring informed consent, and ensuring voluntary participation. Ethical guidelines such as the Belmont Report, the International Conference on Harmonisation, and the Declaration of Helsinki outline important measures, but they are rarely enforceable. In order to ensure ethical practices are followed among drug trials, the Declaration of Helsinki must become enforceable and be recognized as the standard for ethical research in developing nations by U.S. agencies and research institutions.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Samantha Frati</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Efficiency of Women's Health Resources in Developing Countries
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The lack of access to health and family planning resources for women in impoverished countries has been recognized as a major barrier to national growth. When women are given access to family planning education, they tend to prioritize the financial security of their families, which benefits communities and nations as women's rights are restored and individuals invest more in regional economies. Programs such as The Maternal and Child Health and Family Planning Program in Bangladesh are attributed with decreasing the fertility rate from 5 to 2.2 children per woman on average. Although there have been great recorded successes in meeting contraceptive need, resources remain extremely limited and some countries face staunch sociocultural barriers.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Neele Thom</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Desertification of North Africa and the Desertion of its Refugees
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: There were 20 million new climate refugees in 2008, and 17 million people are currently fleeing desertification. 60–75 million people in the North African Sahara-Sahel region face displacement due to desertification driven by climate change via droughts and temperature increases at levels never before seen. The United States must act: it should set a precedent of accepting climate change refugees, provide funds for United Nations Conventions, and become party to the International Criminal Court. The Sahara-Sahel is suffering and the international community is turning a blind eye to their pain.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Nate Blanchard</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Doula Care for Low Income African American and Latino Mothers in a Hospital Setting
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In the United States, African American and Latina women are 148% more likely than white women to experience birth complications such as cesarean sections and low birth weight babies. Implementing more support for birthing mothers during their hospital stay might decrease these outcomes. This support might be best found in a hospital-based doula program that provides individual emotional and physical support to women throughout pregnancy and childbirth. This proposal looks at the current research on doulas and their positive impacts on low-income African American and Latina mothers, and makes the case for broader institutional adoption of doula-supported birth programs.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Christy Wyble</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="health-studies education">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Access to Physical Education in High Schools and Childhood Obesity
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Education</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Childhood obesity is a major public health issue affecting adolescents across the United States — for ages 2 to 5 obesity has doubled, and nearly tripled among youth ages 6 to 19 since the 1970s. This research proposal examines whether there is a relationship between access to physical education in high schools and childhood obesity, specifically for grades 9–12, using random sampling of Interlake High School students alongside data from the Healthy Youth Survey and the Bellevue School District. The study argues that all high schools should provide robust physical education implementation programs as a meaningful intervention in the childhood obesity epidemic.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Qendresa Hasani</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Experimental Applications of Differential Scanning Calorimetry to Test and Characterize Polymers at the University of Washington Bothell
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: Differential Scanning Calorimetry (DSC) is used for analyzing the thermal properties of polymeric materials used in many engineering applications. The data produced generates a heat flow curve that reflects the amount of energy required to heat a sample per degree Celsius over time, allowing for calculation of heat capacities, melting temperatures, glass transition temperatures, degree of crystallinity, and environmental oxidation. This paper describes several projects at UW Bothell where DSC was utilized to evaluate industrial and sports applications of polymers — including degradation in sport track surfaces, premature cracking in polyurethane transformer housing covers, and determination of unknown polymers in high-temperature filtration systems.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Kaleb Dempsey</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="biology political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Indoor Agricultural Technologies: An Introduction to the Future of Sustainable Farming
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Indoor agriculture provides a framework to address the need for new, innovative solutions to feed the planet's exponentially growing population. This investigation assesses the advantages and future prospects of indoor agricultural technologies as a sustainable alternative to traditional farming, using a hybrid approach of academic literature review and exploration of indoor farming culture. Cost-benefit analysis examines potential economic advantages of hydroponic gardening systems and Light Emitting Diodes (LEDs). Advancements in artificial lighting technologies, a dwindling global water supply, and unpredictable weather patterns prompted by climate change together signal a promising future for indoor farming.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Gerald J. MacKenzie</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Fourier Transform Infrared (FTIR) Spectroscopy for Material Characterization at the University of Washington Bothell
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: Fourier Transform Infrared (FTIR) Spectroscopy is a powerful material analysis technique that can be used alone as a quick characterization tool or in complement with techniques such as DSC, GC, NMR, or Raman Spectroscopy to gain the complete physical and chemical makeup of a material. At UW Bothell, FTIR techniques have been applied to analyze synthetic granular composites used on horse racetracks, crumb rubber from artificial turf, and comparative studies of polyvinyl acetate (PVAc) polymers. FTIR tests indicated oxidation degradation of wax binders in track surfaces and revealed that different acrylic contents in PVAc produce subtly different material properties — including greater flexibility at room temperature — with important implications for composite material selection in engineering applications.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Luke B. Daanomah &amp; Bryce Denis</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2017 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li><details class="bio-dropdown"><summary>Atif Bhatti</summary><p>Atif Bhatti is a second year-student at the University of Washington Bothell where he's majoring in Biology and minoring in Neuroscience and Chemistry. Upon graduating after Summer Quarter of 2018, Atif plans to attend medical school and practice neurological medicine in the future. Atif is an active member of UWB's Pre-Health Society and he plans on being one of the club's officers for the 2017–18 school year. In his free time, Atif enjoys volunteering at BloodWorks Northwest and spending time with his friends.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Nate Blanchard</summary><p>Nate Blanchard will graduate in Spring 2017 with a B.A. in Law, Economics, and Public Policy along with a minor in Human Rights. In Fall 2017 he will be advancing his public policy education within the M.A. in Policy Studies. His experiences include competing on the debate team at the University of Washington Bothell and also serving as the President of UWB's Debate Society. His passion is the study of climate change policy and the study of how to promote political advocacy of marginalized stakeholders. He hopes to one day help individuals displaced by climate change as a refugee attorney.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Luke B. Daanomah</summary><p>Luke B. Daanomah will graduate in the Spring of 2017 with a B.Sc. in Mechanical Engineering. After graduation, Luke will be headed off to NASA's Marshall's Space Flight Center in Huntsville, AL to start his career as a propulsion systems engineer. He plans to work for some years before going to graduate school for a Master's degree and hopefully a Ph.D. Luke has a deep passion for undergraduate research and has been a student research assistant at the UW Bothell Materials Testing and Characterization Lab (MTCL) since January 2016, investigating the cause of degradation in synthetic granular composite materials used on horse race tracks, as well as crumb rubber used on sporting surfaces.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Kaleb Dempsey</summary><p>Kaleb Dempsey is an undergraduate at the University of Washington Bothell enrolled in the Mechanical Engineering program and is expected to graduate in June of 2017. He received an Associate in Science degree from Cascadia Community College in 2014 focusing on the natural sciences. Since early 2015, he has been the Lab Coordinator and Manager for Professor John Bridge, aiding in various thermal and material characterization testing including DSC, FTIR, MTS tensile testing, SEM, and soxhlet extractions. His most recent work includes a degradation study on the thermal characterization of wax/polymer binders for synthetic Thoroughbred horse racetracks. Upon graduation, he plans on pursuing a Master's degree in Materials Science and Engineering.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Bryce C. Denis</summary><p>Bryce C. Denis is studying at the University of Washington Bothell where his intended major is Mechanical Engineering; he is expected to graduate with the class of 2018. He has been involved in undergraduate research since March of 2015, studying degradation related to wax/polymer binders over a seven year period for synthetic Thoroughbred horse racetracks. During testing he worked on the FTIR and NMR machines to observe the effects of age on the wax/polymer binder. On top of being involved in Undergraduate Research he also holds the position of a Resident Advisor in on-campus housing. Upon graduation, he plans to search for a job in the Mechanical Engineering or Material Science field.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Clinton Foriska</summary><p>Clinton Foriska will graduate from UW Bothell in Winter 2018 with a Bachelor's of Science in Biology and a minor in Chemistry. He is a US Army combat veteran and retired from the military in 2014. He is interested in pursuing a medical degree and hopes to work for the Veteran Administration, continuing to serve veterans who suffered post-war traumas with an emphasis on rural and underprivileged communities.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Samantha Frati</summary><p>Samantha Frati graduated from UWB in December 2016 with a Bachelor of Arts in Health Studies. She will attend Liberty University School of Law in the fall of 2017 as a Juris Doctor candidate. Through her coursework and undergraduate research at UWB, Samantha developed interests in bioethics, health law, and policy. She hopes to pursue those interests while in law school and complete a dual Juris Doctor/Master of Public Policy degree. After law school, she plans to use her education to work in legislation and health policy.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Qendresa Hasani</summary><p>Qendresa Hasani will graduate in Spring 2017 with a Bachelors of Arts in Health Studies. Upon graduation, she plans to attend Graduate School to study Pharmacy. Qendresa is passionate about improving health literacy of individuals and populations. Her interests include public health, health advocacy, and pharmacy. Over the past six years, her work, coursework, and volunteer experience have allowed her to work across a number of health settings, including hospitals, schools, pharmacy, and non-profits. She values teamwork and community-engaged methods, and enjoys collaborating with community partners to plan health education activities and resources.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Molly Herbert</summary><p>Molly Herbert is a senior and will be graduating with a Bachelor's of Arts from the School of Interdisciplinary Arts and Sciences in Law, Economics &amp; Public Policy, and Global Studies with a minor in Human Rights. Throughout her undergraduate career, Molly has conducted numerous independent research projects primarily in the fields of law and economics, culminating in her senior thesis.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Gerald J. MacKenzie</summary><p>Gerald J. MacKenzie is an Environmental Studies major at UW Bothell. He is currently researching fungal endophytes in aeroponic gardening systems in the Sarah Simonds Green Conservatory. Gerald is very passionate about future prospects of indoor agriculture, particularly pertaining to organic hydroponic inputs and LED technology.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Ryan Mayer</summary><p>Ryan Mayer will graduate in 2018 with a Bachelor's of Science in Environmental Science: Conservation Restoration Ecology. He plans to next attend graduate school studying Environmental Policy, with the intent of eventually becoming an incorruptible public servant. He believes in the Greek concept of phronesis — a type of practical wisdom specializing in the ability to know how or when to act virtuously, while simultaneously inspiring virtue and excellence in others.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Molly Miller</summary><p>Molly Miller will graduate Cum Laude in June 2017 with a Bachelor of Arts in Community Psychology. Her interest in a genetic predisposition to Generalized Anxiety Disorder (GAD) have led her to work in three different research labs in the realm of clinical psychology, including her current position at the Dorsey Lab under Dr. Shannon Dorsey researching dissemination and implementation. She plans on working as a research coordinator in Clinical Psychology with hopes of entering into a PhD program for Clinical Psychology and Neuroscience.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Alexander Richards</summary><p>Alexander Richards will graduate in Fall with a Bachelor of Science in Biology. He is a veteran of the Army branch of the U.S. armed forces. Currently his educational interests are focused toward water preservation and Marine Mammal Physiology. He hopes to enroll as a graduate student for the 2018 school year and pursue his PhD in a related Biology program.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Rebecca Rodrigues</summary><p>Rebecca Rodrigues will graduate in Fall 2017 with a Bachelor of Arts in Community Psychology. Upon graduating, she will attend graduate school to continue her studies in psychology. She plans to work in the public school system to improve education for physically and mentally disabled children.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Neele Thom</summary><p>Neele Thom is a sophomore majoring in Biology at UW Bothell. Currently, she works as a peer consultant in the Writing and Communication Center, and studies as an undergraduate in a research lab at UW Medical School in the hematology department. She plans to go to graduate school after earning her B.S. to study molecular and cellular biology. Although she primarily enjoys studying science, she has a passion for engaging in global health topics and is excited to contribute to The CROW.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Allison Thomas</summary><p>Allison Thomas is a senior at UW Bothell and will graduate in the spring of 2018 with a B.S. in Biology, along with a minor in Chemistry and Neuroscience. She holds an A.A.S. degree in Fashion Design from Seattle Central Community and an A.A. degree from North Seattle College. After graduation, she plans to pursue Pharmaceutical Sciences, with future work in drug development.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Christy Wyble</summary><p>Christy Wyble will graduate in Summer 2017 with a Bachelors of Arts in Health Studies. Her interests are in food quality &amp; availability, herbal medicine, and public health. After finishing her degree she hopes to get her masters in Public Health in maternal-child health care or in Naturopathic Medicine. She is a trained doula and wishes to further pursue advocacy work for the doula world, providing safer care for all birthing mothers.</p></details></li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2017 Editorial Board</h3>
+        <ul class="vol-credits__list">
+          <li><details class="bio-dropdown"><summary>Anaistasia Gray</summary><p>Anaistasia Gray will graduate in Summer 2017 with a Bachelors of Arts in Health Studies. Upon graduation, she plans to attend Graduate School to study Public Health. Her experiences as a Certified Nursing Assistant and volunteering with organizations addressing health care access have driven her passion for researching inequities in health care. She believes solutions to aid underserved populations are rooted in understanding various communities, thought processes, and disciplines. She feels her work in journal drafting and editing makes her contributions to the CROW an exciting way to guide others to publish their work and make the interdisciplinary connections necessary to progress in healthcare.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Julianne Korn</summary><p>Julianne Korn will graduate in June 2017 with a Bachelor of Arts in Health Studies and a Minor in Education &amp; Society. Her experiences so far have included internships with the Hope Heart Institute in Community Health Education and Public Health – Seattle &amp; King County in Chronic Disease &amp; Injury Prevention. Her passions include working with children around education and food access, as well as making changes to impact health disparities in her communities. Julianne has always enjoyed writing and research, and is excited to expand her experiences on campus through working with The CROW.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Katelyn Oppengard</summary><p>Katelyn Oppengard is a first year graduate student in the MFA Creative Writing and Poetics program at UW Bothell. Her undergraduate degrees are in English Literature and Creative Writing from California State University, Long Beach. Although much of her current work is focused in creating poetry, her background specializes in research of Early Modern English playwrights and Bloomsbury literature. She works as a peer consultant at UWB's Writing and Communication Center and is excited to use her skills as a writer and tutor on The CROW's editorial board.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Anna Perry</summary><p>Anna Perry will graduate in Spring 2017 from the School of Nursing and Health Studies with a B.A. in Health Studies. Her interests include community advocacy, social justice, and gender equality. In the future, Anna hopes to use the knowledge gained to help heal victims of violence by defending vulnerable populations and inspiring families to live in unity. Her work in the health field, often as an active listener and support giver, will play an important role as an editorial board member as she strives to give a voice to anyone looking to get published.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Anna-Marie Rinaldi</summary><p>Anna-Marie Rinaldi will graduate in the Spring of 2017 with a B.A. in Health Studies and a minor in Policy Studies. Upon graduating, Anna will enter the workforce where she hopes to gain real-world knowledge of the healthcare field. She plans to work for some years before going to graduate school for a Masters in Health Administration. Before working on The CROW, Anna had taken part in undergraduate research on campus focused on Adolescent and Immigrant Health, which led her to want to examine final research papers as an editor.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Jenny Sims</summary><p>Jenny Sims is a senior at UW Bothell and will graduate in the spring of 2017 with a B.A. in Health Studies. She currently holds an A.A. degree from Shoreline Community College and plans to pursue graduate school in the near future. Jenny is particularly drawn to studying the social determinants of health and how they affect a person's mental health and quality of life. She hopes to find a career that combines her interests in public health, social work, and global studies, and is excited to hone her writing skills while helping others improve theirs.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Henry Welch</summary><p>Henry Welch will graduate in Spring 2017 with a B.A. in Community Psychology from the School of Interdisciplinary Arts &amp; Sciences. His experience as a Peer Consultant at the Writing and Communication Center will help him in collaborating with students on their submissions. He is interested in science, research, and the production of knowledge, and is excited to take part in and learn about the research being done on campus.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Victoria Wettmarshausen</summary><p>Victoria Wettmarshausen has a B.A. in English Literature from Hamburg University and will graduate in Spring 2017 from the University of Washington Bothell with a Master of Arts in Cultural Studies. Her interests include literature and poetry, globalization, feminism, and utopia. She works as a Peer Consultant and Graduate Student Liaison at the Writing and Communication Center and recently started a publishing internship. She hopes to go on into publishing after graduation.</p></details></li>
+          <li>Gabby Alvarado <span class="vol-credits__contributor-note">(board member)</span></li>
+          <li>Sara Alzeer <span class="vol-credits__contributor-note">(board member)</span></li>
+          <li>Andrea Stone, PhD. <span class="vol-credits__contributor-note">(advisor)</span></li>
+          <li>Erik Echols <span class="vol-credits__contributor-note">(advisor)</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__left">
+      <img class="footer__uwb-logo" src="../assets/uwb-logo.png" alt="University of Washington Bothell">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate or publish works that discriminate against any sex, gender expression, sexual orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully consider all potential publications within this guideline.
+      </p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__link-group">
+        <span class="footer__label">Contact</span>
+        <a href="mailto:publish.edu" class="footer__link">
+          <img src="../assets/icon-email.svg" class="footer__link-icon" alt="" aria-hidden="true">
+          publish.edu
+        </a>
+      </div>
+      <span class="footer__divide" aria-hidden="true"></span>
+      <div class="footer__link-group">
+        <span class="footer__label">Follow us</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer" class="footer__link">
+          <img src="../assets/icon-instagram.svg" class="footer__link-icon footer__link-icon--circle" alt="" aria-hidden="true">
+          
+        </a>
+      </div>
+      <img class="footer__crow-img" src="../assets/crow.png" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  <script src="../js/archive.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script src="../js/submit-modal.js"></script>
+</body>
+</html>

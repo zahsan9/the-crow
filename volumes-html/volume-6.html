@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2021 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="../index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="../index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="../index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="../guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="../faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Six</span>
+      <span class="open-vol__masthead-year">2021</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="../assets/cover-v6.jpg"
+            alt="The CROW Volume Six 2021 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="../volumes-pdfs/vol-6.pdf" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p>The Sixth Edition of <span class="crow-name">The CROW</span> was produced and published during the COVID-19 global pandemic. During this time, members of the UWB community have felt the pandemic affect every aspect of their lives, from the health and well-being of their communities to financial and job insecurities. The vast majority of teaching and learning was conducted remotely as well, which has brought new challenges to the student body. Simultaneously, this time has been marked by incidents of racial violence that have had profound impacts on the safety and security of communities of color nationwide. These are impacts we have felt here at UWB as well. We would like to take this time and hold space to acknowledge the hardships and the loss this past year has brought to so many in our communities.</p>
+          <p>With this Edition, <span class="crow-name">The CROW</span> continues to highlight the incredible dedication of students at the University of Washington Bothell as they conduct, analyze, and synthesize their own research investigations in topics ranging from science and technology, to the interdisciplinary arts, and everything in between. The act of conducting research is a highly-impactful learning practice that engages students outside of the classroom setting and allows them to think more critically about the topics they wish to discover. By taking the initiative to submit their work for review by a Board of their peers, the authors in this journal have taken steps towards becoming active contributors to the academic discourse of their particular field of study.</p>
+          <p>Due to the events that defined the 2020-21 academic year, we would like to extend special recognition and gratitude to our student writers. In addition to the personal risk each writer might experience in submitting their work for peer review, the students who worked with us this year did so through a unique set of global circumstances. We know submitting during this time must have been difficult, and we appreciate your patience and your effort. We are so excited we can share with you the 2021 Edition of <span class="crow-name">The CROW</span>!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2021 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="astronomy">Astronomy</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="business">Business</button>
+      <button class="filter-pill" data-filter="csse">CSSE</button>
+      <button class="filter-pill" data-filter="education">Education</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="literature">Literature</button>
+      <button class="filter-pill" data-filter="physics">Physics</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="political-science literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Popular Christian Music in Trump's America
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Political Science</span>
+            <span class="pub-card__subject">Literature</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Since election day 2016, experts from various fields of study have weighed in on Donald J. Trump's political ascendency and enduring support. A growing body of literature recognizes how the "Make America Great Again" movement has grown, in large part, out of a predominantly white, rural and suburban, Christian subculture. This study examines popular Christian music as an important site of cultural production and consumption among a significant portion of Trump's base. After pinpointing the 12 most popular Christian songs during Trump's candidacy and through his pre-Covid-19 presidency, an inductive rhetorical analysis was conducted to identify the main messages, persons, and metaphors contained within the lyrics. Findings reveal that God is consistently presented as an ultimate, male authority who defies human reasoning and is worthy of loyalty in every circumstance — with primary rhetorical purpose affirming a personal theology consistent with authoritarian norms as a strategy for coping with perceived powerlessness.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Jeanne Macbeth</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Thermionic Conversion as The Next Step in The Move to Renewable Energy
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: As the world grapples with the consequences of climate change, our energy needs continue to grow and evolve. While the emission of electrons from the surface of a heated material has been a well-understood physical process for over seventy years, obstacles such as material work function and space charge prevented the development of sufficiently efficient converters. With recent advancements in material fabrication and device manufacturing, the thermionic converter is entering a new era. The development of semiconductors, nanotechnology, and combined emission mechanics makes necessary work functions achievable. Simultaneously, introducing interelectrode plasmas, microscale manufacturing, and interstitial gate electrodes is combating space charge. This paper provides a background on the physics of the phenomenon and summarizes the breakthroughs recently achieved in converter design and efficiency, offering insight into potential applications and examining how these devices can contribute significantly to the push towards renewable energy.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Nathan June</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="physics">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Physics Through Time: Designing A Water Clock That Can Accurately Tell Time
+          </a>
+          <span class="pub-card__subject">Physics</span>
+          <p class="pub-card__abstract">ABSTRACT: Throughout history Muslim civilization has contributed immensely towards so many aspects of life, from the discovery of coffee to the development of sophisticated technology. Unfortunately, the contributions of non-European cultures, including those of Muslim inventors, are often overlooked in educational institutions. This paper aims to highlight some of these contributions, specifically in the field of physics where Muslim inventors were well known for the development of various sophisticated time keeping devices. A literature review was conducted primarily on papers published by the Institute for Science and Technology in Islam and by the Royal Society of London, investigating the mechanism of the Fez clock as well as the best vessel shape and hole diameters for the simplest clepsydras. Findings suggest that the best vessel shape for a clepsydra is a quartic vessel with a 0.5–1.0mm diameter hole, and that a float system was present within the Fez clock.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Sumaiya Sathar</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Science, Spirits, and Speculation: Edgar Allan Poe and the Metaphysical Battle Between Empirical and Supernatural
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: From 1827 to 1849, Edgar Allan Poe wrote volumes of work that inadvertently documented his downward emotional spiral and internal struggle between wanting to believe fully in the spiritual or the empirical. By analyzing a selection of his works alongside his history, it can be seen that his writing reflects his internal metaphysical struggle. Unable to come to terms with the empirical reality of loss, Poe frequently weaves supernatural features into the worlds he creates, attempting to reconcile the unalterable facts of the natural world with the metaphysical hopefulness of spirituality.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Annika G. Rundberg Bunney</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Biologically Active Compounds like Ashwagandha and Ginseng Work as Stress Relievers and Alternatives to Antidepressants
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: With 77% of Americans experiencing stress related symptoms on a daily basis, stress management has become a serious issue. The most common course of treatment is to prescribe antidepressants, which are known to have a long list of possible side effects. This paper focuses on comparing and analyzing the data of two commonly used adaptogens — ashwagandha and ginseng — in stress management using three different stress test scores. Results showed a decrease in stress levels in participants who consumed both adaptogens regularly. However, ashwagandha showed more significant decreases, with a statistically significant 41% reduction in HAM-A scores and a 30% reduction in DASS-21 scores, compared to a 27% reduction in PSS scores for ginseng — providing insight into a natural alternative for stress management treatment.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Mehran Serai</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Price of Oil: Issues in the Oil Rich Niger Delta
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper aims to shed light on the issues occurring in the Niger Delta and provide policy recommendations for the U.S. and Nigerian governments to help address the human rights violations occurring. The Niger Delta is rich in oil and has a long history of exploitation from the fossil fuel industry, resulting in the inhuman treatment of locals and extensive environmental damage. Findings indicate that the issues in the Niger Delta are a result of the lack of governmental control over how fossil fuel industries, such as Shell, are allowed to operate in the area. The paper recommends that the U.S. reassess its support in Nigeria to ensure that human rights violations cease and adequate aid be provided to the economy, while the Nigerian government revisits its Constitution and policy documents to hold companies accountable.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Yazzy Ibrahim</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="psychology business">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Feeling the Burn: An Analysis of Job Burnout and Preventative Solutions
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Business</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Job burnout occurs when an employee works under high stress for long periods of time and feels no sense of accomplishment. Given the cost of replacing employees, human resource managers around the world currently face a challenge in preventing occupational burnout. This study determines the causes of job burnout, the effects on the brain, and what companies are doing to address it. Neurological changes include an enlarged amygdala and the thinning of the frontal cortex, both resulting in a weakened ability to control negative emotion and decision-making. HR managers can tailor administrative policies to match the needs of each life stage, fostering employee resilience and increasing job resources to prevent burnout — ultimately reducing turnover rates, increasing work engagement, and improving employee health.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Jeff Liao</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            A Hot Dutton Issue
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: Danielle Dutton is an American writer and publisher that utilizes style in fresh and exciting ways to juxtapose old-fashioned concepts and feminist modernity. This paper examines multiple published works of writing by the author in order to determine which stylistic elements are being used, and how they affect the writing as a whole.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Marina Burandt</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Murderers and Mad Scientists: Deconstructing the Tropes of Genre Fiction with Feminist Narratology
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper aims to combine genre theory and feminist literary criticism to examine how female writers of genre fiction utilize the concepts of narratology and characterization to critique the patriarchal systems that created the genre and character archetypes they fall under. Through the specific deconstruction of tropes in Gillian Flynn's neo-noir Gone Girl and Larissa Lai's cyberpunk novel The Tiger Flu, the authors show how narratological concepts, combined with the subversion of tropes and character archetypes, can be combined with feminist knowledge to critique gendering in noir and science fiction and shape new literary canons for female writers.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Joe Lollo</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            The Cerebrum of Culture: A History of America and Television from 1980-present
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: What is the actual impact TV has had in this ever-evolving, modern entertainment landscape? Television programming has made many cultural contributions from the small — like the hair and fashion trends inspired by Friends in the 1990s — to the more significant, like the growth in popularity of dark and dramatic TV corresponding with the death of the nuclear family concept in the late 90s to early 00s. Since shows like Hill Street Blues kicked off the redefinition of the drama in the 1980s, television and American culture have had an incomparable and crucial connection of immediate influence and imitation. TV has had strong influences over other mediums; conversely, American culture has controlled the specific directions TV has gone in, with fan engagement being important to the future of a show in deeper ways than any other medium.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Karenna Blomberg</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Analyzing the Trans-Hemispheral Movement of Acipenser Species by Their Mtdna Phylogenetic Relationships
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: The family of Acipenseridae has existed for over 200 million years through the delicate evolution of descendants. Within this time, the genus of species within it has diversified and spread across the world. This study focuses on the percent of genetic similarity in mitochondrial coding genes for the Acipenser genus of sturgeons, between the eastern and western hemispheres, to ask why some sturgeons might be threatened. FASTA files for the mitochondrial DNA of all 17 Acipenser species were imported and sorted into protein coding sequences using a Python program. The PCoA plot revealed that species were separated into two clear clusters — one of only eastern species and another of both western and eastern species — suggesting that sturgeons of the Eastern hemisphere crossbreed less often, which may have resulted in lower genetic diversity and correlates with eastern-hemisphere sturgeons being threatened.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Catherine Gohar, Anirudh Prasad, Madhav Rajkondawar, &amp; Luis Cruz Reyes</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="education political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Racial Oppression Adaptations in Education
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Education</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In post civil-rights America, popular opinion is that racial oppression has either completely disappeared or is insignificant compared to a hundred years ago. This essay explores how oppression has made itself degrees more invisible to the everyday person, highlighting specific examples in the educational system. In our attempts to be antiracist, we have fallen into several pitfalls that inevitably do more harm than good. Businesses market their antiracism rather than practice it. Items implemented in the classroom seem progressive while doing nothing to inform about systems of unequal power. By focusing on individual acts of racial oppression and antiracism, we obscure overall patterns of racial oppression and maintain the system at an invisible level — demonstrating that older forms have been transformed and concealed rather than eradicated.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Jakob Johnson</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="astronomy csse">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Using Computer Programming to Search for Trends in The Atmospheric Compositions of Extrasolar Planets
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Astronomy</span>
+            <span class="pub-card__subject">CSSE</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: Since the discovery of extrasolar planets in the early 1990s, more than 4,350 exoplanets have been confirmed to exist as of February 2021. This research team has been searching for trends between exoplanets' atmospheric compositions and their physical and orbital properties, developing computer programs to automate the process of gathering measurements, identifying planets within their search scope, studying atmospheric composition, and searching for potential trends. The team places heavy emphasis on documentation of programs and processes, striving to make their work easily understandable and usable for the astrophysics research community, with results and programs to be published on forums such as GitHub together with research journals.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Shushmitha Radjaram, Hielen Enyew, &amp; Karina (Aria) Xin-Yi Li</span>
+        </div>
+      </li>
+
+      <!-- Card 14 -->
+      <li class="pub-card" data-subject="biology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title" href="#" target="_blank" rel="noreferrer">
+            Diet Composition and Species Richness in the Gut Microbiome
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Biology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The gut microbiome plays a very important role in the health of human beings by helping to control digestion and benefiting the immune system. Diet has been linked to regulating the risk of several chronic diseases like obesity, type 2 diabetes, cardiovascular disease, and cancer. This paper examines microbiota richness in the human gut microbiome in a plant-based diet versus a meat-based diet, conducting a meta-analysis of four studies using raw meta-data from the QIITA database. Results showed a statistically significant decrease in species richness in those that consumed a meat-based diet. These findings contribute to existing data on how a change in diet can affect the types and abundance of microbiota present in the human gut microbiome.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Jacqueline Monteza, YeJi Oh, Erin Nicholson, &amp; Mehran Serai</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2021 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li><details class="bio-dropdown"><summary>Karenna Blomberg</summary><p>Karenna Blomberg is a UW Bothell student who will graduate in 2022 with a Bachelor's in Media and Communication Studies. She conducted the majority of her research while at Everett Community College, where she received her Associate's degree in 2019. She would like to give her enduring thanks to Gina Colantino, who mentored her during the project. Karenna hopes to continue writing about the wonders of storytelling after graduation and hopes her work can convince readers to think critically about the stories they consume.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Marina Burandt</summary><p>Marina Burandt received her MFA in Creative Writing and Poetics from UWB in 2020 and is currently pursuing her PhD in Literary Studies at the University of Denver. Her research interests lie in queer studies and medieval studies, and the unexpected intersections of both. Her previous writing has focused on dreams, travel, and the self.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Luis Cruz Reyes</summary><p>Luis Cruz Reyes is an undergraduate senior at UW Bothell pursuing a major in Computer Science and Software Engineering. He is working towards a career in Cyber Security and plans to graduate by 2022. In his free time, he enjoys drawing and modifying his 3D printer.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Hielen Enyew</summary><p>Hielen Enyew is an undergraduate at the University of Washington majoring in International Relations and minoring in Informatics. She is part of the exoplanet research group at UWB with Dr. Paola Rodriguez Hidalgo and mentors high school students at the Alene Moris Women's Center. She also volunteers at the Ethiopian church in Seattle and Vine Maple Place. She is passionate about space and in her free time enjoys hiking, telescope gazing, reading, watching movies, and spending time with her family.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Catherine Gohar</summary><p>Catherine Gohar is a UW Bothell senior who will graduate in June 2021 with a Bachelor of Science in Biology and a minor in Chemistry. She is a QSC tutor for biology and chemistry and conducts research in the Hillesland Laboratory in microbiology and evolution. She hopes to pursue a career studying infectious disease treatment and control as a research technician after graduation.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Yazzy Ibrahim</summary><p>Yazzy Ibrahim is graduating in June 2021 with a Bachelor of Arts in Environmental Studies, Law, Economics, and Public Policy, and a minor in Human Rights. She is passionate about environmental justice and policy and hopes to work for an environmental department at a state or federal agency. In her free time, she enjoys listening to music, reading books, growing plants, and expanding her never-ending pineapple collection.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Jakob Johnson</summary><p>Jakob Johnson is a third year student at UW Bothell planning to graduate with a BS in Biology and a minor in Chemistry. He is applying to pharmacy school and pursuing a career in pharmaceutical research and drug design. He is excited to be publishing again in the CROW, following his 2019 publication on Bēowulf and his 2020 publication on limb regrowth in starfish. In his free time, Jakob enjoys cooking, writing, and reading classical English.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Nathan June</summary><p>Nathan June graduated as a post-baccalaureate student with a degree in Physics. Originally from Kansas City, he worked in Chicago before moving to Seattle to change careers toward his lifelong interest in space. At UW Bothell, he performed research with the Gravitational Wave Astronomy Research Group and the LIGO Scientific Collaboration, and served as Program Manager for the Space Public Outreach Team. He was awarded the Husky 100 recognition for his community work supporting youth from underrepresented communities in STEM education.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Karina (Aria) Xin-Yi Li</summary><p>Karina (Aria) Xin-Yi Li is a junior majoring in Computer Science and Software Engineering with a minor in Biology. She is president of UW Bothell's Women in Science and Engineering (BWiSE) chapter, a club that aims to encourage and assist women in STEM. She enjoys using technology to improve and automate the world around her and is interning at Target as a software engineer this summer.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Jeffery Liao</summary><p>Jeffery Liao graduates in June 2021 with a BA in Business Administration with a concentration in Management. He is passionate about personality assessments and fostering positive work engagement. Jeff enjoys hospitality-related fields and will be working as a Resident Services Coordinator after graduation. In his spare time, he enjoys watching Warhammer 40k painting tutorials, learning about outdoor survival, and building computers.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Joe Lollo</summary><p>Joe Lollo prefers non-gendered pronouns, is an undergraduate student at UW Bothell, a media artist, a lifelong reader and gamer, and now a published scholar. They are pursuing a B.A. in Culture, Literature, and the Arts and Media and Communication Studies. Joe is applying to graduate schools and ultimately wants to pursue a Ph.D. in English focused on game studies, fan culture/fandom studies, and science fiction. They are also a staff writer for The Husky Herald and a research assistant with the Center on Reinventing Public Education.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Jeanne Macbeth</summary><p>Jeanne Macbeth was born and raised in the Greater Seattle region, on the unceded ancestral territory of the Coast Salish peoples. She is an artist and interdisciplinary academic specializing in qualitative research and creative practice as a means of investigating larger social issues. She is a research assistant and graduating senior at UW Bothell, triple majoring in Society, Ethics, and Human Behavior; Culture, Literature, and the Arts; and Interdisciplinary Arts.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Jacqueline R. Monteza</summary><p>Jacqueline R. Monteza is a senior at UW who will graduate in June 2022 with a BS in Biology and a Minor in Neuroscience. She will take part in undergraduate research in the Biochemistry Department and is applying to allopathic medical schools with a focus in Neurology. She hopes to better advocate for underrepresented Hispanic/Latino groups in medicine. In her free time, Jacqueline enjoys baking desserts, hiking, and playing the piano and violin.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Erin Nicholson</summary><p>Erin Nicholson will graduate in June 2021 with a BS in Biology and a minor in Neuroscience. She is especially interested in reproductive health and developmental biology and hopes to get into embryology after graduation. In her free time, she enjoys reading, traveling with her husband, fitness, and baking.</p></details></li>
+          <li><details class="bio-dropdown"><summary>YeJi Oh</summary><p>YeJi Oh graduated from UW Bothell in Winter 2021 with a Bachelor of Science in Biology and a minor in Chemistry. She has volunteered at Swedish Hospital and is working as a physical therapist aide while getting her EKG technician certificate. In the future, she plans to become a physician assistant to better serve underrepresented communities.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Anirudh Prasad</summary><p>Anirudh Prasad is an undergraduate student majoring in Computer Science and Software Engineering and minoring in Business Administration. He is the president of the UW Bothell chapter of the UW Blockchain Society and plans to graduate in 2022. Anirudh is passionate about up-and-coming technologies and is pondering pursuing research opportunities in the future. In his free time, he likes hiking and reading.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Shushmitha Radjaram</summary><p>Shushmitha Radjaram is a junior majoring in Computer Science and minoring in Mathematics. She leads the technical side of the exoplanet atmospheres research group, developing new ways to implement programming and data science in data extraction, management, and analysis. She is completing a Business Intelligence Engineering Internship at Amazon and is also a dancer on Natya UW, the University of Washington's award-winning Indian classical dance team.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Madhav Rajkondawar</summary><p>Madhav Rajkondawar is a senior at UW Bothell pursuing a major in Computer Science and Software Engineering with a minor in Data Science. He is vice-president of the UW Blockchain Society at the Bothell campus and plans to graduate in 2021. Madhav is interested in building products that make a large-scale impact and in his free time likes to listen to music, play outdoor sports, and watch movies.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Annika G. Rundberg Bunney</summary><p>Annika G. Rundberg Bunney is an interdisciplinary artist and writer from the Pacific Northwest whose work focuses on memory and its intersections with imagination, history, and the environment. She is in her second year of a Creative Writing and Poetics MFA at UW Bothell where her thesis explores long exposure, uncertain perceptions of reality, and Edgar Allan Poe. She has been published in Clamor (2020) and The Journal of Occurrences (2018).</p></details></li>
+          <li><details class="bio-dropdown"><summary>Sumaiya Sathar</summary><p>Sumaiya Sathar is a senior at UW graduating with a BS in Microbiology and a BA in Medical Anthropology and Global Health. She works as an Administrative Assistant at the UWMC General Internal Medicine Roosevelt Clinic, tutors writing, chemistry, and math, and teaches religious studies. Sumaiya manages a small business to help refugees and volunteers with local schools, mosques, and non-profit organizations. She is passionate about using science and technology to find solutions to global problems.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Mehran Serai</summary><p>Mehran Serai is a UW Bothell senior who will graduate in August 2021 with a BS in Biology and a minor in Chemistry. In her last year of undergrad she participated in research with the UWB Biochemistry Department. After graduation, she plans to work in the medical field before applying to medical school to pursue a career in dermatology. In her free time, she enjoys reading, listening to music, and baking.</p></details></li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2021 Editorial Board</h3>
+        <ul class="vol-credits__list">
+          <li><details class="bio-dropdown"><summary>Alex Blaskovich</summary><p>Alex Blaskovich is a third year undergraduate working towards a major in Interactive Media Design with a minor in Creative Writing. She is passionate about world building design and animation and loves to write fantasy novels in her spare time. She currently works as a Lead Peer Consultant at the Writing &amp; Communication Center and is looking forward to being a part of this year's editorial board.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Mickena Butler</summary><p>Mickena Butler is a junior at UWB with a major in Health Studies and a minor in Global Health. She works as a CNA caring for fragile disabled children and loves learning about public health issues and policies from around the world. She hopes to be a public health advocate whether as a physician, social worker, nurse, or policy advocate. This is her second quarter with the CROW editorial board.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Aaron Davis</summary><p>Aaron Davis will graduate in 2021 with a B.A. in Health Studies with a double minor in Global Health and Health Education and Promotion. They have served on the Health Studies Curriculum Committee and worked as an undergraduate research assistant with the Global Health department and the rHEALTH research group. Aaron works as an emergency shelter manager and homeless advocate while aspiring to do participatory-based research in underserved communities. They plan to pursue a Master of Public Health at UW Seattle upon graduation.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Rachel Kudlacz</summary><p>Rachel Kudlacz is a senior graduating in June 2021 with a Bachelor of Arts in Community Psychology. With her interest in the social sciences, she uses her skills in researching, writing, editing, and visualizing in her pursuit of presenting science as accessible and understandable for everyone. She works as a Peer Writing Consultant at the Writing and Communication Center and as the Creative Director of the Husky Game Development club on campus.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Jordan Nguyen</summary><p>Jordan Nguyen is a junior in the Health Studies major working towards the Biology major. After graduation he intends to work as a medical assistant before applying to Physician Assistant school. Outside his work at the CROW, Jordan is a research assistant working with Professor Stone on conducting research on racial disparities in health to improve population health outcomes.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Rose O'Connor</summary><p>Rose O'Connor is a second-year graduate student pursuing an MFA in Creative Writing and Poetics. She received a B.A. in English from Skidmore College in 2018 with a minor in Management &amp; Business. She currently works as a Lead Peer Consultant at UW Bothell's Writing and Communication Center and will continue toward her goal of teaching at the college level in the English MA program at Boston College next fall.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Salome Seifu</summary><p>Salome Seifu is a fourth-year undergraduate majoring in English Literature. In her free time, she likes to play video games, draw, read, listen to music, and fantasize about worlds beyond. She is incredibly excited to be a part of this year's CROW editorial board and currently works at UWB's Writing and Communication Center.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Karina Syrova</summary><p>Karina Syrova is a third-year undergraduate in the Health Studies major with a minor in Biology. Thanks to publishing last year, she was able to join the editorial board. She is excited to collaborate with other writers in the CROW's sixth volume. At UWB, Karina works at the Makerspace remotely and specializes in 3D printing. Outside of schoolwork, you might find her reading poetry or drawing.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Shahrzad Tehrani</summary><p>Shahrzad Tehrani is a junior at UWB working towards her BA in Environmental Studies with minors in Biology and Public Health. She is passionate about science communication and research writing, which led her to join the CROW Editorial Board. She loves helping writers refine their writing to effectively communicate their ideas. After graduation, she plans to work with sustainable, ethically-minded businesses to increase public awareness of science and empower conscious consumption.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Christine Truong</summary><p>Christine Truong is an undergraduate senior graduating in June 2021 with a Biology degree and a double minor in Chemistry and Health Studies. After graduating she will apply to medical schools, volunteer at hospitals, and work as a medical scribe. She is an advocate for mental health awareness and is currently the Vice President of the Biology Club, having recently launched a mentorship program supporting first-generation STEM students. During her free time, she enjoys creating digital art and enjoying the great outdoors.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Dacia Wagnon</summary><p>Dacia Wagnon will graduate with a B.A. in Health Studies in March 2021. She is passionate about students challenging and improving their written communication skills during their college career. Since the CROW is a unique space where knowledge, passions, and writing development intersect, she couldn't be more honored to be on the editorial board. After graduating, she will pursue a career advocating for female reproductive health and education access.</p></details></li>
+          <li><details class="bio-dropdown"><summary>Sidra Yousaf</summary><p>Sidra Yousaf is a second year undergraduate majoring in Community Psychology and Biology. She intends to go to medical school and specialize in cardiology, and is passionate about social justice issues in healthcare. She works as a Peer Consultant at the Writing and Communication Center at UWB and in her free time enjoys drawing, painting, and watching movies.</p></details></li>
+          <li>Andrea Stone, PhD. <span class="vol-credits__contributor-note">(advisor)</span></li>
+          <li>Erik Echols <span class="vol-credits__contributor-note">(advisor)</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__left">
+      <img class="footer__uwb-logo" src="../assets/uwb-logo.png" alt="University of Washington Bothell">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate or publish works that discriminate against any sex, gender expression, sexual orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully consider all potential publications within this guideline.
+      </p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__link-group">
+        <span class="footer__label">Contact</span>
+        <a href="mailto:publish.edu" class="footer__link">
+          <img src="../assets/icon-email.svg" class="footer__link-icon" alt="" aria-hidden="true">
+          publish.edu
+        </a>
+      </div>
+      <span class="footer__divide" aria-hidden="true"></span>
+      <div class="footer__link-group">
+        <span class="footer__label">Follow us</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer" class="footer__link">
+          <img src="../assets/icon-instagram.svg" class="footer__link-icon footer__link-icon--circle" alt="" aria-hidden="true">
+          
+        </a>
+      </div>
+      <img class="footer__crow-img" src="../assets/crow.png" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  <script src="../js/archive.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script src="../js/submit-modal.js"></script>
+</body>
+</html>

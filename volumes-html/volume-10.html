@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025 Publications | The CROW Journal | UW Bothell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Henny+Penny&family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">The CROW</a>
+    <div class="nav__spacer"></div>
+    <ul class="nav__links">
+      <li><a href="../index.html#archives" class="nav__link">The Volumes</a></li>
+      <li><a href="../index.html#about"    class="nav__link">About us</a></li>
+      <li><a href="../index.html#editors"  class="nav__link">Meet the Editors</a></li>
+      <li><a href="../guidelines.html"      class="nav__link">Guidelines</a></li>
+      <li><a href="../faq.html"            class="nav__link">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav__submit">SUBMIT</a>
+  </nav>
+
+  <!-- OPEN VOLUME HERO -->
+  <section class="open-vol">
+
+    <!-- Masthead bar -->
+    <div class="open-vol__masthead">
+      <span class="open-vol__masthead-vol">Volume Ten</span>
+      <span class="open-vol__masthead-year">2025</span>
+    </div>
+
+    <div class="open-vol__inner">
+
+      <!-- Left: cover card + action buttons -->
+      <div class="open-vol__left">
+        <div class="open-vol__card">
+          <img
+            class="open-vol__card-cover"
+            src="../assets/cover-v10.jpg"
+            alt="The CROW Volume Ten 2025 Journal Cover">
+        </div>
+        <div class="open-vol__buttons">
+          <a href="../volumes-pdfs/vol-10.pdf" class="open-vol__btn" target="_blank" rel="noreferrer">↓ Download PDF</a>
+          <a href="#publications" class="open-vol__btn open-vol__btn--outline">See Publications →</a>
+        </div>
+      </div>
+
+      <!-- Right: letter from editors -->
+      <div class="open-vol__content">
+        <p class="open-vol__letter-label">Letter From the Editors</p>
+
+        <div class="open-vol__letter-body">
+          <p>This momentous Tenth Edition of <span class="crow-name">The CROW</span> was composed and published in the midst of major education funding cuts, and anxieties around changes in the country. As we witness ongoing attacks on the rights of our community members, we feel that the mission of <span class="crow-name">The CROW</span> to platform and uplift student voices is our way of advocating. We thank you for being part of this work and reaffirm our belief in the value and impact of student writing, student activism, and student investment in global futures.</p>
+          <p>With this edition, <span class="crow-name">The CROW</span> continues to highlight the incredible dedication of students at UW Bothell as they synthesize their own investigations in topics ranging from science and technology, interdisciplinary arts, health studies, and everything in between. Research is a high-impact learning practice that engages students outside the classroom and allows them to think more critically about the topics they wish to discover. By taking the initiative to submit their work for review by a board of their peers, the authors in this journal have taken steps towards becoming active contributors to academic discourse that values inclusion, expansion, and critical thinking. As ways of writing and research advance, student publications like <span class="crow-name">The CROW</span> lie on the frontier. This year saw us throwing our belated 23-24 launch party, working through several power outages, and fielding papers from a wide variety of disciplines.</p>
+          <p>We would like to extend special recognition and gratitude to our student authors. Despite fears of rejection, judgement, or critique; our authors showed perseverance with the editing and publication process. We know submitting was difficult, and we appreciate your patience and effort as we tried to ensure your work would shine. We are so excited to share the 2025 Edition of <span class="crow-name">The CROW</span>!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="publications__header">
+      <h2 class="publications__heading">2025 publications</h2>
+      <div class="publications__searchbar">
+        <button class="publications__search-icon-btn" aria-label="Search">
+          <img src="https://www.figma.com/api/mcp/asset/274d134b-f04f-4804-aa63-c7297c2d5d07" alt="" width="24" height="24">
+        </button>
+        <input
+          type="search"
+          class="publications__search-input"
+          placeholder="Search by title or author…"
+          aria-label="Search publications"
+          id="pubSearch">
+        <button class="publications__search-clear" id="pubSearchClear" aria-label="Clear search" hidden>&#x2715;</button>
+      </div>
+    </div>
+
+    <div class="publications__filters" id="pubFilters" role="group" aria-label="Filter by subject">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="biology">Biology</button>
+      <button class="filter-pill" data-filter="business">Business</button>
+      <button class="filter-pill" data-filter="education">Education</button>
+      <button class="filter-pill" data-filter="health-studies">Health Studies</button>
+      <button class="filter-pill" data-filter="literature">Literature</button>
+      <button class="filter-pill" data-filter="political-science">Political Science</button>
+      <button class="filter-pill" data-filter="psychology">Psychology</button>
+    </div>
+
+    <p class="publications__count" id="pubCount"></p>
+    <ul class="publications__grid" id="pubGrid">
+
+      <!-- Card 1 -->
+      <li class="pub-card" data-subject="literature">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-01-Kai.pdf"
+             target="_blank" rel="noreferrer">
+            Reflecting the Poem That Never Ends
+          </a>
+          <span class="pub-card__subject">Literature</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper critically examines the themes, details, language, and processes in Silvina López Medin's book <em>Poem That Never Ends</em>. Investigating personal lineages of motherhood, <em>Poem That Never Ends</em> navigates the complexities of writing about shared family history. Looking closely at the many thematic layers and the discussion of process into the book itself reveals insights into contemporary discourse around poetics, imagination, and form.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Phoenix Kai</span>
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="pub-card" data-subject="education political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-04-Chacon.pdf"
+             target="_blank" rel="noreferrer">
+            The Mexican American Experience: Healing Through Ethnic Studies and Bilingualism
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Education</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: The US education system is a tool used to push the dominant Anglo-American cultures among immigrants and other minoritized cultures within the United States. With their proximity to the US border and historical events, Mexicans living in the United States have faced subjugation and discrimination from the Texas Revolution to the anti-immigrant policies and rhetoric; these educational practices have targeted Mexicans for almost two centuries…</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Amado Chacon</span>
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="pub-card" data-subject="health-studies political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-02-Yousaf.pdf"
+             target="_blank" rel="noreferrer">
+            Racism in Healthcare: Researched and Analyzed from an Intersectional Angle
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Political Science</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This literature review explores the interplay of racism and implicit bias in healthcare, particularly focusing on the reproductive health of women of color through an intersectional lens. The legacy of Jim Crow laws and forced sterilizations have contributed to a mistrust of the American healthcare system among women of color. These legacies motivated the Black Panther Party to form the People's Free Medical Clinics, so that their community members could feel safe seeking medical treatments…</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Sidra Yousaf</span>
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-03-Lambert.pdf"
+             target="_blank" rel="noreferrer">
+            Similarities Between Greater Roadrunner (<em>Geococcyx californianus</em>) Birds and Mulga (<em>Acacia aneura</em>) Shrubs: A Review of Extreme Adaptations to Desert Environments
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This literature review paper will focus on the Greater Roadrunner (<em>Geococcyx californianus</em>) of the Southwestern U.S. and the Mulga shrub (<em>Acacia aneura</em>) of Australia. The former is one of the fastest running, flightless birds on the planet, and the latter is an evergreen shrub capable of growing to incredible heights. Greater Roadrunners and Mulga shrubs demonstrate remarkable adaptations that enable survival in the so-called harsh environments…</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Faith Lambert, Niki Hakimi, Faith Manning, &amp; Geoffrey Tong</span>
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-05-Fero.pdf"
+             target="_blank" rel="noreferrer">
+            Echoing Across a Nation: The New Wave of Gendered Terrorism in the United States
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: This essay examines the evolution of terrorism in the United States, tracing its trajectory from early instances of global terrorism to the transformative impact of 9/11 and the rise of new wave domestic terrorism during Donald Trump's presidency. With a particular focus on its impact on women, the analysis explores how the post-9/11 era redefined terrorism as an external threat predominantly associated with Muslim and Arab communities, while overlooking the growing dangers…</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Brianna Fero</span>
+        </div>
+      </li>
+
+      <!-- Card 6 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-06-El-Anany.pdf"
+             target="_blank" rel="noreferrer">
+            Judicial Compliance: The Supreme Constitutional Court and The Militarization of Egypt's Government
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper examines the role of Egypt's Supreme Constitutional Court (SCC) in legitimizing authoritarian rule and reinforcing executive power, despite its formal mandate as an independent judicial body. Through an institutional and political analysis, the study explores the SCC's historical development, its appointment processes, and its jurisdiction over constitutional review. While the SCC was initially established to bolster judicial independence…</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Hoda El Anany</span>
+        </div>
+      </li>
+
+      <!-- Card 7 -->
+      <li class="pub-card" data-subject="political-science">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-07-El-Anany.pdf"
+             target="_blank" rel="noreferrer">
+            Evolution of American Foreign Policy: The Creation of a Global Superpower
+          </a>
+          <span class="pub-card__subject">Political Science</span>
+          <p class="pub-card__abstract">ABSTRACT: This paper examines the evolution of American foreign policy and its transformation from isolationism to global superpower status. By analyzing key historical developments, including 19th-century expansionism, involvement in the World Wars, and post-war international leadership, the paper explores how the United States strategically balanced isolationist tendencies with interventionist actions to secure its national interests. This study argues that territorial expansion, economic influence, and military engagements shaped America's rise, culminating in its dominant role in world affairs. Through foreign aid, military alliances, and global governance initiatives, contemporary U.S. foreign policy continues to reflect the nation's long-standing principles of power projection and exceptionalism.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Hoda El Anany</span>
+        </div>
+      </li>
+
+      <!-- Card 8 -->
+      <li class="pub-card" data-subject="business psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-08-Lovas.pdf"
+             target="_blank" rel="noreferrer">
+            Rebrand or Rebland? How Brand Image Reflects Appreciation for Consumers
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Business</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In recent years, many companies' brandings and outward appearances have become rather alike, following trends of minimalism, such as flat shapes and basic colors. This has mostly been pioneered by tech companies such as Google and Microsoft but is now also being seen in other businesses like PayPal or Jaguar. These new rebrands wildly contrast with many of the detailed and unique aesthetics seen in previous decades, which has spawned backlash. Many detractors view these rebrands as boring, unimaginative, and inferior compared to what came before. This paper aims to explore what factors have pushed this recent trend as well as the overall effect these rebrands have on consumers and employees. Do they truly help to revitalize a company's brand, or are they a sign of a growing disconnect between companies and their customers?</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Stephen Lovas</span>
+        </div>
+      </li>
+
+      <!-- Card 9 -->
+      <li class="pub-card" data-subject="health-studies psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-09-Stone.pdf"
+             target="_blank" rel="noreferrer">
+            Family Perspectives of Alzheimer's Dementia Progression &amp; Types of Care: A Qualitative Methods Approach
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Health Studies</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: In just under forty years from now, the United States will be faced with a crisis of dementia as our generations continue to age. Alzheimer's Dementia and its related diseases require around the clock care as the disease progresses, and abuse is a well documented issue in facilities that provide long term care for these patients. Documentation is much more scarce for people receiving treatment at home. Using a qualitative method study design with narrative approaches, one-on-one interviews will be conducted on family members of patients with Alzheimer's Dementia to analyze possible differences in quality and scope of care, with the hope that this research can highlight inequities in long term care.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Robin Stone</span>
+        </div>
+      </li>
+
+      <!-- Card 10 -->
+      <li class="pub-card" data-subject="psychology health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-10-Sugita.pdf"
+             target="_blank" rel="noreferrer">
+            The Impact of Social Media on Teen Mental Health: A Mixed-Method Intervention
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Psychology</span>
+            <span class="pub-card__subject">Health Studies</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This mixed-method study investigates how social media interactions—particularly social comparison and online validation—affect adolescent mental health. With smartphones and social media now deeply embedded in teen life, concerns have grown about their psychological impact, including links to depression, anxiety, and low self-esteem. This study will recruit 150–200 high school students (ages 13–17) in Renton, Washington, to explore these dynamics through surveys, journal entries, and interviews. The findings may reveal that certain types of social media interactions negatively impact teen mental health, informing interventions such as digital mindfulness tools or policy changes to promote healthier online habits.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Kelsey Sugita</span>
+        </div>
+      </li>
+
+      <!-- Card 11 -->
+      <li class="pub-card" data-subject="health-studies">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-11-Hussein.pdf"
+             target="_blank" rel="noreferrer">
+            Breast Cancer: A Qualitative Study on Why Barriers Prevent North African Women with Stage III Breast Cancer from Seeking Mammography Screening and How to Overcome It
+          </a>
+          <span class="pub-card__subject">Health Studies</span>
+          <p class="pub-card__abstract">ABSTRACT: Breast cancer is the leading cause of cancer-related deaths among women worldwide, with particularly high mortality rates in North Africa due to late-stage diagnoses. This study aims to explore the barriers that prevent North African women from seeking mammography screening and to identify culturally appropriate strategies to overcome these challenges. Using a qualitative phenomenological approach, the study will involve in-depth interviews with ten North African women diagnosed with Stage III breast cancer. Anticipated themes include limited awareness, mistrust in the healthcare system, financial constraints, cultural beliefs, and fear of stigma. The findings aim to support the development of targeted public health campaigns and improve healthcare provider education in North African communities.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Mahy Hussein</span>
+        </div>
+      </li>
+
+      <!-- Card 12 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-12-Kaur.pdf"
+             target="_blank" rel="noreferrer">
+            A Comprehensive Analysis: The Relationship Between Temperature and Precipitation on Chokecherries
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This research aimed to study the relationship and combined impact of temperature and precipitation on the overall fruit yield of Chokecherry trees, with the goal of finding conditions that maximize production and quality amidst constantly changing climate conditions. The hypothesis was that in order to maximize yield, trees needed spring temperatures ranging from 70°F to 85°F during growing seasons, and 32°F to 45°F during dormancy. Using data from the USA National Phenology Network (2014–2023), results suggest minimal correlation between precipitation and yield, maximum correlation between temperature and yield, and no collective correlation between temperature and precipitation on yield.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Gurkamal Kaur</span>
+        </div>
+      </li>
+
+      <!-- Card 13 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-13-Berhane.pdf"
+             target="_blank" rel="noreferrer">
+            Rodentia Species Did Not Follow the Latitudinal Diversity Gradient During the Miocene
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: The latitudinal diversity gradient (LDG) suggests that species richness increases as they get closer to the equator, but it is unclear whether this trend applies to rodents. Using data from the Paleobiology Database, a linear regression analysis yielded a p-value of 0.619, indicating no statistically significant relationship between latitudinal range and species richness. The results suggest that the LDG does not apply to rodents during the Miocene, and that plate tectonic activity — which led rodents to adapt to various environments — explains their distribution better than temperature changes alone.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Yordanos Berhane</span>
+        </div>
+      </li>
+
+      <!-- Card 14 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-14-Jeffords.pdf"
+             target="_blank" rel="noreferrer">
+            Effects of the Paleocene-Eocene Thermal Maximum on Freshwater Plant Distribution and its Relation to Modern Climate Change
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This research tests the hypothesis that the distribution of plants in freshwater aquatic environments changed because of a rapidly warming climate during the Paleocene-Eocene Thermal Maximum. Comparing aquatic and terrestrial plant species between the Paleocene and Eocene epochs via a χ² test revealed a notable increase in aquatic plant distribution from the Paleocene to the Eocene — potentially resulting in impaired water quality, eutrophication, and a decline in aquatic biodiversity. Given our dependence on freshwater resources, similar trends in response to present-day climate change could pose significant risks to life on Earth.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Victoria Jeffords</span>
+        </div>
+      </li>
+
+      <!-- Card 15 -->
+      <li class="pub-card" data-subject="biology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-15-Macias.pdf"
+             target="_blank" rel="noreferrer">
+            Benthic Foraminifera Found to Have Survived Better During the Paleocene-Eocene Thermal Maximum with Implications to a Future Mass Extinction Event
+          </a>
+          <span class="pub-card__subject">Biology</span>
+          <p class="pub-card__abstract">ABSTRACT: This research tests whether planktonic foraminifera were greater victims of the global extinction event during the Paleocene-Eocene Thermal Maximum (PETM) than benthic foraminifera, due to their exposure to warming in the open water column. A χ² test applied to data from the Paleobiology Database showed that benthic foraminifera frequency increased from the Paleocene to the Eocene while planktonic foraminifera decreased — suggesting benthic forams survived better during the PETM because they are less exposed to surface-level warming events, with implications for understanding future mass extinction risks.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Liz Macias</span>
+        </div>
+      </li>
+
+      <!-- Card 16 -->
+      <li class="pub-card" data-subject="education psychology">
+        <div class="pub-card__content">
+          <a class="pub-card__title"
+             href="https://uwb.ds.lib.uw.edu/thecrow/wp-content/uploads/2025/09/2025-16-Sekhon.pdf"
+             target="_blank" rel="noreferrer">
+            Students Eventually Value Active Learning
+          </a>
+          <div class="pub-card__subjects">
+            <span class="pub-card__subject">Education</span>
+            <span class="pub-card__subject">Psychology</span>
+          </div>
+          <p class="pub-card__abstract">ABSTRACT: This research investigates STEM students' feelings towards active learning methodologies in foundational physics and mathematics courses through an analysis of Student Evaluations of Teaching (SET) open-ended questions. Findings demonstrate a consistent increase in student appreciation for active learning environments over three quarters. The research highlights that educators who engage with more advanced students tend to achieve higher satisfaction compared to those teaching newer students, suggesting that prolonged exposure to active learning positively correlates with increased student satisfaction.</p>
+        </div>
+        <div class="pub-card__footer">
+          <div class="pub-card__author-icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/847d5a69-2687-4ddf-b5df-ade80609a0ec" alt="">
+          </div>
+          <span class="pub-card__author">By Parbeen Sekhon &amp; Eric Onnen</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="vol-credits">
+    <div class="vol-credits__inner">
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2025 Authors</h3>
+        <ul class="vol-credits__list vol-credits__list--authors">
+          <li>
+            <details class="bio-dropdown">
+              <summary>phoenix kai</summary>
+              <p>phoenix kai (they/them) is a queer poet, writer, and multimedia artist located on the unceded Indigenous lands of the Coast Salish peoples in Seattle, WA. Their work has appeared in the Henry Art Gallery Interpretive Guide, Silly Goose Press, Beyond Queer Words, and elsewhere. phoenix was a 2024 Husky 100, received their BA in Ethnic Studies from the University of Colorado Boulder, and their MFA in Creative Writing and Poetics from UW Bothell. They are currently fascinated with open access digital archives, speculative futures, and techno-feminisms. In their spare time they enjoy reading, playing games, and watching cartoons.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Sidra Yousaf</summary>
+              <p>Sidra Yousaf graduated from UW Bothell in 2024 with a BS in Biology, a BA in Community Psychology, and a minor in Neuroscience. She intends to take her MCAT and apply to medical school, eventually specializing in neurology. Growing up in a rural part of Washington, she is acutely aware of healthcare disparities faced by marginalized groups. In the future, she wants to start a non-profit organization that provides affordable and free specialized healthcare to lower-income communities in urban and rural areas. In her free time, she enjoys painting, hanging out with friends, and perfecting her matcha recipe.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Faith Lambert</summary>
+              <p>Faith Lambert (she/her) is a recent UWB alumna as of Winter 2025 with a major in Biology and a career interest in cancer research. As a lifelong learner, she plans to attend graduate school and earn a Ph.D. in cellular and molecular biology, immunology, or pathobiology. She aspires to someday lead her own research team to tackle the most prominent issues in healthcare today. Outside of classes, she engaged in activism and educational advocacy as the club president of the Alliance 4 Sustainability at UWB. In her downtime, she enjoys writing free-verse poetry and working on her fantasy-turned-sci-fi book series.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Niki Hakimi</summary>
+              <p>Niki Hakimi (she/her) is a 2024 UW Bothell graduate with a B.S. in Biology, planning to continue her education through optometry school. She is passionate about health and science research and hopes to contribute to both clinical practice and vision science research, particularly exploring how visual health impacts overall well-being. She hopes to engage in research that advances treatments for visual impairments and expands access to quality eye care. Outside of academics, she enjoys planting and reading.</p>
+            </details>
+          </li>
+          <li>Faith Manning</li>
+          <li>Geoffrey Tong</li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Amado Chacon</summary>
+              <p>Amado Chacon is a first-generation college graduate and second-generation Latino, graduating in 2024 with a BA in Culture, Literature, and the Arts. He plans to continue his education and will join the Master's in Teaching program in Spring 2025, hoping to become an ethnic studies teacher. He has long been interested in history and culture and has expressed interest in continuing and expanding on his CROW research. In his free time, he enjoys reading, writing, and drawing.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Brianna Fero</summary>
+              <p>Brianna Fero is dedicated to advancing human rights, global justice, and ethical development. Originally from Arizona, she obtained an Associate of Arts in Global Studies from Seattle Central College and a Bachelor of Arts in Global Studies with a minor in Gender, Women, and Sexuality Studies from UW Bothell in 2024, and is currently earning her Master of Arts in Policy Studies at UW Bothell. Her research explores international development and governance, with an emphasis on women, children, Indigenous rights, and international affairs. Driven by a belief that true freedom comes when everyone is free, she views her work as her calling, with a PhD on the horizon.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Hoda El Anany</summary>
+              <p>Hoda El Anany (she/her/hers) is a senior pursuing a degree in Law, Economics, and Public Policy with a minor in Human Rights and Business Administration. She has a passion for music and loves attending concerts and works as an Administrative Assistant for UW Medicine. Academically, she has focused her research on Middle Eastern politics, with a particular emphasis on human rights issues in Palestine. Following her anticipated graduation in Spring 2025, she intends to go to law school with a passion for criminal justice or public interest.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Stephen Lovas</summary>
+              <p>Stephen Lovas is currently a freshman at UW Bothell pursuing a Business degree with a Marketing Concentration. He has had a passion for writing since he was a kid, writing countless stories and articles across a wide array of subjects. In his free time, he enjoys drawing, playing games, and going on walks.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Robin Stone</summary>
+              <p>Robin Stone (he/them) graduated in June 2024 with a Bachelor of Arts in Health Studies from UW Bothell. Robin has a huge passion for public health and public policy, with an emphasis on memory care and geriatric medicine, and hopes to one day work in the WA State Department of Health or for Olympia more broadly. A lifelong Mormon and Christian, Robin advocates for an authentically faith-filled life while still being authentically queer.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Kelsey Sugita</summary>
+              <p>Kelsey Sugita is a senior at UW Bothell, majoring in Health Studies with minors in Global Health and Health Education and Promotion, set to graduate in June 2026. She plans to pursue a Master's in Public Health and volunteers with UW's Department of Environmental and Occupational Health Sciences, contributing to research on air quality and its impact on community health. A strong advocate for mental health, Kelsey is passionate about promoting well-being and equity in public health.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Mahy Hussein</summary>
+              <p>Mahy Hussein is a Health Science graduate from UW Bothell with a passion for global health equity and women's health. Her academic interests focus on health disparities in underserved populations, with a particular emphasis on cancer awareness, prevention, and early detection. Mahy aims to contribute to public health research that leads to culturally sensitive interventions and improved access to care, amplifying the voices of marginalized communities through education, advocacy, and innovation.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Gurkamal Kaur</summary>
+              <p>Gurkamal Kaur is a third-year Biology major at UW Bothell with intentions of attending medical school, passionate about addressing health disparities driven by climate change and resource availability in rural areas. In addition to volunteering in the Post Anesthesia Care Unit at EvergreenHealth, she has conducted research on genetic approaches to investigating protein function using CRISPRi-dCas9 and morpholino oligo knockdowns. She is actively working towards mental health advocacy for underserved communities and mentoring first-generation and immigrant students. Outside of academics, she enjoys swimming, tennis, hiking, reading, and spending time with loved ones.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Yordanos Berhane</summary>
+              <p>Yordanos Berhane (she/her/hers) is a first-generation Eritrean-American undergraduate student at UW Bothell, graduating in Spring 2025 with a Bachelor's in Psychology and a minor in Health Studies. After graduating, she plans to further her education with the goal of practicing behavioral medicine, especially in underrepresented communities.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Victoria Jeffords</summary>
+              <p>Victoria Jeffords (she/her) is a fourth-year Earth Systems Science major at UW Bothell, deeply passionate about environmental science and the ways human activity shapes local ecosystems. She is currently conducting research on cultivating and identifying microbes capable of bioremediating 6PPD-Quinone, a toxic chemical impacting aquatic life. Beyond the lab, she balances her time bartending part-time and playing as #69 on UW's Women's Ice Hockey Team. She hopes to continue combining research, fieldwork, and advocacy to address pressing environmental challenges.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Liz Macias</summary>
+              <p>Liz Macias (she/her/hers) is a senior at UW Bothell in her final quarter, earning her bachelor's degree in Conservation and Restoration Science. She recently received a Spring internship with Whale Scouts and is conducting an independent study with Professor Martha Groom, studying how forest density affects air quality at Saint Edwards State Park using environmental sensors developed during her capstone. In her free time, she likes to put puzzles together, hang out with friends and family, be outdoors, and discover new music.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Parbeen Sekhon</summary>
+              <p>Parbeen Sekhon (she/her) recently graduated with a Bachelor of Science in Physics and a minor in Math. Her passion for physics education research grew through her work as a peer facilitator for introductory physics courses, where she fostered collaborative learning and supported student success. Now preparing for medical school, Parbeen is driven by a commitment to addressing health disparities and advocating for equitable healthcare. In her free time, she enjoys hiking, experimenting with new recipes, and photographing scenic landscapes.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Eric Onnen</summary>
+              <p>Eric Onnen (he/him) recently graduated with a Bachelor of Science in Physics and is currently pursuing a Professional Master of Science in Physics at UW Seattle. He works as an Engineering Technician at Helion Energy, where he applies his technical expertise to advance sustainable energy solutions. In his free time, Eric enjoys exploring new technologies, hiking, experimenting with new recipes, and photographing scenic landscapes.</p>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <div class="vol-credits__divider" aria-hidden="true"></div>
+
+      <div class="vol-credits__col">
+        <h3 class="vol-credits__heading">2025 Editorial Board</h3>
+        <ul class="vol-credits__list">
+          <li>
+            <details class="bio-dropdown">
+              <summary>Layla Youssef</summary>
+              <p>Layla Youssef (she/her) is a 2nd year graduate student studying Museology, interested in curation and exhibit design for cultural and history museums. With a background in postcolonial studies, ethnic studies, and human rights, her goal is to develop exhibits on overlooked histories that encourage stronger understanding and more positive connections between visitors and the cultures represented. In her free time, she enjoys watching movies, exploring vintage shops, and visiting local cafes and bakeries with friends. This is her second year with the CROW, now working as managing editor.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Chuck Frickin-Bats</summary>
+              <p>Chuck Frickin-Bats is a queer, non-binary, disabled sex worker and published author (they/them), currently in the Masters in Community Health and Social Justice program. After starting sex work in 2010, they quickly got involved in advocacy, and that is what drives their education. Chuck found a passion for research and plans to continue writing about the stigmatization of the sex trade and health. They recently dubbed themselves the "Donation Coordinatrix" for Red Cedar Community Network, assisting the unhoused. In Chuck's downtime, they stress about their plants, obsessively listen to Sleep Token, devour audiobooks, and celebrate Halloween as a lifestyle. This is their first year on the CROW Editorial Board.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Rehema Hassani</summary>
+              <p>Rehema Hassani (she/her) is a fourth-year Health Studies major at UWB, double minoring in Health Education and Promotion and Global Health. She is passionate about public health and wants to do more research on maternal and child health, especially for women and children of color. Outside of school she works as a Certified Nursing Assistant at a rehabilitation and care center. She loves going on walks, catching the sunset, reading, and spending time with her family and friends. This is her first year working with the CROW editorial board.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Kaya Schubiger-Lewis</summary>
+              <p>Kaya Schubiger-Lewis (she/her) is a 2nd year transfer student at UWB graduating this spring from the Health Studies program with a Bachelor of Arts. She plans to continue her studies with the goal of becoming an Optometrist. As a woman of color, she intends to create space in the medical field for all people to feel safe and cared for. In her spare time, she enjoys laughing with friends, trying new foods, and spending quality time with her two cats. This is her first year on the CROW editorial board.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Sabine Drake</summary>
+              <p>Sabine Drake (she/her/hers) is a fourth-year Health Studies major, intending to minor in Chemistry in hopes of pursuing a Doctor of Veterinary Medicine career. She is passionate about public health research, community disparities, and her work as a Veterinary assistant. She enjoys writing and reading, especially surrounding health-related topics. This is her second year working with the CROW editorial board. In her free time, she enjoys spending time with her family, being outside, and spending time with her two dogs.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Newton (Newt) Austria-Ball</summary>
+              <p>Newton (Newt) Austria-Ball (they/them) is in their third year at UWB, following a path towards majoring in Biology while minoring in Creative Writing. They love all kinds of writing and helping others with their writing, which led them to becoming a writing tutor. This is their second year on the CROW Editorial Board. Having lived in an underprivileged area for most of their life, they want to help shed light on those without ready access to healthcare by advocating for more affordable and accessible care. In their free time, they like taking walks in the wetlands, learning about plants, hanging out with their cat, writing, playing instruments, and painting.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Cecilia Negash</summary>
+              <p>Cecilia Negash (she/her) is a second-year undergraduate majoring in Education, studying to become an elementary school teacher. Having worked with kids for the past 3 years, she is particularly interested in child development and developing pedagogical strategies for a more equitable education. Outside of classes, she is a Lead Tutor at the Writing and Communication Center and a substitute teacher at an after-school program. This is her first year working with the CROW editorial board. During her downtime, she likes to thrift clothes and books and hang out with friends and family.</p>
+            </details>
+          </li>
+          <li>
+            <details class="bio-dropdown">
+              <summary>Morgan Fu-Mueller</summary>
+              <p>Morgan Fu-Mueller (he/they) is a third-year Psychology major preparing for law school. He loves to think about K-pop, play D&D, and make art, drawing on all of that to advance his writing. As a WaCC tutor, they're passionate about enabling people to use their own voices to convey themselves and making academic writing more accessible. Their experience with topics in the medical field stems from growing up around doctors and in hospitals. They're excited to be working with the CROW editorial board again this year to help produce the best and silliest issue yet.</p>
+            </details>
+          </li>
+          <li class="vol-credits__contributor-note">(advisor) Andrea Stone, PhD</li>
+          <li class="vol-credits__contributor-note">(advisor) Erik Echols</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__left">
+      <img class="footer__uwb-logo" src="../assets/uwb-logo.png" alt="University of Washington Bothell">
+      <p class="footer__policy">
+        <span class="crow-name">The CROW</span> is an equal opportunity student publication that does not discriminate or publish works that discriminate against any sex, gender expression, sexual orientation, race, color, ethnicity, creed, religion, or ability. We thoughtfully consider all potential publications within this guideline.
+      </p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__link-group">
+        <span class="footer__label">Contact</span>
+        <a href="mailto:publish.edu" class="footer__link">
+          <img src="../assets/icon-email.svg" class="footer__link-icon" alt="" aria-hidden="true">
+          publish.edu
+        </a>
+      </div>
+      <span class="footer__divide" aria-hidden="true"></span>
+      <div class="footer__link-group">
+        <span class="footer__label">Follow us</span>
+        <a href="https://instagram.com/uwbcrow" target="_blank" rel="noreferrer" class="footer__link">
+          <img src="../assets/icon-instagram.svg" class="footer__link-icon footer__link-icon--circle" alt="" aria-hidden="true">
+          
+        </a>
+      </div>
+      <img class="footer__crow-img" src="../assets/crow.png" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  <script src="../js/archive.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script src="../js/submit-modal.js"></script>
+</body>
+</html>

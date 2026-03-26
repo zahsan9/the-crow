@@ -1,16 +1,16 @@
 /* ── Volume data (newest → oldest) ────────────────────────────────────────── */
 const VOLUMES = [
   { title: 'Volume Eleven', year: '2026', comingSoon: true,  img: null },
-  { title: 'Volume Ten',    year: '2025', comingSoon: false, img: 'assets/cover-v10.jpg', archivePage: 'volumes/volume-10.html' },
-  { title: 'Volume Nine',   year: '2024', comingSoon: false, img: 'assets/cover-v9.jpg', archivePage: 'volumes/volume-9.html' },
-  { title: 'Volume Eight',  year: '2023', comingSoon: false, img: 'assets/cover-v8.jpg', archivePage: 'volumes/volume-8.html' },
-  { title: 'Volume Seven',  year: '2022', comingSoon: false, img: 'assets/cover-v7.jpg', archivePage: 'volumes/volume-7.html' },
-  { title: 'Volume Six',    year: '2021', comingSoon: false, img: 'assets/cover-v6.jpg', archivePage: 'volumes/volume-6.html' },
-  { title: 'Volume Five',   year: '2020', comingSoon: false, img: 'assets/cover-v5.jpg', archivePage: 'volumes/volume-5.html' },
-  { title: 'Volume Four',   year: '2019', comingSoon: false, img: 'assets/cover-v4.jpg', archivePage: 'volumes/volume-4.html' },
-  { title: 'Volume Three',  year: '2018', comingSoon: false, img: 'assets/cover-v3.jpg', archivePage: 'volumes/volume-3.html' },
-  { title: 'Volume Two',    year: '2017', comingSoon: false, img: 'assets/cover-v2.jpg', archivePage: 'volumes/volume-2.html' },
-  { title: 'Volume One',    year: '2016', comingSoon: false, img: 'assets/cover-v1.jpg', archivePage: 'volumes/volume-1.html' },
+  { title: 'Volume Ten',    year: '2025', comingSoon: false, img: 'assets/cover-v10.jpg', archivePage: 'volumes-html/volume-10.html' },
+  { title: 'Volume Nine',   year: '2024', comingSoon: false, img: 'assets/cover-v9.jpg', archivePage: 'volumes-html/volume-9.html' },
+  { title: 'Volume Eight',  year: '2023', comingSoon: false, img: 'assets/cover-v8.jpg', archivePage: 'volumes-html/volume-8.html' },
+  { title: 'Volume Seven',  year: '2022', comingSoon: false, img: 'assets/cover-v7.jpg', archivePage: 'volumes-html/volume-7.html' },
+  { title: 'Volume Six',    year: '2021', comingSoon: false, img: 'assets/cover-v6.jpg', archivePage: 'volumes-html/volume-6.html' },
+  { title: 'Volume Five',   year: '2020', comingSoon: false, img: 'assets/cover-v5.jpg', archivePage: 'volumes-html/volume-5.html' },
+  { title: 'Volume Four',   year: '2019', comingSoon: false, img: 'assets/cover-v4.jpg', archivePage: 'volumes-html/volume-4.html' },
+  { title: 'Volume Three',  year: '2018', comingSoon: false, img: 'assets/cover-v3.jpg', archivePage: 'volumes-html/volume-3.html' },
+  { title: 'Volume Two',    year: '2017', comingSoon: false, img: 'assets/cover-v2.jpg', archivePage: 'volumes-html/volume-2.html' },
+  { title: 'Volume One',    year: '2016', comingSoon: false, img: 'assets/cover-v1.jpg', archivePage: 'volumes-html/volume-1.html' },
 ];
 
 const N = VOLUMES.length;

@@ -1,3 +1,45 @@
+/* ── Bio dropdown smooth open/close ─────────────────────────────────────────── */
+document.querySelectorAll('.bio-dropdown').forEach(details => {
+  const summary = details.querySelector('summary');
+
+  summary.addEventListener('click', e => {
+    e.preventDefault();
+
+    const ease = 'cubic-bezier(0.4, 0, 0.2, 1)';
+    const dur  = 260;
+
+    if (details.open) {
+      // — Close —
+      const from = details.offsetHeight;
+      const to   = summary.offsetHeight;
+      details.style.overflow = 'hidden';
+      const anim = details.animate(
+        [{ height: from + 'px' }, { height: to + 'px' }],
+        { duration: dur, easing: ease }
+      );
+      anim.onfinish = () => {
+        details.removeAttribute('open');
+        details.style.height   = '';
+        details.style.overflow = '';
+      };
+    } else {
+      // — Open —
+      details.setAttribute('open', '');
+      const to = details.scrollHeight;
+      details.style.overflow = 'hidden';
+      details.style.height   = summary.offsetHeight + 'px';
+      const anim = details.animate(
+        [{ height: summary.offsetHeight + 'px' }, { height: to + 'px' }],
+        { duration: dur, easing: ease }
+      );
+      anim.onfinish = () => {
+        details.style.height   = '';
+        details.style.overflow = '';
+      };
+    }
+  });
+});
+
 /* ── Page transitions ───────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('page-loaded');
