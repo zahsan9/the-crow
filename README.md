@@ -1,8 +1,55 @@
 # The CROW Journal — UW Bothell
 
-Website for **The CROW** (Campus Research & Observational Writings), the undergraduate and graduate student research journal at the University of Washington Bothell.
+Website for **The CROW** (Campus Research & Observational Writings), the undergraduate and graduate student research journal at the University of Washington Bothell. The journal publishes research from students across all disciplines — science, health, arts, humanities, and everything in between.
 
-No build step. No dependencies. Open any `.html` file in a browser or serve the folder with any static file server.
+No build step. No dependencies. Vanilla HTML, CSS, and JavaScript.
+
+---
+
+## Background
+
+The original site was built on Wix/WordPress and had a number of pain points:
+
+- **No author context** — publication pages listed papers with no information about who wrote them or their background
+- **Broken links** — several Volume 8 PDFs pointed to a decommissioned UWB server and returned 404s
+- **Abrupt UI interactions** — dropdowns and content switches snapped instantly with no transitions
+- **Inconsistent visual design** — page banners, nav behavior, and card styles varied across pages
+- **Bloated footer** — contained a large faded watermark text that cluttered the layout
+- **No accessibility basics** — missing keyboard navigation, no print styles, broken email links
+
+---
+
+## What Was Improved
+
+- **Author and editorial board bios** — added collapsible bio dropdowns on Volumes 8, 9, and 10 with smooth height animation (Web Animations API)
+- **Publication cards** — full-card click area via stretched link, hover labels ("View PDF →" / "Full text available in PDF download."), 5-line abstract clamp, no underlines on titles
+- **Broken Vol 8 links** — all 14 dead external URLs replaced; cards correctly marked as PDF-only
+- **Guidelines dropdown** — content switches with a crossfade; only the text swaps, the decorative paper stack stays static
+- **FAQ accordion** — smooth open/close, accessible `aria-expanded` states
+- **Consistent banners** — all page mastheads unified to the same color and spacing
+- **Footer** — removed the faded "The CROW" watermark pseudo-element
+- **Nav scroll behavior** — consolidated into one place; fixed a bug where the FAQ nav link broke due to duplicate variable declarations across scripts
+- **Editor icons** — saved as local SVG assets instead of Figma API URLs
+- **Print styles** — added `@media print` so published papers print cleanly
+- **Coming Soon indicator** — carousel card for the upcoming volume is clearly marked and non-clickable
+
+---
+
+## Design
+
+- **Fonts:** Henny Penny (display), DM Sans (body), Poppins (nav), Inter (UI)
+- **Colors:** `--dark: #191331` · `--ink: #2d2357` · `--purple: #43396d` · `--cream: #f5f0e8` · `--white: #ffffff`
+- **Figma:** `figma.com/design/IOhSblaiD7OLWv9tpUm0ey`
+
+---
+
+## Local Development
+
+```bash
+python3 -m http.server 8080
+```
+
+Open `http://localhost:8080`. Direct `file://` access also works for most features.
 
 ---
 
@@ -30,83 +77,5 @@ the-crow/
 │   └── volume-10.html      # 2025
 │
 ├── volumes-pdfs/           # PDF downloads
-│
 └── assets/                 # Images and icons
 ```
-
----
-
-## Adding a New Volume
-
-1. Duplicate an existing `volumes-html/volume-N.html` and update:
-   - Page `<title>`
-   - Masthead heading and year
-   - Author bio dropdowns
-   - Editorial board bio dropdowns
-   - Publication cards (title, author, abstract, PDF link)
-
-2. Add the cover image to `assets/cover-vN.jpg`
-
-3. In `js/app.js`, prepend a new entry to the `VOLUMES` array:
-   ```js
-   { title: 'Volume Twelve', year: '2027', comingSoon: false, img: 'assets/cover-v12.jpg', archivePage: 'volumes-html/volume-12.html' },
-   ```
-   The carousel, dots, and archive grid update automatically.
-
-4. Mark the previous "Coming Soon" entry as published by setting `comingSoon: false` and adding its `img` and `archivePage`.
-
----
-
-## Publication Cards
-
-Cards are defined as `<article class="pub-card">` elements in each volume HTML file. `archive.js` reads them on page load and:
-
-- Counts publications and displays the total
-- Cards with a real `href` on `.pub-card__title` get a stretched link (click anywhere on the card)
-- Cards with `href="#"` are marked `pub-card--pdf-only` and show "Full text available in PDF download." on hover
-
-To add a linked card, set the anchor's `href` to the article URL. To add an unlinked card, use `href="#"`.
-
----
-
-## Bio Dropdowns
-
-Each volume page has `<details class="bio-dropdown">` elements for authors and editorial board members. The open/close animation is handled by `transitions.js` using the Web Animations API.
-
-Structure:
-```html
-<details class="bio-dropdown">
-  <summary>Name (pronouns) · Program</summary>
-  <p>Bio text here.</p>
-</details>
-```
-
-For people without a bio, omit the `<p>` tag and remove the `class="bio-dropdown"` so the element renders as a plain non-interactive row.
-
----
-
-## Updating the Editors Section
-
-The editors grid on the homepage is rendered from the `EDITORS` and `ADVISORS` arrays in `js/app.js`. Update those arrays directly — no HTML changes needed.
-
----
-
-## Local Development
-
-Any static file server works:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then open `http://localhost:8080`.
-
-Direct `file://` access also works for most features, but some browsers restrict local asset loading over `file://`.
-
----
-
-## Design
-
-- **Fonts:** Henny Penny (display), DM Sans (body), Poppins (nav), Inter (UI)
-- **Colors:** `--dark: #191331` · `--ink: #2d2357` · `--purple: #43396d` · `--cream: #f5f0e8` · `--white: #ffffff`
-- **Figma:** `figma.com/design/IOhSblaiD7OLWv9tpUm0ey`
