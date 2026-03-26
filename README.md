@@ -1,6 +1,6 @@
 # The CROW Journal — UW Bothell
 
-Website for **The CROW** (Campus Research & Observational Writings), the undergraduate and graduate student research journal at the University of Washington Bothell. The journal publishes research from students across all disciplines — science, health, arts, humanities, and everything in between.
+Website redesign for **The CROW** (Campus Research & Observational Writings), the undergraduate and graduate student research journal at the University of Washington Bothell. The journal publishes research from students across all disciplines — science, health, arts, humanities, and everything in between.
 
 Made with HTML, CSS, and JavaScript.
 
@@ -44,9 +44,6 @@ python3 -m http.server 8080
 Open `http://localhost:8080`. Direct `file://` access also works for most features.
 
 ---
-
-## Background
-
 
 ### What changed
 
