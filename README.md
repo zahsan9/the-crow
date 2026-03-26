@@ -47,17 +47,40 @@ Open `http://localhost:8080`. Direct `file://` access also works for most featur
 
 ## Background
 
-The original site was built on Wix/WordPress. The redesign addressed several pain points:
+The original site was built on Wix. It functioned as a storage location for articles — but failed to communicate what The CROW actually is, who it's for, or why student work here matters. The redesign addressed that positioning problem from the ground up.
 
-| Pain point | What changed |
-|---|---|
-| No author context — papers were listed with no information about who wrote them | Added collapsible bio dropdowns on Volumes 8–10 for authors and editorial board members |
-| Broken links — Volume 8 PDFs pointed to a decommissioned UWB server | Dead URLs replaced; affected cards correctly marked as PDF-only |
-| Jarring UI — dropdowns and content switches snapped with no transitions | Smooth height animation on bio dropdowns (Web Animations API); crossfade on guidelines content swap |
-| Inconsistent visual design across pages | Unified page banner color and spacing; consistent nav scroll behavior |
-| Publication cards gave no affordance for interaction | Full-card click area, hover labels, and 5-line abstract clamp |
-| Cluttered footer with a large faded watermark | Watermark pseudo-element removed |
-| Broken email links, no print styles, missing Instagram handle | Fixed across all pages; print styles added |
+### Pain points
+
+**It wasn't clear what the site was.**
+No hero, no mission statement, no immediate signal that this is a student research journal. Visitors had no idea if they were in the right place.
+
+**The visual design undercut the work.**
+A generic Wix template communicated nothing distinctive about The CROW's identity. Student research that deserved recognition was presented with the same weight as placeholder content.
+
+**No sense of community.**
+Editors, contributors, and the people behind the journal were invisible. The site felt static and institutional rather than student-run and participatory.
+
+**The submission process was buried and intimidating.**
+Guidelines were hard to find, dense, and not broken out by submission type. First-time submitters had no clear path.
+
+**Content was hard to browse.**
+Articles were listed with no author context — no bios, no program, no reason to care who wrote them. There was no way to quickly understand the range of work published.
+
+**Dead interactions.**
+No hover states, no transitions, no microinteractions. Pages felt unfinished and unresponsive to the user.
+
+**Inconsistent design across pages.**
+Different pages felt disconnected — inconsistent banners, nav behavior, card styles, and typography with no shared system underneath.
+
+### What changed
+
+- **Positioning** — homepage now leads with identity: what The CROW is, who it's for, and how to get involved
+- **Visual design** — custom design system with a cohesive color palette, type scale, and consistent spacing across all pages
+- **Community** — editors section with names, programs, and role; author bios on Volumes 8–10
+- **Submission clarity** — dedicated guidelines page with a dropdown by paper type (research paper, abstract, editorial, WIP, etc.) and a full FAQ
+- **Content browsability** — publication cards with abstracts, hover affordance, full-card click area, and PDF availability clearly communicated
+- **Interactions** — smooth transitions throughout: bio dropdowns animate open/close, guidelines content crossfades, nav responds on scroll
+- **Design consistency** — unified banner treatment, shared CSS custom properties, single stylesheet for all pages
 
 ---
 
