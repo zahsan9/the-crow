@@ -44,7 +44,12 @@ python3 -m http.server 8080
 Open `http://localhost:8080`. Direct `file://` access also works for most features.
 
 ---
-
+### Original 
+https://www.uwbcrow.com/
+Points for improvement:
+- No clear branding & low visuals.
+- Large volumes of information presented in unbroken paragraphs.
+- Redundant information that is not organized in an intuitive way. 
 ### What changed
 
 - **Positioning** — homepage now leads with identity: what The CROW is, who it's for, and how to get involved
