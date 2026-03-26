@@ -173,9 +173,9 @@ document.querySelector('.nav__logo').addEventListener('click', () => {
 });
 
 /* ── Editors ─────────────────────────────────────────────────────────────── */
-const PERSON_ICON_BG     = 'assets/icon-person-bg.png';
-const PERSON_ICON_PERSON = 'assets/icon-person.png';
-const PERSON_ICON_VECTOR = 'assets/icon-person-vector.png';
+const PERSON_ICON_BG     = 'assets/icon-person-bg.svg';
+const PERSON_ICON_PERSON = 'assets/icon-person.svg';
+const PERSON_ICON_VECTOR = 'assets/icon-person-vector.svg';
 
 const EDITORS = [
   { name: 'Cecelia Negash (she/her)',              role: 'Undergraduate Education' },
