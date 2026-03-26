@@ -49,7 +49,6 @@ Open `http://localhost:8080`. Direct `file://` access also works for most featur
 
 - **Positioning** — homepage now leads with identity: what The CROW is, who it's for, and how to get involved
 - **Visual design** — custom design system with a cohesive color palette, type scale, and consistent spacing across all pages
-- **Community** — editors section with names, programs, and role; author bios on Volumes 8–10
 - **Submission clarity** — dedicated guidelines page with a dropdown by paper type (research paper, abstract, editorial, WIP, etc.) and a full FAQ
 - **Content browsability** — publication cards with abstracts, hover affordance, full-card click area, and PDF availability clearly communicated
 - **Interactions** — smooth transitions throughout: bio dropdowns animate open/close, guidelines content crossfades, nav responds on scroll
