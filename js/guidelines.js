@@ -54,24 +54,31 @@ function closeDropdown() {
   dropdown.classList.remove('gl-dropdown--open');
 }
 
+const paperContent = document.getElementById('glPaperContent');
+const criteriaWrap = document.getElementById('glCriteria');
+
 function selectType(type) {
-  // Update dropdown label
-  selected.textContent = LABELS[type];
+  // Fade out
+  paperContent.classList.add('is-switching');
+  criteriaWrap.classList.add('is-switching');
 
-  // Show correct paper section
-  ALL_TYPES.forEach(t => {
-    document.getElementById(PAPER_MAP[t]).hidden = (t !== type);
-  });
+  setTimeout(() => {
+    // Swap content at lowest opacity point
+    selected.textContent = LABELS[type];
 
-  // Show correct criteria section
-  ALL_TYPES.forEach(t => {
-    document.getElementById(CRITERIA_MAP[t]).hidden = (t !== type);
-  });
+    ALL_TYPES.forEach(t => {
+      document.getElementById(PAPER_MAP[t]).hidden    = (t !== type);
+      document.getElementById(CRITERIA_MAP[t]).hidden = (t !== type);
+    });
 
-  // Active state on items
-  list.querySelectorAll('.gl-dropdown__item').forEach(i => {
-    i.classList.toggle('gl-dropdown__item--active', i.dataset.type === type);
-  });
+    list.querySelectorAll('.gl-dropdown__item').forEach(i => {
+      i.classList.toggle('gl-dropdown__item--active', i.dataset.type === type);
+    });
+
+    // Fade back in
+    paperContent.classList.remove('is-switching');
+    criteriaWrap.classList.remove('is-switching');
+  }, 160);
 }
 
 toggle.addEventListener('click', () => {

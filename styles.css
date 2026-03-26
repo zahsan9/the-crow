@@ -752,6 +752,16 @@ body {
   transform: rotate(3deg) translate(8px, 6px);
 }
 
+#glPaperContent,
+#glCriteria {
+  transition: opacity 0.16s ease;
+}
+
+#glPaperContent.is-switching,
+#glCriteria.is-switching {
+  opacity: 0;
+}
+
 .guidelines-page__paper-front {
   position: relative;
   width: 560px;
