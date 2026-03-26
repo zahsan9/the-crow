@@ -14,6 +14,7 @@ document.querySelectorAll('a[href]').forEach(link => {
 
   link.addEventListener('click', e => {
     e.preventDefault();
+    if (link.classList.contains('nav__logo')) sessionStorage.removeItem('carouselActive');
     document.body.classList.remove('page-loaded');
     setTimeout(() => { window.location.href = href; }, 280);
   });

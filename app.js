@@ -16,7 +16,8 @@ const VOLUMES = [
 const N = VOLUMES.length;
 
 /* ── Carousel state ──────────────────────────────────────────────────────── */
-let active = 1;       // Default: Volume Ten centered (matches Figma Archives-1)
+const _saved = parseInt(sessionStorage.getItem('carouselActive'), 10);
+let active = (!isNaN(_saved) && _saved >= 0 && _saved < N) ? _saved : 1;
 let isAnimating = false;
 
 /*
@@ -147,6 +148,7 @@ cards.forEach(card => {
     if (p === 'left')  navigate(-1);
     if (p === 'right') navigate(+1);
     if (p === 'center' && VOLUMES[active].archivePage) {
+      sessionStorage.setItem('carouselActive', active);
       window.location.href = VOLUMES[active].archivePage;
     }
   });
@@ -162,6 +164,12 @@ cards.forEach(card => {
 document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')  navigate(-1);
   if (e.key === 'ArrowRight') navigate(+1);
+});
+
+// Clicking the nav logo resets the carousel to its default state
+document.querySelector('.nav__logo').addEventListener('click', () => {
+  sessionStorage.removeItem('carouselActive');
+  jumpTo(1);
 });
 
 /* ── Editors ─────────────────────────────────────────────────────────────── */
