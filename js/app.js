@@ -173,9 +173,9 @@ document.querySelector('.nav__logo').addEventListener('click', () => {
 });
 
 /* ── Editors ─────────────────────────────────────────────────────────────── */
-const PERSON_ICON_BG     = 'https://www.figma.com/api/mcp/asset/885311e9-e8ee-44af-84c2-666b7bf5f2ae';
-const PERSON_ICON_PERSON = 'https://www.figma.com/api/mcp/asset/a74d5b4c-ea80-4854-85f8-c7d3f8ad84de';
-const PERSON_ICON_VECTOR = 'https://www.figma.com/api/mcp/asset/6f88c0e5-0948-4093-bcc6-d2beace4ecf5';
+const PERSON_ICON_BG     = 'assets/icon-person-bg.png';
+const PERSON_ICON_PERSON = 'assets/icon-person.png';
+const PERSON_ICON_VECTOR = 'assets/icon-person-vector.png';
 
 const EDITORS = [
   { name: 'Cecelia Negash (she/her)',              role: 'Undergraduate Education' },
