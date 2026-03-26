@@ -691,20 +691,10 @@ body {
 
 /* Guidelines masthead */
 .guidelines-masthead {
-  background: var(--dark);
-  border-bottom: 3px solid var(--purple);
-  padding: 108px 120px 40px;
+  background: var(--ink);
+  padding: 72px 120px 40px;
 }
 
-.guidelines-masthead__eyebrow {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(248,243,236,0.38);
-  margin-bottom: 14px;
-}
 
 .guidelines-masthead__heading {
   font-family: 'DM Sans', sans-serif;
@@ -1732,8 +1722,8 @@ body {
   gap: 8px;
 }
 
-.pub-card:not(.pub-card--pdf-only) .pub-card__footer::after {
-  content: 'View PDF →';
+.pub-card:not(.pub-card--pdf-only) .pub-card__footer::after,
+.pub-card--pdf-only .pub-card__footer::after {
   margin-left: auto;
   font-family: 'Inter', sans-serif;
   font-size: 12px;
@@ -1743,8 +1733,20 @@ body {
   transition: opacity 0.2s ease;
 }
 
-.pub-card:not(.pub-card--pdf-only):hover .pub-card__footer::after {
+.pub-card:not(.pub-card--pdf-only) .pub-card__footer::after {
+  content: 'View PDF →';
+}
+
+.pub-card--pdf-only .pub-card__footer::after {
+  content: 'Full text available in PDF download.';
+}
+
+.pub-card:hover .pub-card__footer::after {
   opacity: 1;
+}
+
+.pub-card__pdf-note {
+  display: none;
 }
 
 .pub-card__author-icon {

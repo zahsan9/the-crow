@@ -27,8 +27,3 @@ document.querySelectorAll('.faq-item__trigger').forEach(trigger => {
   });
 });
 
-/* ── Nav shadow on scroll ───────────────────────────────────────────────── */
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 0);
-}, { passive: true });
