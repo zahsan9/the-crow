@@ -1641,10 +1641,15 @@ body {
 }
 
 /* stretched link — makes entire card clickable */
+.pub-card:not(.pub-card--pdf-only) {
+  cursor: pointer;
+}
+
 .pub-card__title::after {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
 }
 
 .pub-card--pdf-only .pub-card__title::after {

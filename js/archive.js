@@ -79,6 +79,6 @@ document.querySelectorAll('a.pub-card__title[href="#"]').forEach(link => {
   link.closest('.pub-card').classList.add('pub-card--pdf-only');
   const note = document.createElement('p');
   note.className = 'pub-card__pdf-note';
-  note.textContent = 'Full text available in the PDF download above.';
+  note.textContent = 'Full text available in PDF download.';
   link.insertAdjacentElement('afterend', note);
 });
