@@ -1,3 +1,26 @@
+/* ── Mobile hamburger menu ───────────────────────────────────────────────────── */
+const hamburger = document.querySelector('.nav__hamburger');
+const navLinks   = document.querySelector('.nav__links');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+
+  // Close menu when any link inside it is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
 /* ── Bio dropdown smooth open/close ─────────────────────────────────────────── */
 document.querySelectorAll('.bio-dropdown').forEach(details => {
   const summary = details.querySelector('summary');

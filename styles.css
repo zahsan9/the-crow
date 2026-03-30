@@ -2206,6 +2206,332 @@ body {
   color: var(--ink);
 }
 
+/* ── Hamburger — hidden on desktop ─────────────────────────────────────────── */
+.nav__hamburger { display: none; }
+
+/* ── Mobile nav submit item — hidden on desktop ─────────────────────────────── */
+.nav__links-submit { display: none; }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   RESPONSIVE — all mobile/tablet layout adjustments below 768 px
+   Desktop styles above are completely untouched.
+   ──────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Lift the hard desktop floor */
+  body { min-width: 0; }
+
+  /* ── NAV ──────────────────────────────────────────────────────────────────── */
+  .nav {
+    height: 64px;
+    padding: 0 20px;
+  }
+
+  .nav__logo { font-size: 28px; }
+
+  /* Nav links hidden by default; revealed as full-screen overlay */
+  .nav__links {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: 64px;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 12px 0 32px;
+    z-index: 98;
+    overflow-y: auto;
+    border-top: 1px solid rgba(45,35,87,0.08);
+  }
+
+  .nav__links.open { display: flex; }
+
+  .nav__links li { width: 100%; }
+
+  .nav__link {
+    display: block;
+    padding: 14px 24px;
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .nav__link::after { display: none; }
+
+  /* Desktop submit button hidden; mobile version is inside the overlay */
+  .nav__submit { display: none; }
+
+  /* Submit inside mobile overlay */
+  .nav__links-submit {
+    display: block;
+    padding: 20px 24px 0;
+    width: 100%;
+  }
+
+  .nav__links-submit .nav__submit {
+    display: inline-flex;
+    font-size: 16px;
+    padding: 12px 28px;
+    margin-left: 0;
+  }
+
+  /* Hamburger button */
+  .nav__hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-shrink: 0;
+  }
+
+  .nav__hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: transform 0.22s ease, opacity 0.22s ease;
+  }
+
+  .nav__hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav__hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .nav__hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  #archives, #about, #editors { scroll-margin-top: 64px; }
+
+  /* ── HERO ──────────────────────────────────────────────────────────────────── */
+  .hero {
+    min-height: 100dvh;
+    padding: 0 24px 100px;
+    justify-content: center;
+  }
+
+  .hero__bird { width: 72px; height: auto; }
+
+  .hero__tagline {
+    font-size: 15px;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero__cta { font-size: 14px; padding: 10px 24px; margin-top: 20px; }
+
+  /* ── ARCHIVES / CAROUSEL ──────────────────────────────────────────────────── */
+  .archives { padding: 40px 0 64px; }
+
+  .archives__heading {
+    font-size: 22px;
+    padding-left: 20px;
+    margin-bottom: 28px;
+  }
+
+  /* Height to comfortably contain one scaled-down card */
+  .carousel { height: 300px; }
+
+  /* Scale the card to fit a phone viewport */
+  .vol-card {
+    width: min(180px, 44vw);
+    height: calc(min(180px, 44vw) * 1.385);
+    border-radius: 14px;
+  }
+
+  /* Scale card internals to match the smaller card size */
+  .vol-card__footer {
+    height: 46px;
+    padding: 0 8%;
+  }
+
+  .vol-card__title { font-size: 13px; }
+
+  .vol-card__year { font-size: 12px; }
+
+  .coming-soon p:last-child { font-size: 14px; }
+  .coming-soon p:first-child { font-size: 8px; }
+
+  /* Hide the side cards — they still hold JS state, just invisible */
+  .vol-card[data-pos="left"],
+  .vol-card[data-pos="right"] {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Move prev/next buttons to flank the card */
+  #btnPrev { left: 8px; }
+  #btnNext { right: 8px; }
+
+  .carousel__btn { width: 52px; height: 52px; }
+
+  /* ── ABOUT ─────────────────────────────────────────────────────────────────── */
+  .about { min-height: 100dvh; padding: 48px 24px 52px; display: flex; flex-direction: column; justify-content: center; }
+
+  .about__heading { margin-bottom: 24px; }
+
+  .about__heading .crow-name { font-size: 32px; }
+
+  .about__heading-above { font-size: 22px; margin-bottom: 10px; }
+
+  .about__body { font-size: 15px; max-width: 100%; line-height: 1.6; }
+
+  /* ── SECTION DIVIDER ───────────────────────────────────────────────────────── */
+  .section-divider { padding: 0 24px 48px; }
+
+  .section-divider__line:first-child { width: 100%; max-width: 280px; }
+
+  /* ── EDITORS ───────────────────────────────────────────────────────────────── */
+  .editors { padding: 48px 24px 72px; }
+
+  .editors__heading { font-size: 22px; }
+
+  .editors__grid { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
+
+  .editors__grid--advisors { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
+
+  .editor-card__avatar { width: 80px; height: 80px; }
+
+  .editor-card__name { font-size: 13px; max-width: 140px; }
+
+  .editor-card__role { font-size: 12px; max-width: 140px; }
+
+  /* ── FOOTER ────────────────────────────────────────────────────────────────── */
+  .footer {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 24px 48px;
+  }
+
+  .footer__right {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer__label { font-size: 9px; }
+
+  .footer__link { font-size: 12px; gap: 6px; }
+
+  .footer__link-icon { width: 24px; height: 24px; }
+
+  .footer__divide { display: none; }
+
+  .footer__crow-img { display: none; }
+
+  /* ── GUIDELINES PAGE ───────────────────────────────────────────────────────── */
+  .guidelines-masthead { padding: 40px 24px 24px; }
+
+  .guidelines-masthead__heading { font-size: 26px; }
+
+  .guidelines-masthead__sub { font-size: 13px; }
+
+  .guidelines-page { padding: 40px 24px 80px; }
+
+  .guidelines-page__inner { flex-direction: column; gap: 40px; }
+
+  .guidelines-page__paper-wrap {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hide decorative stacked backing pages */
+  .guidelines-page__paper-back,
+  .guidelines-page__paper-back--far { display: none; }
+
+  .guidelines-page__paper-front {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 36px 24px;
+  }
+
+  .guidelines-page__sidebar { width: 100%; }
+
+  /* ── VOLUME PAGES ──────────────────────────────────────────────────────────── */
+  .open-vol__masthead {
+    padding: 40px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .open-vol__masthead-vol { font-size: 28px; }
+
+  .open-vol__masthead-year { font-size: 16px; }
+
+  .open-vol__letter-label { font-size: 15px; }
+
+  .open-vol__letter-body { font-size: 14px; }
+
+  .open-vol__inner {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 24px;
+  }
+
+  .open-vol__left {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .open-vol__card-cover { height: auto; aspect-ratio: 405 / 492; }
+
+  /* ── PUBLICATIONS ──────────────────────────────────────────────────────────── */
+  .publications { padding: 48px 24px 72px; }
+
+  .publications__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .publications__heading { font-size: 22px; }
+
+  .publications__searchbar { width: 100%; }
+
+  .publications__grid { grid-template-columns: 1fr; }
+
+  .pub-card__title { font-size: 15px; }
+
+  .pub-card__abstract { font-size: 13px; }
+
+  .pub-card__author { font-size: 13px; }
+
+  /* ── VOLUME CREDITS ────────────────────────────────────────────────────────── */
+  .vol-credits { padding: 48px 24px; }
+
+  .vol-credits__inner { flex-direction: column; gap: 40px; }
+
+  .vol-credits__divider { display: none; }
+
+  .vol-credits__heading { font-size: 10px; }
+
+  .vol-credits__list li { font-size: 14px; }
+
+  /* ── AUTHOR BIOS ───────────────────────────────────────────────────────────── */
+  .author-bios { padding: 48px 24px; }
+
+  .author-bios__heading { font-size: 22px; }
+
+  .bio-card__name { font-size: 14px; }
+
+  .bio-card__body { font-size: 13px; }
+
+  /* ── FAQ PAGE ──────────────────────────────────────────────────────────────── */
+  .faq-page { padding: 48px 24px 80px; }
+
+  .faq-page__heading { font-size: 22px; }
+
+  .faq-policy { padding: 20px; }
+
+  .faq-policy__title { font-size: 15px; }
+
+  .faq-item__trigger { font-size: 15px; }
+
+  .faq-item__body p, .faq-item__body ul { font-size: 14px; }
+}
+
 /* ── Print styles ───────────────────────────────────────────────────────────── */
 @media print {
   .nav, .footer, .publications__searchbar, .publications__filters,

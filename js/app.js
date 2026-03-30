@@ -285,6 +285,21 @@ buildEditors();
 buildDots();
 updateDots();
 
+/* ── "View Volumes" CTA: center the archives section on mobile ───────────── */
+const heroCta = document.querySelector('.hero__cta');
+if (heroCta) {
+  heroCta.addEventListener('click', e => {
+    if (window.innerWidth > 768) return; // desktop uses default scrollIntoView
+    e.preventDefault();
+    e.stopImmediatePropagation(); // prevent transitions.js scrollIntoView handler
+    const archives = document.getElementById('archives');
+    if (!archives) return;
+    const sectionCenter = archives.offsetTop + archives.offsetHeight / 2;
+    const scrollTo = sectionCenter - window.innerHeight / 2;
+    window.scrollTo({ top: Math.max(0, scrollTo), behavior: 'smooth' });
+  });
+}
+
 /* ── Instant-jump to #archives when returning from a volume page ─────────── */
 if (location.hash === '#archives') {
   const archives = document.getElementById('archives');
