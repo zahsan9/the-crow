@@ -66,3 +66,6 @@ Points for improvement:
 - **Fonts:** Henny Penny (display), DM Sans (body), Poppins (nav), Inter (UI)
 - **Colors:** `--dark: #191331` · `--ink: #2d2357` · `--purple: #43396d` · `--cream: #f5f0e8` · `--white: #ffffff`
 - **Figma:** `figma.com/design/IOhSblaiD7OLWv9tpUm0ey`
+
+## Demo
+https://youtu.be/01caViMhTFk
