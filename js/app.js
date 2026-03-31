@@ -154,11 +154,18 @@ cards.forEach(card => {
   });
 });
 
-// Make :active work on iOS Safari (requires a touchstart listener on the element)
-[document.getElementById('btnPrev'), document.getElementById('btnNext')].forEach(btn => {
-  btn.addEventListener('touchstart', () => btn.classList.add('pressed'),    { passive: true });
-  btn.addEventListener('touchend',   () => btn.classList.remove('pressed'), { passive: true });
-  btn.addEventListener('touchcancel',() => btn.classList.remove('pressed'), { passive: true });
+// Touch: fire navigate() on touchend so a quick tap is never swallowed by
+// the browser before it synthesises a click. preventDefault() cancels the
+// synthetic click that would otherwise arrive ~300 ms later.
+[document.getElementById('btnPrev'), document.getElementById('btnNext')].forEach((btn, idx) => {
+  const delta = idx === 0 ? -1 : +1;
+  btn.addEventListener('touchstart', () => btn.classList.add('pressed'), { passive: true });
+  btn.addEventListener('touchend', e => {
+    btn.classList.remove('pressed');
+    e.preventDefault();
+    navigate(delta);
+  }, { passive: false });
+  btn.addEventListener('touchcancel', () => btn.classList.remove('pressed'), { passive: true });
 });
 
 document.addEventListener('keydown', e => {
