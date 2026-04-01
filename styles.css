@@ -551,6 +551,12 @@ body {
   cursor: pointer;
 }
 
+/* Subtle outline on side card hover — no size/position change */
+.carousel__track:not(.navigating) .vol-card[data-pos="left"]:hover,
+.carousel__track:not(.navigating) .vol-card[data-pos="right"]:hover {
+  outline-color: rgba(255, 255, 255, 0.7);
+}
+
 /* Centre card is clickable when it has an archive page */
 .vol-card[data-pos="center"] { cursor: pointer; }
 
